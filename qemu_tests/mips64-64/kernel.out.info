@@ -6,7 +6,9 @@ line 100: Freeing initrd memory: 3616K (98000000007b0000 - 9800000000b38000)
 
 line 152: RAMDISK: Couldn't find valid RAM disk image starting at 0.
 
-source for message in line 99: https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/tree/init/initramfs.c?id=refs/tags/v4.2.3, line 626
+source for message in 
+  line 99: https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/tree/init/initramfs.c?id=refs/tags/v4.2.3, line 626
+  line 152: https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/tree/init/do_mounts_rd.c?id=refs/tags/v4.2.3, line 176
 
 ---> https://bugs.launchpad.net/ubuntu/+source/linux/+bug/524893
 talking about CRAMFS => http://cateee.net/lkddb/web-lkddb/CRAMFS.html - related?
