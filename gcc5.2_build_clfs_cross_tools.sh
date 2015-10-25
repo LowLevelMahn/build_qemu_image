@@ -943,6 +943,12 @@ die_on_any_error 2
 find init | cpio -H newc -o > /tools/boot/initramfs.cpio 2>&1 | tee "${STEP_LOG_DIR}/create_initramfs.cpio.out"
 die_on_any_error 3
 
+## check cpio
+# cpio -idv < initramfs.cpio 
+# die_on_any_error 300
+# file init
+# die_on_any_error 400
+
 rm -rf init.c
 die_on_any_error 4
 

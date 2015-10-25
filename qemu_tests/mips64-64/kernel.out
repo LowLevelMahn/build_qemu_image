@@ -1,7 +1,7 @@
 Trying 127.0.0.1...
 Connected to localhost.
 Escape character is '^]'.
-Linux version 4.2.3 (dl@dl-Precision-M6500) (gcc version 5.2.0 (GCC) ) #1 SMP Sun Oct 25 15:30:25 CET 2015
+Linux version 4.2.3 (dl@dl-Precision-M6500) (gcc version 5.2.0 (GCC) ) #1 SMP Sun Oct 25 21:06:52 CET 2015
 earlycon: Early serial console at I/O port 0x3f8 (options '38400n8')
 bootconsole [uart0] enabled
 Config serial console: console=ttyS0,38400n8r
@@ -14,10 +14,10 @@ Software DMA cache coherency enabled
 Determined physical RAM map:
  memory: 0000000000001000 @ 0000000000000000 (reserved)
  memory: 00000000000ef000 @ 0000000000001000 (ROM data)
- memory: 00000000006bc000 @ 00000000000f0000 (reserved)
- memory: 0000000007850000 @ 00000000007ac000 (usable)
-Wasting 27496 bytes for tracking 491 unused pages
-Initial ramdisk at: 0x98000000007b0000 (3703308 bytes)
+ memory: 00000000006ac000 @ 00000000000f0000 (reserved)
+ memory: 0000000007860000 @ 000000000079c000 (usable)
+Wasting 27272 bytes for tracking 487 unused pages
+Initial ramdisk at: 0x98000000007a0000 (3708428 bytes)
 Zone ranges:
   DMA      [mem 0x0000000000004000-0x0000000000ffffff]
   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
@@ -30,12 +30,12 @@ Primary instruction cache 32kB, VIVT, 4-way, linesize 32 bytes.
 Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
 PERCPU: Embedded 4 pages/cpu @980000000107c000 s18688 r8192 d38656 u65536
 Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 8161
-Kernel command line: rd_start=0xffffffff807b0000 rd_size=3703308  console=ttyS0,38400n8r
+Kernel command line: rd_start=0xffffffff807a0000 rd_size=3708428  console=ttyS0,38400n8r
 PID hash table entries: 512 (order: -2, 4096 bytes)
 Dentry cache hash table entries: 16384 (order: 3, 131072 bytes)
 Inode-cache hash table entries: 8192 (order: 2, 65536 bytes)
 Enable cache parity protection for MIPS 20KC/25KF CPUs.
-Memory: 118784K/131040K available (4824K kernel code, 290K rwdata, 1132K rodata, 320K init, 234K bss, 12256K reserved, 0K cma-reserved)
+Memory: 118848K/131040K available (4820K kernel code, 278K rwdata, 1132K rodata, 272K init, 234K bss, 12192K reserved, 0K cma-reserved)
 Hierarchical RCU implementation.
 	Additional per-CPU info printed with stalls.
 	Build-time adjustment of leaf fanout to 64.
@@ -43,10 +43,10 @@ Hierarchical RCU implementation.
 RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=1
 NR_IRQS:256
 CPU frequency 100.00 MHz
-clocksource: MIPS: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112631611 ns
-sched_clock: 32 bits at 99MHz, resolution 10ns, wraps every 21474867194ns
+clocksource: MIPS: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112445451 ns
+sched_clock: 32 bits at 100MHz, resolution 9ns, wraps every 21474658299ns
 Console: colour dummy device 80x25
-Calibrating delay loop... 847.05 BogoMIPS (lpj=4235264)
+Calibrating delay loop... 829.84 BogoMIPS (lpj=4149248)
 pid_max: default: 32768 minimum: 301
 Mount-cache hash table entries: 2048 (order: 0, 16384 bytes)
 Mountpoint-cache hash table entries: 2048 (order: 0, 16384 bytes)
@@ -95,9 +95,9 @@ RPC: Registered named UNIX socket transport module.
 RPC: Registered udp transport module.
 RPC: Registered tcp transport module.
 RPC: Registered tcp NFSv4.1 backchannel transport module.
-Trying to unpack rootfs image as initramfs...
-rootfs image is not initramfs (junk in compressed archive); looks like an initrd
-Freeing initrd memory: 3616K (98000000007b0000 - 9800000000b38000)
+Unpacking initramfs...
+Initramfs unpacking failed: junk in compressed archive
+Freeing initrd memory: 3616K (98000000007a0000 - 9800000000b28000)
 futex hash table entries: 256 (order: 0, 16384 bytes)
 VFS: Disk quotas dquot_6.6.0
 VFS: Dquot-cache hash table entries: 2048 (order 0, 16384 bytes)
@@ -117,7 +117,6 @@ console [ttyS0] enabled
 bootconsole [uart0] disabled
 bootconsole [uart0] disabled
 serial8250.0: ttyS1 at I/O 0x2f8 (irq = 3, base_baud = 115200) is a 16550A
-brd: module loaded
 Uniform Multi-Platform E-IDE driver
 ide_generic: please use "probe_mask=0x3f" module parameter for probing all legacy ISA IDE ports
 ide-gd driver 1.18
@@ -145,31 +144,10 @@ rtc_cmos rtc_cmos: rtc core: registered rtc_cmos as rtc0
 rtc_cmos rtc_cmos: alarms up to one day, 242 bytes nvram
 NET: Registered protocol family 17
 NET: Registered protocol family 15
-rtc_cmos rtc_cmos: setting system clock to 2015-10-25 14:32:40 UTC (1445783560)
+rtc_cmos rtc_cmos: setting system clock to 2015-10-25 20:09:41 UTC (1445803781)
 ata2.00: ATAPI: QEMU DVD-ROM, 2.4.0.1, max UDMA/100
 ata2.00: configured for UDMA/33
 scsi 1:0:0:0: CD-ROM            QEMU     QEMU DVD-ROM     2.4. PQ: 0 ANSI: 5
-RAMDISK: Couldn't find valid RAM disk image starting at 0.
-List of all partitions:
-0100            4096 ram0  (driver?)
-0101            4096 ram1  (driver?)
-0102            4096 ram2  (driver?)
-0103            4096 ram3  (driver?)
-0104            4096 ram4  (driver?)
-0105            4096 ram5  (driver?)
-0106            4096 ram6  (driver?)
-0107            4096 ram7  (driver?)
-0108            4096 ram8  (driver?)
-0109            4096 ram9  (driver?)
-010a            4096 ram10  (driver?)
-010b            4096 ram11  (driver?)
-010c            4096 ram12  (driver?)
-010d            4096 ram13  (driver?)
-010e            4096 ram14  (driver?)
-010f            4096 ram15  (driver?)
-1f00            1024 mtdblock0  (driver?)
-1f01            2944 mtdblock1  (driver?)
-1f02             128 mtdblock2  (driver?)
-No filesystem could mount root, tried:  ext3 ext2 ext4
-Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(1,0)
----[ end Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(1,0)
+Freeing YAMON memory: 956k freed
+Freeing unused kernel memory: 272K (ffffffff8071c000 - ffffffff80760000)
+printf Hello World!
