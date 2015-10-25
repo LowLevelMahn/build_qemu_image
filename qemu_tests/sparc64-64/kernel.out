@@ -1,0 +1,218 @@
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+OpenBIOS for Sparc64
+Configuration device id QEMU version 1 machine id 0
+kernel addr 404000 size 9a8371
+kernel cmdline 
+CPUs: 1 x SUNW,UltraSPARC-IIi
+UUID: 00000000-0000-0000-0000-000000000000
+Welcome to OpenBIOS v1.1 built on Jun 17 2015 18:50
+  Type 'help' for detailed information
+[sparc64] Kernel already loaded
+
+[    0.000000] PROMLIB: Sun IEEE Boot Prom 'OBP 3.10.24 1999/01/01 01:01'
+[    0.000000] PROMLIB: Root node compatible: sun4u
+[    0.000000] Linux version 4.2.3 (dl@dl-Precision-M6500) (gcc version 5.2.0 (GCC) ) #1 SMP Tue Oct 20 09:46:02 CEST 2015
+[    0.000000] bootconsole [earlyprom0] enabled
+[    0.000000] ARCH: SUN4U
+[    0.000000] Ethernet address: 52:54:00:12:34:56
+[    0.000000] MM: PAGE_OFFSET is 0xfffff80000000000 (max_phys_bits == 40)
+[    0.000000] MM: VMALLOC [0x0000000100000000 --> 0x0000060000000000]
+[    0.000000] MM: VMEMMAP [0x0000060000000000 --> 0x00000c0000000000]
+[    0.000000] Kernel: Using 3 locked TLB entries for main kernel image.
+[    0.000000] Remapping the kernel... done.
+[    0.000000] OF stdout device is: /pci@1fe,0/ebus@3/su
+[    0.000000] PROM: Built device tree with 52326 bytes of memory.
+[    0.000000] Top of RAM: 0x3fe80000, Total RAM: 0x3fe80000
+[    0.000000] Memory hole size: 0MB
+[    0.000000] Allocated 16384 bytes for kernel page tables.
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      empty
+[    0.000000]   Normal   [mem 0x0000000000000000-0x000000003fe7ffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000000000-0x000000003fe7ffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000000000-0x000000003fe7ffff]
+[    0.000000] Booting Linux...
+[    0.000000] CPU CAPS: [flush,stbar,swap,muldiv,v9,mul32,div32,v8plus]
+[    0.000000] CPU CAPS: [vis]
+[    0.000000] PERCPU: Embedded 8 pages/cpu @fffff8003f800000 s30592 r0 d34944 u4194304
+[    0.000000] Built 1 zonelists in Node order, mobility grouping on.  Total pages: 129857
+[    0.000000] Policy zone: Normal
+[    0.000000] Kernel command line: 
+[    0.000000] PID hash table entries: 4096 (order: 2, 32768 bytes)
+[    0.000000] Sorting __ex_table...
+[    0.000000] Memory: 1024720K/1047040K available (6593K kernel code, 481K rwdata, 1784K rodata, 328K init, 632K bss, 22320K reserved, 0K cma-reserved)
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	Additional per-CPU info printed with stalls.
+[    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=1.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=1
+[    0.000000] NR_IRQS:2048 nr_irqs:2048 1
+[    5.307676] clocksource: tick: mask: 0xffffffffffffffff max_cycles: 0x171024e7e0, max_idle_ns: 440795205315 ns
+[    5.308759] clocksource: mult[a000000] shift[24]
+[    5.309765] clockevent: mult[1999999a] shift[32]
+[    5.315716] Console: colour dummy device 80x25
+[    5.316873] console [tty0] enabled
+[    5.318136] bootconsole [earlyprom0] disabled
+[    0.000000] PROMLIB: Sun IEEE Boot Prom 'OBP 3.10.24 1999/01/01 01:01'
+[    0.000000] PROMLIB: Root node compatible: sun4u
+[    0.000000] Linux version 4.2.3 (dl@dl-Precision-M6500) (gcc version 5.2.0 (GCC) ) #1 SMP Tue Oct 20 09:46:02 CEST 2015
+[    0.000000] bootconsole [earlyprom0] enabled
+[    0.000000] ARCH: SUN4U
+[    0.000000] Ethernet address: 52:54:00:12:34:56
+[    0.000000] MM: PAGE_OFFSET is 0xfffff80000000000 (max_phys_bits == 40)
+[    0.000000] MM: VMALLOC [0x0000000100000000 --> 0x0000060000000000]
+[    0.000000] MM: VMEMMAP [0x0000060000000000 --> 0x00000c0000000000]
+[    0.000000] Kernel: Using 3 locked TLB entries for main kernel image.
+[    0.000000] Remapping the kernel... done.
+[    0.000000] OF stdout device is: /pci@1fe,0/ebus@3/su
+[    0.000000] PROM: Built device tree with 52326 bytes of memory.
+[    0.000000] Top of RAM: 0x3fe80000, Total RAM: 0x3fe80000
+[    0.000000] Memory hole size: 0MB
+[    0.000000] Allocated 16384 bytes for kernel page tables.
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      empty
+[    0.000000]   Normal   [mem 0x0000000000000000-0x000000003fe7ffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000000000-0x000000003fe7ffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000000000-0x000000003fe7ffff]
+[    0.000000] Booting Linux...
+[    0.000000] CPU CAPS: [flush,stbar,swap,muldiv,v9,mul32,div32,v8plus]
+[    0.000000] CPU CAPS: [vis]
+[    0.000000] PERCPU: Embedded 8 pages/cpu @fffff8003f800000 s30592 r0 d34944 u4194304
+[    0.000000] Built 1 zonelists in Node order, mobility grouping on.  Total pages: 129857
+[    0.000000] Policy zone: Normal
+[    0.000000] Kernel command line: 
+[    0.000000] PID hash table entries: 4096 (order: 2, 32768 bytes)
+[    0.000000] Sorting __ex_table...
+[    0.000000] Memory: 1024720K/1047040K available (6593K kernel code, 481K rwdata, 1784K rodata, 328K init, 632K bss, 22320K reserved, 0K cma-reserved)
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	Additional per-CPU info printed with stalls.
+[    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=1.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=1
+[    0.000000] NR_IRQS:2048 nr_irqs:2048 1
+[    5.307676] clocksource: tick: mask: 0xffffffffffffffff max_cycles: 0x171024e7e0, max_idle_ns: 440795205315 ns
+[    5.308759] clocksource: mult[a000000] shift[24]
+[    5.309765] clockevent: mult[1999999a] shift[32]
+[    5.315716] Console: colour dummy device 80x25
+[    5.316873] console [tty0] enabled
+[    5.318136] bootconsole [earlyprom0] disabled
+[    5.464583] Calibrating delay using timer specific routine.. 203.39 BogoMIPS (lpj=1016950)
+[    5.464824] pid_max: default: 32768 minimum: 301
+[    5.467258] Dentry cache hash table entries: 131072 (order: 7, 1048576 bytes)
+[    5.470458] Inode-cache hash table entries: 65536 (order: 6, 524288 bytes)
+[    5.472223] Mount-cache hash table entries: 2048 (order: 1, 16384 bytes)
+[    5.472337] Mountpoint-cache hash table entries: 2048 (order: 1, 16384 bytes)
+[    5.497351] Brought up 1 CPUs
+[    5.513282] Performance events: No support for PMU type 'ultra12'
+[    5.515544] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    5.518234] xor: automatically using best checksumming function:
+[    5.619809]    VIS       :   164.000 MB/sec
+[    5.630523] NET: Registered protocol family 16
+[    5.664378] /pci@1f,0: PCI IO[1fe02000000] MEM[1ff00100000]
+[    5.664602] /pci@1f,0: Unable to request IOMMU resource.
+[    5.664664] /pci@1f,0: SABRE PCI Bus Module ver[0:0]
+[    5.664747] PCI: Scanning PBM /pci@1f,0
+[    5.666107] sabre ffe2b740: PCI host bridge to bus 0000:00
+[    5.666413] pci_bus 0000:00: root bus resource [io  0x1fe02000000-0x1fe0200ffff] (bus address [0x0000-0xffff])
+[    5.666519] pci_bus 0000:00: root bus resource [mem 0x1ff00100000-0x1ff100fffff] (bus address [0x00000000-0x0fffffff])
+[    5.666874] pci_bus 0000:00: root bus resource [bus 00-02]
+[    5.676516] pci 0000:00:01.0: can't claim BAR 7 [io  0x1000000-0x1fffff]: no compatible bridge window
+[    5.676653] pci 0000:00:01.1: can't claim BAR 7 [io  0x1000000-0x1fffff]: no compatible bridge window
+[    5.934584] raid6: int64x1  gen()   439 MB/s
+[    6.106844] raid6: int64x1  xor()   295 MB/s
+[    6.279143] raid6: int64x2  gen()   618 MB/s
+[    6.452214] raid6: int64x2  xor()   372 MB/s
+[    6.624753] raid6: int64x4  gen()   533 MB/s
+[    6.797061] raid6: int64x4  xor()   311 MB/s
+[    6.969650] raid6: int64x8  gen()   185 MB/s
+[    7.142120] raid6: int64x8  xor()   149 MB/s
+[    7.142192] raid6: using algorithm int64x2 gen() 618 MB/s
+[    7.142272] raid6: .... xor() 372 MB/s, rmw enabled
+[    7.142378] raid6: using intx1 recovery algorithm
+[    7.144652] vgaarb: setting as boot device: PCI:0000:00:02.0
+[    7.144825] vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none
+[    7.144940] vgaarb: loaded
+[    7.145019] vgaarb: bridge control possible 0000:00:02.0
+[    7.147750] SCSI subsystem initialized
+[    7.150041] usbcore: registered new interface driver usbfs
+[    7.150550] usbcore: registered new interface driver hub
+[    7.150920] usbcore: registered new device driver usb
+[    7.154059] pps_core: LinuxPPS API ver. 1 registered
+[    7.154128] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    7.154497] PTP clock support registered
+[    7.156285] Advanced Linux Sound Architecture Driver Initialized.
+[    7.168540] /pci@1f,0/ebus@3/eeprom@14,2000: Mostek regs at 0x1fe02002000
+[    7.173268] clocksource: Switched to clocksource tick
+[    7.285471] NET: Registered protocol family 2
+[    7.290733] TCP established hash table entries: 8192 (order: 3, 65536 bytes)
+[    7.291247] TCP bind hash table entries: 8192 (order: 4, 131072 bytes)
+[    7.291689] TCP: Hash tables configured (established 8192 bind 8192)
+[    7.293151] UDP hash table entries: 512 (order: 1, 16384 bytes)
+[    7.293422] UDP-Lite hash table entries: 512 (order: 1, 16384 bytes)
+[    7.295348] NET: Registered protocol family 1
+[    7.300875] Unpacking initramfs...
+[    7.336102] Freeing initrd memory: 3888K (fffff80000daa000 - fffff80001176000)
+[    7.341416] futex hash table entries: 256 (order: 1, 16384 bytes)
+[    7.346010] HugeTLB registered 8 MB page size, pre-allocated 0 pages
+[    7.369887] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+[    7.370104] io scheduler noop registered
+[    7.370221] io scheduler deadline registered
+[    7.370435] io scheduler cfq registered (default)
+[    7.376968] ffe2ef58: ttyS0 at MMIO 0x1fe020003f8 (irq = 5, base_baud = 115387) is a 16550A
+[    7.377206] Console: ttyS0 (SU)
+[    7.405320] console [ttyS0] enabled
+[    7.431042] loop: module loaded
+[    7.436189] nbd: registered device at major 43
+[    7.467438] Uniform Multi-Platform E-IDE driver
+[    7.469298] ide-gd driver 1.18
+[    7.469827] ide-cd driver 5.00
+[    7.476931] e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+[    7.477328] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    7.478104] e1000e: Intel(R) PRO/1000 Network Driver - 3.2.5-k
+[    7.478503] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    7.481670] PPP generic driver version 2.4.2
+[    7.483880] PPP BSD Compression module registered
+[    7.484225] PPP Deflate Compression module registered
+[    7.484638] PPP MPPE Compression module registered
+[    7.484985] NET: Registered protocol family 24
+[    7.489812] aoe: AoE v85 initialised.
+[    7.490875] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    7.491358] ehci-pci: EHCI PCI platform driver
+[    7.492157] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    7.493181] ohci-pci: OHCI PCI platform driver
+[    7.493888] uhci_hcd: USB Universal Host Controller Interface driver
+[    7.494973] usbcore: registered new interface driver usb-storage
+[    7.498003] mousedev: PS/2 mouse device common for all mice
+[    7.506254] rtc-m48t59 rtc-m48t59.0: rtc core: registered m48t59 as rtc0
+[    7.508322] md: linear personality registered for level -1
+[    7.508712] md: raid0 personality registered for level 0
+[    7.509031] md: raid1 personality registered for level 1
+[    7.509365] md: raid10 personality registered for level 10
+[    7.510688] md: raid6 personality registered for level 6
+[    7.510983] md: raid5 personality registered for level 5
+[    7.511279] md: raid4 personality registered for level 4
+[    7.511599] md: multipath personality registered for level -4
+[    7.513263] device-mapper: ioctl: 4.33.0-ioctl (2015-8-18) initialised: dm-devel@redhat.com
+[    7.525895] usbcore: registered new interface driver usbhid
+[    7.526292] usbhid: USB HID core driver
+[   10.065242] Motu MidiTimePiece on parallel port irq: 7 ioport: 0x378
+[   10.066950] oprofile: using timer interrupt.
+[   10.067477] pktgen: Packet Generator for packet performance testing. Version: 2.75
+[   10.069056] ipip: IPv4 over IPv4 tunneling driver
+[   10.074071] Initializing XFRM netlink socket
+[   10.074787] NET: Registered protocol family 10
+[   10.081738] sit: IPv6 over IPv4 tunneling driver
+[   10.088888] NET: Registered protocol family 17
+[   10.089405] NET: Registered protocol family 15
+[   10.089709] 8021q: 802.1Q VLAN Support v1.8
+[   10.096757] rtc-m48t59 rtc-m48t59.0: setting system clock to 2015-10-24 11:48:39 UTC (1445687319)
+[   10.097491] ALSA device list:
+[   10.097712]   #0: Dummy 1
+[   10.097911]   #1: Virtual MIDI Card 1
+[   10.098133]   #2: MTPAV on parallel port at 0x378
+printf Hello World!

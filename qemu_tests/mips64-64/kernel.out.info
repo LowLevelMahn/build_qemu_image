@@ -1,0 +1,23 @@
+Line 20: Initial ramdisk at: 0x98000000007b0000 (3703308 bytes)
+
+line 98: Trying to unpack rootfs image as initramfs...
+line 99: rootfs image is not initramfs (junk in compressed archive); looks like an initrd
+line 100: Freeing initrd memory: 3616K (98000000007b0000 - 9800000000b38000)
+
+line 152: RAMDISK: Couldn't find valid RAM disk image starting at 0.
+
+source for message in line 99: https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/tree/init/initramfs.c?id=refs/tags/v4.2.3, line 626
+
+---> https://bugs.launchpad.net/ubuntu/+source/linux/+bug/524893
+talking about CRAMFS => http://cateee.net/lkddb/web-lkddb/CRAMFS.html - related?
+
+---- network card
+
+CONFIG_PCNET32
+
+line 138: pcnet32: pcnet32.c:v1.35 21.Apr.2008 tsbogend@alpha.franken.de
+line 139: PCI: Enabling device 0000:00:0b.0 (0000 -> 0003)
+line 140: pcnet32: PCnet/PCI II 79C970A at 0x1060, 52:54:00:12:34:56 assigned IRQ 10
+line 141: pcnet32: eth0: registered as PCnet/PCI II 79C970A
+line 142: pcnet32: 1 cards_found
+

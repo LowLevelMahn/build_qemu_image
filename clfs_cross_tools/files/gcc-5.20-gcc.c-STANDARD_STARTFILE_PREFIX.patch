@@ -1,0 +1,14 @@
+--- gcc-5.2.0.original/gcc/gcc.c	2015-03-10 05:37:41.000000000 -0400
++++ gcc-5.2.0/gcc/gcc.c	2015-10-13 01:36:57.024140586 -0400
+@@ -1267,6 +1267,11 @@
+ #define STANDARD_STARTFILE_PREFIX_2 "/usr/lib/"
+ #endif
+ 
++#undef STANDARD_STARTFILE_PREFIX_1
++#define STANDARD_STARTFILE_PREFIX_1 "/tools/lib/"
++#undef STANDARD_STARTFILE_PREFIX_2
++#define STANDARD_STARTFILE_PREFIX_2 ""
++
+ #ifdef CROSS_DIRECTORY_STRUCTURE  /* Don't use these prefixes for a cross compiler.  */
+ #undef MD_EXEC_PREFIX
+ #undef MD_STARTFILE_PREFIX

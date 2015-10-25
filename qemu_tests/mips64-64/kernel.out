@@ -1,0 +1,176 @@
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+Linux version 4.2.3 (dl@dl-Precision-M6500) (gcc version 5.2.0 (GCC) ) #1 SMP Wed Oct 21 07:19:04 CEST 2015
+earlycon: Early serial console at I/O port 0x3f8 (options '38400n8')
+bootconsole [uart0] enabled
+Config serial console: console=ttyS0,38400n8r
+CPU0 revision is: 000182a0 (MIPS 20Kc)
+FPU revision is: 000f8200
+Checking for the multiply/shift bug... no.
+Checking for the daddiu bug... no.
+MIPS: machine is mti,malta
+Software DMA cache coherency enabled
+Determined physical RAM map:
+ memory: 0000000000001000 @ 0000000000000000 (reserved)
+ memory: 00000000000ef000 @ 0000000000001000 (ROM data)
+ memory: 00000000006bc000 @ 00000000000f0000 (reserved)
+ memory: 0000000007850000 @ 00000000007ac000 (usable)
+Wasting 27496 bytes for tracking 491 unused pages
+Initial ramdisk at: 0x98000000007b0000 (3703308 bytes)
+Zone ranges:
+  DMA      [mem 0x0000000000004000-0x0000000000ffffff]
+  DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+  Normal   empty
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x0000000000004000-0x0000000007ffbfff]
+Initmem setup node 0 [mem 0x0000000000004000-0x0000000007ffbfff]
+Primary instruction cache 32kB, VIVT, 4-way, linesize 32 bytes.
+Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+PERCPU: Embedded 4 pages/cpu @980000000107c000 s18688 r8192 d38656 u65536
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 8161
+Kernel command line: rd_start=0xffffffff807b0000 rd_size=3703308  console=ttyS0,38400n8r
+PID hash table entries: 512 (order: -2, 4096 bytes)
+Dentry cache hash table entries: 16384 (order: 3, 131072 bytes)
+Inode-cache hash table entries: 8192 (order: 2, 65536 bytes)
+Enable cache parity protection for MIPS 20KC/25KF CPUs.
+Memory: 118784K/131040K available (4824K kernel code, 290K rwdata, 1132K rodata, 320K init, 234K bss, 12256K reserved, 0K cma-reserved)
+Hierarchical RCU implementation.
+	Additional per-CPU info printed with stalls.
+	Build-time adjustment of leaf fanout to 64.
+	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=1.
+RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=1
+NR_IRQS:256
+CPU frequency 100.00 MHz
+clocksource: MIPS: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112636579 ns
+sched_clock: 32 bits at 99MHz, resolution 10ns, wraps every 21474872314ns
+Console: colour dummy device 80x25
+Calibrating delay loop... 812.64 BogoMIPS (lpj=4063232)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 2048 (order: 0, 16384 bytes)
+Mountpoint-cache hash table entries: 2048 (order: 0, 16384 bytes)
+Checking for the daddi bug... no.
+Brought up 1 CPUs
+devtmpfs: initialized
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+NET: Registered protocol family 16
+clocksource: pit: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1601818034827 ns
+vgaarb: loaded
+SCSI subsystem initialized
+PCI host bridge to bus 0000:00
+pci_bus 0000:00: root bus resource [mem 0x10000000-0x17ffffff]
+pci_bus 0000:00: root bus resource [io  0x1000-0x1fffff]
+pci_bus 0000:00: root bus resource [??? 0x00000000 flags 0x0]
+pci_bus 0000:00: No busn resource found for root bus, will use [bus 00-ff]
+pci 0000:00:00.0: [Firmware Bug]: reg 0x14: invalid BAR (can't size)
+pci 0000:00:00.0: [Firmware Bug]: reg 0x18: invalid BAR (can't size)
+pci 0000:00:00.0: [Firmware Bug]: reg 0x1c: invalid BAR (can't size)
+pci 0000:00:00.0: [Firmware Bug]: reg 0x20: invalid BAR (can't size)
+pci 0000:00:00.0: [Firmware Bug]: reg 0x24: invalid BAR (can't size)
+pci 0000:00:0a.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+pci 0000:00:0a.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+pci 0000:00:0a.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+pci 0000:00:0a.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+pci 0000:00:0a.3: quirk: [io  0x1000-0x103f] claimed by PIIX4 ACPI
+pci 0000:00:0a.3: quirk: [io  0x1100-0x110f] claimed by PIIX4 SMB
+vgaarb: device added: PCI:0000:00:12.0,decodes=io+mem,owns=none,locks=none
+pci 0000:00:12.0: BAR 0: assigned [mem 0x10000000-0x11ffffff pref]
+pci 0000:00:0b.0: BAR 6: assigned [mem 0x12000000-0x1203ffff pref]
+pci 0000:00:12.0: BAR 6: assigned [mem 0x12040000-0x1204ffff pref]
+pci 0000:00:12.0: BAR 1: assigned [mem 0x12050000-0x12050fff]
+pci 0000:00:0a.2: BAR 4: assigned [io  0x1040-0x105f]
+pci 0000:00:0b.0: BAR 0: assigned [io  0x1060-0x107f]
+pci 0000:00:0b.0: BAR 1: assigned [mem 0x12051000-0x1205101f]
+pci 0000:00:0a.1: BAR 4: assigned [io  0x1080-0x108f]
+clocksource: Switched to clocksource MIPS
+NET: Registered protocol family 2
+TCP established hash table entries: 2048 (order: 0, 16384 bytes)
+TCP bind hash table entries: 2048 (order: 1, 32768 bytes)
+TCP: Hash tables configured (established 2048 bind 2048)
+UDP hash table entries: 512 (order: 0, 16384 bytes)
+UDP-Lite hash table entries: 512 (order: 0, 16384 bytes)
+NET: Registered protocol family 1
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+Trying to unpack rootfs image as initramfs...
+rootfs image is not initramfs (junk in compressed archive); looks like an initrd
+Freeing initrd memory: 3616K (98000000007b0000 - 9800000000b38000)
+futex hash table entries: 256 (order: 0, 16384 bytes)
+VFS: Disk quotas dquot_6.6.0
+VFS: Dquot-cache hash table entries: 2048 (order 0, 16384 bytes)
+Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+io scheduler noop registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+PCI: Enabling device 0000:00:12.0 (0000 -> 0002)
+cirrusfb 0000:00:12.0: Cirrus Logic chipset on PCI bus, RAM (4096 kB) at 0x10000000
+Console: switching to colour frame buffer device 80x30
+Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+console [ttyS0] disabled
+serial8250.0: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+console [ttyS0] enabled
+console [ttyS0] enabled
+bootconsole [uart0] disabled
+bootconsole [uart0] disabled
+serial8250.0: ttyS1 at I/O 0x2f8 (irq = 3, base_baud = 115200) is a 16550A
+brd: module loaded
+Uniform Multi-Platform E-IDE driver
+ide_generic: please use "probe_mask=0x3f" module parameter for probing all legacy ISA IDE ports
+ide-gd driver 1.18
+ide-cd driver 5.00
+PCI: Enabling device 0000:00:0a.1 (0000 -> 0001)
+scsi host0: ata_piix
+scsi host1: ata_piix
+ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0x1080 irq 14
+ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0x1088 irq 15
+physmap platform flash device: 00400000 at 1e000000
+physmap-flash.0: Found 1 x32 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+Intel/Sharp Extended Query Table at 0x0031
+Using buffer write method
+Creating 3 MTD partitions on "physmap-flash.0":
+0x000000000000-0x000000100000 : "YAMON"
+0x000000100000-0x0000003e0000 : "User FS"
+0x0000003e0000-0x000000400000 : "Board Config"
+pcnet32: pcnet32.c:v1.35 21.Apr.2008 tsbogend@alpha.franken.de
+PCI: Enabling device 0000:00:0b.0 (0000 -> 0003)
+pcnet32: PCnet/PCI II 79C970A at 0x1060, 52:54:00:12:34:56 assigned IRQ 10
+pcnet32: eth0: registered as PCnet/PCI II 79C970A
+pcnet32: 1 cards_found
+mousedev: PS/2 mouse device common for all mice
+rtc_cmos rtc_cmos: rtc core: registered rtc_cmos as rtc0
+rtc_cmos rtc_cmos: alarms up to one day, 242 bytes nvram
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+rtc_cmos rtc_cmos: setting system clock to 2015-10-23 14:33:05 UTC (1445610785)
+ata2.00: ATAPI: QEMU DVD-ROM, 2.4.50, max UDMA/100
+ata2.00: configured for UDMA/33
+scsi 1:0:0:0: CD-ROM            QEMU     QEMU DVD-ROM     2.4. PQ: 0 ANSI: 5
+RAMDISK: Couldn't find valid RAM disk image starting at 0.
+List of all partitions:
+0100            4096 ram0  (driver?)
+0101            4096 ram1  (driver?)
+0102            4096 ram2  (driver?)
+0103            4096 ram3  (driver?)
+0104            4096 ram4  (driver?)
+0105            4096 ram5  (driver?)
+0106            4096 ram6  (driver?)
+0107            4096 ram7  (driver?)
+0108            4096 ram8  (driver?)
+0109            4096 ram9  (driver?)
+010a            4096 ram10  (driver?)
+010b            4096 ram11  (driver?)
+010c            4096 ram12  (driver?)
+010d            4096 ram13  (driver?)
+010e            4096 ram14  (driver?)
+010f            4096 ram15  (driver?)
+1f00            1024 mtdblock0  (driver?)
+1f01            2944 mtdblock1  (driver?)
+1f02             128 mtdblock2  (driver?)
+No filesystem could mount root, tried:  ext3 ext2 ext4
+Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(1,0)
+---[ end Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(1,0)
+random: nonblocking pool is initialized
