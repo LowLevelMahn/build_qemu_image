@@ -1,0 +1,99 @@
+  CHK     include/generated/uapi/linux/version.h
+  UPD     include/generated/uapi/linux/version.h
+  HOSTCC  scripts/basic/fixdep
+  WRAP    arch/mips/include/generated/asm/cputime.h
+  WRAP    arch/mips/include/generated/asm/current.h
+  WRAP    arch/mips/include/generated/asm/dma-contiguous.h
+  WRAP    arch/mips/include/generated/asm/emergency-restart.h
+  WRAP    arch/mips/include/generated/asm/irq_work.h
+  WRAP    arch/mips/include/generated/asm/local64.h
+  WRAP    arch/mips/include/generated/asm/mcs_spinlock.h
+  WRAP    arch/mips/include/generated/asm/mm-arch-hooks.h
+  WRAP    arch/mips/include/generated/asm/mutex.h
+  WRAP    arch/mips/include/generated/asm/parport.h
+  WRAP    arch/mips/include/generated/asm/percpu.h
+  WRAP    arch/mips/include/generated/asm/preempt.h
+  WRAP    arch/mips/include/generated/asm/sections.h
+  WRAP    arch/mips/include/generated/asm/segment.h
+  WRAP    arch/mips/include/generated/asm/serial.h
+  WRAP    arch/mips/include/generated/asm/trace_clock.h
+  WRAP    arch/mips/include/generated/asm/ucontext.h
+  WRAP    arch/mips/include/generated/asm/user.h
+  WRAP    arch/mips/include/generated/asm/xor.h
+  WRAP    arch/mips/include/generated/uapi/asm/auxvec.h
+  WRAP    arch/mips/include/generated/uapi/asm/ipcbuf.h
+  HOSTCC  scripts/unifdef
+  INSTALL usr/include/asm-generic/ (35 files)
+  INSTALL usr/include/drm/ (18 files)
+  INSTALL usr/include/linux/android/ (1 file)
+  INSTALL usr/include/linux/byteorder/ (2 files)
+  INSTALL usr/include/linux/caif/ (2 files)
+  INSTALL usr/include/linux/can/ (5 files)
+  INSTALL usr/include/linux/dvb/ (8 files)
+  INSTALL usr/include/linux/hdlc/ (1 file)
+  INSTALL usr/include/linux/hsi/ (2 files)
+  INSTALL usr/include/linux/iio/ (2 files)
+  INSTALL usr/include/linux/isdn/ (1 file)
+  INSTALL usr/include/linux/mmc/ (1 file)
+  INSTALL usr/include/linux/netfilter/ipset/ (4 files)
+  INSTALL usr/include/linux/netfilter/ (85 files)
+  INSTALL usr/include/linux/netfilter_arp/ (2 files)
+  INSTALL usr/include/linux/netfilter_bridge/ (17 files)
+  INSTALL usr/include/linux/netfilter_ipv4/ (9 files)
+  INSTALL usr/include/linux/netfilter_ipv6/ (12 files)
+  INSTALL usr/include/linux/nfsd/ (5 files)
+  INSTALL usr/include/linux/raid/ (2 files)
+  INSTALL usr/include/linux/spi/ (1 file)
+  INSTALL usr/include/linux/sunrpc/ (1 file)
+  INSTALL usr/include/linux/tc_act/ (11 files)
+  INSTALL usr/include/linux/tc_ematch/ (4 files)
+  INSTALL usr/include/linux/usb/ (11 files)
+  INSTALL usr/include/linux/wimax/ (1 file)
+  INSTALL usr/include/linux/ (416 files)
+  INSTALL usr/include/misc/ (1 file)
+  INSTALL usr/include/mtd/ (5 files)
+  INSTALL usr/include/rdma/ (6 files)
+  INSTALL usr/include/scsi/fc/ (4 files)
+  INSTALL usr/include/scsi/ (3 files)
+  INSTALL usr/include/sound/ (11 files)
+  INSTALL usr/include/video/ (3 files)
+  INSTALL usr/include/xen/ (4 files)
+  INSTALL usr/include/uapi/ (0 file)
+  INSTALL usr/include/asm/ (38 files)
+  CHECK   usr/include/asm-generic/ (35 files)
+  CHECK   usr/include/drm/ (18 files)
+  CHECK   usr/include/linux/android/ (1 files)
+  CHECK   usr/include/linux/byteorder/ (2 files)
+  CHECK   usr/include/linux/caif/ (2 files)
+  CHECK   usr/include/linux/can/ (5 files)
+  CHECK   usr/include/linux/dvb/ (8 files)
+  CHECK   usr/include/linux/hdlc/ (1 files)
+  CHECK   usr/include/linux/hsi/ (2 files)
+  CHECK   usr/include/linux/iio/ (2 files)
+  CHECK   usr/include/linux/isdn/ (1 files)
+  CHECK   usr/include/linux/mmc/ (1 files)
+  CHECK   usr/include/linux/netfilter/ipset/ (4 files)
+  CHECK   usr/include/linux/netfilter/ (85 files)
+  CHECK   usr/include/linux/netfilter_arp/ (2 files)
+  CHECK   usr/include/linux/netfilter_bridge/ (17 files)
+  CHECK   usr/include/linux/netfilter_ipv4/ (9 files)
+  CHECK   usr/include/linux/netfilter_ipv6/ (12 files)
+  CHECK   usr/include/linux/nfsd/ (5 files)
+  CHECK   usr/include/linux/raid/ (2 files)
+  CHECK   usr/include/linux/spi/ (1 files)
+  CHECK   usr/include/linux/sunrpc/ (1 files)
+  CHECK   usr/include/linux/tc_act/ (11 files)
+  CHECK   usr/include/linux/tc_ematch/ (4 files)
+  CHECK   usr/include/linux/usb/ (11 files)
+  CHECK   usr/include/linux/wimax/ (1 files)
+  CHECK   usr/include/linux/ (416 files)
+  CHECK   usr/include/misc/ (1 files)
+  CHECK   usr/include/mtd/ (5 files)
+  CHECK   usr/include/rdma/ (6 files)
+  CHECK   usr/include/scsi/fc/ (4 files)
+  CHECK   usr/include/scsi/ (3 files)
+  CHECK   usr/include/sound/ (11 files)
+  CHECK   usr/include/video/ (3 files)
+  CHECK   usr/include/xen/ (4 files)
+  CHECK   usr/include/uapi/ (0 files)
+  CHECK   usr/include/asm/ (38 files)

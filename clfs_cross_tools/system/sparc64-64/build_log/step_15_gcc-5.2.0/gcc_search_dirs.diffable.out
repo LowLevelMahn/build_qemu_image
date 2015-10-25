@@ -1,0 +1,10 @@
+libraries
+
+  /home/dl/ramdisk/clfs_cross_tools/system/{TARGET_SYSTEM}/cross-tools/lib/gcc/{CLFS_TARGET}/5.2.0/
+/home/dl/ramdisk/clfs_cross_tools/system/{TARGET_SYSTEM}/cross-tools/lib/gcc/
+/home/dl/ramdisk/clfs_cross_tools/system/{TARGET_SYSTEM}/cross-tools/{CLFS_TARGET}/lib/{CLFS_TARGET}/5.2.0/
+/home/dl/ramdisk/clfs_cross_tools/system/{TARGET_SYSTEM}/cross-tools/{CLFS_TARGET}/lib64/
+/home/dl/ramdisk/clfs_cross_tools/system/{TARGET_SYSTEM}/tools/lib/{CLFS_TARGET}/5.2.0/
+/home/dl/ramdisk/clfs_cross_tools/system/{TARGET_SYSTEM}/tools/lib64/
+/home/dl/ramdisk/clfs_cross_tools/system/{TARGET_SYSTEM}/cross-tools/{CLFS_TARGET}/lib/
+/home/dl/ramdisk/clfs_cross_tools/system/{TARGET_SYSTEM}/tools/lib/

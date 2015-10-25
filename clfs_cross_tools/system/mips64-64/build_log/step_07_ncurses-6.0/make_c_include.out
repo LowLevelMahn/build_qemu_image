@@ -1,0 +1,16 @@
+make: Entering directory '/home/dl/ramdisk/clfs_cross_tools/system/mips64-64/sources/step_07_ncurses-6.0-build/include'
+cat curses.head >curses.h
+/bin/sh ../../ncurses-6.0/include/MKhashsize.sh ../../ncurses-6.0/include/Caps >hashsize.h
+AWK=mawk /bin/sh ../../ncurses-6.0/include/MKncurses_def.sh ../../ncurses-6.0/include/ncurses_defs >ncurses_def.h
+AWK=mawk /bin/sh ../../ncurses-6.0/include/MKparametrized.sh ../../ncurses-6.0/include/Caps >parametrized.h
+touch config.h
+AWK=mawk /bin/sh ../../ncurses-6.0/include/MKkey_defs.sh ../../ncurses-6.0/include/Caps >>curses.h
+mawk -f MKterm.h.awk ../../ncurses-6.0/include/Caps > term.h
+/bin/sh ../../ncurses-6.0/include/edit_cfg.sh ../include/ncurses_cfg.h term.h
+** edit: HAVE_TCGETATTR 1
+** edit: HAVE_TERMIOS_H 1
+** edit: HAVE_TERMIO_H 1
+/bin/sh -c 'if test "chtype" = "cchar_t" ; then cat ../../ncurses-6.0/include/curses.wide >>curses.h ; fi'
+cat ../../ncurses-6.0/include/curses.tail >>curses.h
+** edit: BROKEN_LINKER 0
+make: Leaving directory '/home/dl/ramdisk/clfs_cross_tools/system/mips64-64/sources/step_07_ncurses-6.0-build/include'

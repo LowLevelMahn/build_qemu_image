@@ -1,0 +1,2 @@
+libraries:
+  /home/dl/ramdisk/clfs_cross_tools/system/alpha/cross-tools/lib/gcc/alphaev67-unknown-linux-gnu/5.2.0/:/home/dl/ramdisk/clfs_cross_tools/system/alpha/cross-tools/lib/gcc/:/home/dl/ramdisk/clfs_cross_tools/system/alpha/cross-tools/alphaev67-unknown-linux-gnu/lib/alphaev67-unknown-linux-gnu/5.2.0/:/home/dl/ramdisk/clfs_cross_tools/system/alpha/cross-tools/alphaev67-unknown-linux-gnu/lib/:/home/dl/ramdisk/clfs_cross_tools/system/alpha/tools/lib/alphaev67-unknown-linux-gnu/5.2.0/:/home/dl/ramdisk/clfs_cross_tools/system/alpha/tools/lib/

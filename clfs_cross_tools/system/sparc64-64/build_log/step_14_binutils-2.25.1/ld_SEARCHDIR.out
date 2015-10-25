@@ -1,0 +1,3 @@
+SEARCH_DIR("=/cross-tools/sparc64-unknown-linux-gnu/lib64")
+SEARCH_DIR("/tools/lib")
+SEARCH_DIR("=/cross-tools/sparc64-unknown-linux-gnu/lib")

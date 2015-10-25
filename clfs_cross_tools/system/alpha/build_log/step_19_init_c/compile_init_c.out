@@ -1,0 +1,1 @@
+/home/dl/ramdisk/clfs_cross_tools/system/alpha/cross-tools/bin/../lib/gcc/alphaev67-unknown-linux-gnu/5.2.0/../../../../alphaev67-unknown-linux-gnu/bin/ld: error in /home/dl/ramdisk/clfs_cross_tools/system/alpha/cross-tools/bin/../lib/gcc/alphaev67-unknown-linux-gnu/5.2.0/crtend.o(.eh_frame); no .eh_frame_hdr table will be created.

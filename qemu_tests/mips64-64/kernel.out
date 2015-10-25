@@ -1,7 +1,7 @@
 Trying 127.0.0.1...
 Connected to localhost.
 Escape character is '^]'.
-Linux version 4.2.3 (dl@dl-Precision-M6500) (gcc version 5.2.0 (GCC) ) #1 SMP Wed Oct 21 07:19:04 CEST 2015
+Linux version 4.2.3 (dl@dl-Precision-M6500) (gcc version 5.2.0 (GCC) ) #1 SMP Sun Oct 25 15:30:25 CET 2015
 earlycon: Early serial console at I/O port 0x3f8 (options '38400n8')
 bootconsole [uart0] enabled
 Config serial console: console=ttyS0,38400n8r
@@ -43,10 +43,10 @@ Hierarchical RCU implementation.
 RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=1
 NR_IRQS:256
 CPU frequency 100.00 MHz
-clocksource: MIPS: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112636579 ns
-sched_clock: 32 bits at 99MHz, resolution 10ns, wraps every 21474872314ns
+clocksource: MIPS: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112631611 ns
+sched_clock: 32 bits at 99MHz, resolution 10ns, wraps every 21474867194ns
 Console: colour dummy device 80x25
-Calibrating delay loop... 812.64 BogoMIPS (lpj=4063232)
+Calibrating delay loop... 847.05 BogoMIPS (lpj=4235264)
 pid_max: default: 32768 minimum: 301
 Mount-cache hash table entries: 2048 (order: 0, 16384 bytes)
 Mountpoint-cache hash table entries: 2048 (order: 0, 16384 bytes)
@@ -145,8 +145,8 @@ rtc_cmos rtc_cmos: rtc core: registered rtc_cmos as rtc0
 rtc_cmos rtc_cmos: alarms up to one day, 242 bytes nvram
 NET: Registered protocol family 17
 NET: Registered protocol family 15
-rtc_cmos rtc_cmos: setting system clock to 2015-10-23 14:33:05 UTC (1445610785)
-ata2.00: ATAPI: QEMU DVD-ROM, 2.4.50, max UDMA/100
+rtc_cmos rtc_cmos: setting system clock to 2015-10-25 14:32:40 UTC (1445783560)
+ata2.00: ATAPI: QEMU DVD-ROM, 2.4.0.1, max UDMA/100
 ata2.00: configured for UDMA/33
 scsi 1:0:0:0: CD-ROM            QEMU     QEMU DVD-ROM     2.4. PQ: 0 ANSI: 5
 RAMDISK: Couldn't find valid RAM disk image starting at 0.
@@ -173,4 +173,3 @@ List of all partitions:
 No filesystem could mount root, tried:  ext3 ext2 ext4
 Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(1,0)
 ---[ end Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(1,0)
-random: nonblocking pool is initialized

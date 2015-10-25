@@ -1,0 +1,100 @@
+make  all-recursive
+make[1]: Entering directory '/home/dl/ramdisk/clfs_cross_tools/system/alpha/sources/step_12_isl-0.14-build'
+Making all in .
+make[2]: Entering directory '/home/dl/ramdisk/clfs_cross_tools/system/alpha/sources/step_12_isl-0.14-build'
+  CC       isl_gmp.lo
+  CC       isl_val_gmp.lo
+  CC       isl_ast_int.lo
+  CC       isl_affine_hull.lo
+  CC       isl_aff.lo
+  CC       isl_arg.lo
+  CC       isl_ast.lo
+  CC       isl_ast_build.lo
+  CC       isl_ast_build_expr.lo
+  CC       isl_ast_codegen.lo
+  CC       isl_ast_graft.lo
+  CC       isl_band.lo
+  CC       basis_reduction_tab.lo
+  CC       isl_bernstein.lo
+  CC       isl_blk.lo
+  CC       isl_bound.lo
+  CC       isl_coalesce.lo
+  CC       isl_constraint.lo
+  CC       isl_convex_hull.lo
+  CC       isl_ctx.lo
+  CC       isl_deprecated.lo
+  CC       isl_dim.lo
+  CC       isl_dim_map.lo
+  CC       isl_equalities.lo
+  CC       isl_factorization.lo
+  CC       isl_farkas.lo
+  CC       isl_flow.lo
+  CC       isl_fold.lo
+  CC       isl_hash.lo
+  CC       isl_id_to_ast_expr.lo
+  CC       isl_id_to_pw_aff.lo
+  CC       isl_ilp.lo
+  CC       isl_input.lo
+  CC       isl_local_space.lo
+  CC       isl_lp.lo
+  CC       isl_map.lo
+  CC       isl_map_simplify.lo
+  CC       isl_map_subtract.lo
+  CC       isl_map_to_basic_set.lo
+  CC       isl_mat.lo
+  CC       isl_morph.lo
+  CC       isl_id.lo
+  CC       isl_obj.lo
+  CC       isl_options.lo
+  CC       isl_output.lo
+  CC       isl_point.lo
+  CC       isl_polynomial.lo
+  CC       isl_printer.lo
+  CC       print.lo
+  CC       isl_range.lo
+  CC       isl_reordering.lo
+  CC       isl_sample.lo
+  CC       isl_scan.lo
+  CC       isl_schedule.lo
+  CC       isl_scheduler.lo
+  CC       isl_set_list.lo
+  CC       isl_sort.lo
+  CC       isl_space.lo
+  CC       isl_stream.lo
+  CC       isl_seq.lo
+  CC       isl_tab.lo
+  CC       isl_tab_pip.lo
+  CC       isl_tarjan.lo
+  CC       isl_transitive_closure.lo
+  CC       isl_union_map.lo
+  CC       isl_val.lo
+  CC       isl_vec.lo
+  CC       isl_version.lo
+  CC       isl_vertices.lo
+  CC       isl_test.o
+  CC       polyhedron_sample.o
+  CC       pip.o
+  CC       polyhedron_minimize.o
+  CC       polytope_scan.o
+  CC       polyhedron_detect_equalities.o
+  CC       cat.o
+  CC       closure.o
+  CC       bound.o
+  CC       codegen.o
+  CCLD     libisl.la
+  CCLD     isl_pip
+  CCLD     isl_polyhedron_sample
+  CCLD     isl_polyhedron_minimize
+  CCLD     isl_polytope_scan
+  CCLD     isl_polyhedron_detect_equalities
+  CCLD     isl_cat
+  CCLD     isl_bound
+  CCLD     isl_closure
+  CCLD     isl_codegen
+  CCLD     isl_test
+make[2]: Leaving directory '/home/dl/ramdisk/clfs_cross_tools/system/alpha/sources/step_12_isl-0.14-build'
+Making all in doc
+make[2]: Entering directory '/home/dl/ramdisk/clfs_cross_tools/system/alpha/sources/step_12_isl-0.14-build/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/dl/ramdisk/clfs_cross_tools/system/alpha/sources/step_12_isl-0.14-build/doc'
+make[1]: Leaving directory '/home/dl/ramdisk/clfs_cross_tools/system/alpha/sources/step_12_isl-0.14-build'

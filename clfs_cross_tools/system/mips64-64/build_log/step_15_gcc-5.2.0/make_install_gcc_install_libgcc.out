@@ -1,0 +1,698 @@
+/bin/bash ../gcc-5.2.0/mkinstalldirs /cross-tools /cross-tools
+make[1]: Entering directory '/home/dl/ramdisk/clfs_cross_tools/system/mips64-64/sources/step_15_gcc-5.2.0-build/fixincludes'
+make[1]: Entering directory '/home/dl/ramdisk/clfs_cross_tools/system/mips64-64/sources/step_15_gcc-5.2.0-build/lto-plugin'
+rm -rf /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0/install-tools
+make[1]: Entering directory '/home/dl/ramdisk/clfs_cross_tools/system/mips64-64/sources/step_15_gcc-5.2.0-build/mips64-unknown-linux-gnu/libgcc'
+/bin/bash ../../gcc-5.2.0/fixincludes/../mkinstalldirs /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0/install-tools
+make[2]: Entering directory '/home/dl/ramdisk/clfs_cross_tools/system/mips64-64/sources/step_15_gcc-5.2.0-build/lto-plugin'
+test -z "/cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0" || /bin/mkdir -p "/cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0"
+make[2]: Nothing to be done for 'install-data-am'.
+mkdir -p -- /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0/install-tools
+/bin/bash ../../gcc-5.2.0/fixincludes/../mkinstalldirs /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/install-tools/include
+ /bin/bash ./libtool --tag=disable-static  --mode=install /usr/bin/install -c   liblto_plugin.la '/cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0'
+mkdir -p -- /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/install-tools/include
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/fixincludes/README-fixinc \
+  /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/install-tools/include/README
+/usr/bin/install -c fixinc.sh /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0/install-tools/fixinc.sh
+/usr/bin/install -c fixincl /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0/install-tools/fixincl
+/usr/bin/install -c mkheaders /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0/install-tools/mkheaders
+make[1]: Leaving directory '/home/dl/ramdisk/clfs_cross_tools/system/mips64-64/sources/step_15_gcc-5.2.0-build/fixincludes'
+libtool: install: /usr/bin/install -c .libs/liblto_plugin.so.0.0.0 /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0/liblto_plugin.so.0.0.0
+libtool: install: (cd /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0 && { ln -s -f liblto_plugin.so.0.0.0 liblto_plugin.so.0 || { rm -f liblto_plugin.so.0 && ln -s liblto_plugin.so.0.0.0 liblto_plugin.so.0; }; })
+libtool: install: (cd /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0 && { ln -s -f liblto_plugin.so.0.0.0 liblto_plugin.so || { rm -f liblto_plugin.so && ln -s liblto_plugin.so.0.0.0 liblto_plugin.so; }; })
+libtool: install: /usr/bin/install -c .libs/liblto_plugin.lai /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0/liblto_plugin.la
+libtool: finish: PATH="/cross-tools/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/sbin" ldconfig -n /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[2]: Leaving directory '/home/dl/ramdisk/clfs_cross_tools/system/mips64-64/sources/step_15_gcc-5.2.0-build/lto-plugin'
+make[1]: Leaving directory '/home/dl/ramdisk/clfs_cross_tools/system/mips64-64/sources/step_15_gcc-5.2.0-build/lto-plugin'
+make[1]: Entering directory '/home/dl/ramdisk/clfs_cross_tools/system/mips64-64/sources/step_15_gcc-5.2.0-build/gcc'
+/bin/bash ../../gcc-5.2.0/gcc/../mkinstalldirs /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0
+/bin/bash ../../gcc-5.2.0/gcc/../mkinstalldirs /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0
+if [ x = xinfo ]; then \
+	/home/dl/ramdisk/clfs_cross_tools/system/mips64-64/sources/gcc-5.2.0/missing makeinfo --split-size=5000000 --no-split -I . -I ../../gcc-5.2.0/gcc/doc \
+		-I ../../gcc-5.2.0/gcc/doc/include -o doc/cpp.info ../../gcc-5.2.0/gcc/doc/cpp.texi; \
+fi
+/bin/bash ../../gcc-5.2.0/gcc/../mkinstalldirs /cross-tools/bin
+if [ x = xinfo ]; then \
+	/home/dl/ramdisk/clfs_cross_tools/system/mips64-64/sources/gcc-5.2.0/missing makeinfo --split-size=5000000 --no-split -I . -I ../../gcc-5.2.0/gcc/doc \
+		-I ../../gcc-5.2.0/gcc/doc/include -o doc/gcc.info ../../gcc-5.2.0/gcc/doc/gcc.texi; \
+fi
+if [ x = xinfo ]; then \
+	/home/dl/ramdisk/clfs_cross_tools/system/mips64-64/sources/gcc-5.2.0/missing makeinfo --split-size=5000000 --no-split -I . -I ../../gcc-5.2.0/gcc/doc \
+		-I ../../gcc-5.2.0/gcc/doc/include -o doc/cppinternals.info ../../gcc-5.2.0/gcc/doc/cppinternals.texi; \
+fi
+if [ x = xinfo ]; then \
+	/home/dl/ramdisk/clfs_cross_tools/system/mips64-64/sources/gcc-5.2.0/missing makeinfo --split-size=5000000 --no-split -I ../../gcc-5.2.0/gcc/doc \
+		-I ../../gcc-5.2.0/gcc/doc/include -o doc/gccinstall.info ../../gcc-5.2.0/gcc/doc/install.texi; \
+fi
+/bin/bash ../../gcc-5.2.0/gcc/../mkinstalldirs /cross-tools/include
+build/genhooks -d \
+		../../gcc-5.2.0/gcc/doc/tm.texi.in > tmp-tm.texi
+/bin/bash ../../gcc-5.2.0/gcc/../mkinstalldirs /cross-tools/share/info
+/bin/bash ../../gcc-5.2.0/gcc/../mkinstalldirs /cross-tools/share/man/man1
+case `echo X|tr X '\101'` in \
+  A) tr -d '\015' < tmp-tm.texi > tmp2-tm.texi ;; \
+  *) tr -d '\r' < tmp-tm.texi > tmp2-tm.texi ;; \
+esac
+/bin/bash ../../gcc-5.2.0/gcc/../mkinstalldirs /cross-tools/share/man/man7
+mkdir -p -- /cross-tools/share/man/man7
+mv tmp2-tm.texi tmp-tm.texi
+/bin/bash ../../gcc-5.2.0/gcc/../move-if-change tmp-tm.texi tm.texi
+rm -f tmp-header-vars
+echo USER_H=loongson.h >> tmp-header-vars; echo HASHTAB_H=hashtab.h >> tmp-header-vars; echo OBSTACK_H=obstack.h >> tmp-header-vars; echo SPLAY_TREE_H=splay-tree.h >> tmp-header-vars; echo XREGEX_H=xregex.h >> tmp-header-vars; echo FNMATCH_H=fnmatch.h >> tmp-header-vars; echo LINKER_PLUGIN_API_H=plugin-api.h >> tmp-header-vars; echo BCONFIG_H=bconfig.h auto-host.h ansidecl.h >> tmp-header-vars; echo CONFIG_H=config.h auto-host.h ansidecl.h >> tmp-header-vars; echo TCONFIG_H=tconfig.h auto-host.h ansidecl.h >> tmp-header-vars; echo TM_P_H=tm_p.h config/mips/mips-protos.h linux-protos.h tm-preds.h >> tmp-header-vars; echo GTM_H=tm.h options.h config/dbxelf.h defaults.h insn-constants.h >> tmp-header-vars; echo TM_H=tm.h options.h config/dbxelf.h mips-opts.h >> tmp-header-vars; echo DUMPFILE_H=line-map.h dumpfile.h >> tmp-header-vars; echo VEC_H=vec.h statistics.h ggc.h gtype-desc.h statistics.h >> tmp-header-vars; echo HASH_TABLE_H=hashtab.h hash-table.h >> tmp-header-vars; echo EXCEPT_H=except.h hashtab.h >> tmp-header-vars; echo TARGET_H=tm.h options.h config/dbxelf.h mips-opts.h target.h target.def target-hooks-macros.h insn-modes.h insn-codes.h >> tmp-header-vars; echo C_TARGET_H=c-family/c-target.h c-family/c-target.def target-hooks-macros.h >> tmp-header-vars; echo COMMON_TARGET_H=common/common-target.h common-target.def target-hooks-macros.h >> tmp-header-vars; echo MACHMODE_H=machmode.h mode-classes.def insn-modes.h >> tmp-header-vars; echo HOOKS_H=hooks.h machmode.h mode-classes.def insn-modes.h >> tmp-header-vars; echo HOSTHOOKS_DEF_H=hosthooks-def.h hooks.h machmode.h mode-classes.def insn-modes.h >> tmp-header-vars; echo LANGHOOKS_DEF_H=langhooks-def.h hooks.h machmode.h mode-classes.def insn-modes.h >> tmp-header-vars; echo TARGET_DEF_H=target-def.h target-hooks-def.h hooks.h machmode.h mode-classes.def insn-modes.h targhooks.h >> tmp-header-vars; echo C_TARGET_DEF_H=c-family/c-target-def.h c-family/c-target-hooks-def.h tree.h tree-core.h coretypes.h all-tree.def tree.def c-family/c-common.def common-targhooks.h >> tmp-header-vars; echo RTL_BASE_H=coretypes.h rtl.h rtl.def machmode.h mode-classes.def insn-modes.h reg-notes.def insn-notes.def hashtab.h >> tmp-header-vars; echo FIXED_VALUE_H=fixed-value.h machmode.h mode-classes.def insn-modes.h double-int.h >> tmp-header-vars; echo RTL_H=coretypes.h rtl.h rtl.def machmode.h mode-classes.def insn-modes.h reg-notes.def insn-notes.def mips-opts.h genrtl.h >> tmp-header-vars; echo READ_MD_H=hashtab.h read-md.h >> tmp-header-vars; echo PARAMS_H=params.h params.def >> tmp-header-vars; echo INTERNAL_FN_H=internal-fn.h internal-fn.def >> tmp-header-vars; echo TREE_CORE_H=tree-core.h coretypes.h all-tree.def tree.def c-family/c-common.def mips-opts.h real.h machmode.h mode-classes.def insn-modes.h fixed-value.h machmode.h mode-classes.def insn-modes.h double-int.h >> tmp-header-vars; echo TREE_H=tree.h tree-core.h coretypes.h all-tree.def tree.def c-family/c-common.def mips-opts.h real.h machmode.h mode-classes.def insn-modes.h fixed-value.h machmode.h mode-classes.def insn-modes.h double-int.h tree-check.h >> tmp-header-vars; echo REGSET_H=regset.h bitmap.h hashtab.h statistics.h hard-reg-set.h >> tmp-header-vars; echo BASIC_BLOCK_H=basic-block.h predict.h predict.def vec.h statistics.h ggc.h gtype-desc.h statistics.h function.h line-map.h input.h machmode.h mode-classes.def insn-modes.h cfg-flags.def cfghooks.h >> tmp-header-vars; echo GIMPLE_H=gimple.h gimple.def gsstruct.def vec.h statistics.h ggc.h gtype-desc.h statistics.h ggc.h gtype-desc.h statistics.h basic-block.h predict.h predict.def vec.h statistics.h ggc.h gtype-desc.h statistics.h function.h hashtab.h hash-table.h is-a.h >> tmp-header-vars; echo GCOV_IO_H=gcov-io.h gcov-iov.h auto-host.h gcov-counter.def >> tmp-header-vars; echo RECOG_H=recog.h >> tmp-header-vars; echo EMIT_RTL_H=emit-rtl.h >> tmp-header-vars; echo FLAGS_H=flags.h flag-types.h options.h flag-types.h config/mips/mips-opts.h >> tmp-header-vars; echo OPTIONS_H=options.h flag-types.h config/mips/mips-opts.h >> tmp-header-vars; echo FUNCTION_H=function.h line-map.h input.h machmode.h mode-classes.def insn-modes.h >> tmp-header-vars; echo EXPR_H=expr.h insn-config.h function.h mips-opts.h real.h machmode.h mode-classes.def insn-modes.h fixed-value.h machmode.h mode-classes.def insn-modes.h double-int.h tree-check.h machmode.h mode-classes.def insn-modes.h emit-rtl.h >> tmp-header-vars; echo OPTABS_H=optabs.h insn-codes.h insn-opinit.h >> tmp-header-vars; echo REGS_H=regs.h machmode.h mode-classes.def insn-modes.h hard-reg-set.h >> tmp-header-vars; echo CFGLOOP_H=cfgloop.h basic-block.h predict.h predict.def vec.h statistics.h ggc.h gtype-desc.h statistics.h function.h hashtab.h statistics.h sbitmap.h >> tmp-header-vars; echo IPA_UTILS_H=ipa-utils.h tree.h tree-core.h coretypes.h all-tree.def tree.def c-family/c-common.def plugin-api.h is-a.h >> tmp-header-vars; echo IPA_REFERENCE_H=ipa-reference.h bitmap.h mips-opts.h real.h machmode.h mode-classes.def insn-modes.h fixed-value.h machmode.h mode-classes.def insn-modes.h double-int.h tree-check.h >> tmp-header-vars; echo CGRAPH_H=cgraph.h vec.h statistics.h ggc.h gtype-desc.h statistics.h tree.h tree-core.h coretypes.h all-tree.def tree.def c-family/c-common.def plugin-api.h is-a.h >> tmp-header-vars; echo DF_H=df.h bitmap.h line-map.h input.h machmode.h mode-classes.def insn-modes.h cfg-flags.def cfghooks.h alloc-pool.h timevar.h timevar.def >> tmp-header-vars; echo RESOURCE_H=resource.h hard-reg-set.h df.h bitmap.h line-map.h input.h machmode.h mode-classes.def insn-modes.h cfg-flags.def cfghooks.h alloc-pool.h timevar.h timevar.def >> tmp-header-vars; echo GCC_H=gcc.h version.h diagnostic-core.h line-map.h input.h bversion.h diagnostic.def >> tmp-header-vars; echo GGC_H=ggc.h gtype-desc.h statistics.h >> tmp-header-vars; echo TIMEVAR_H=timevar.h timevar.def >> tmp-header-vars; echo INSN_ATTR_H=insn-attr.h insn-attr-common.h insn-addr.h >> tmp-header-vars; echo INSN_ADDR_H=insn-addr.h >> tmp-header-vars; echo C_COMMON_H=c-family/c-common.h c-family/c-common.def tree.h tree-core.h coretypes.h all-tree.def tree.def c-family/c-common.def line-map.h input.h bversion.h diagnostic.def >> tmp-header-vars; echo C_PRAGMA_H=c-family/c-pragma.h cpplib.h >> tmp-header-vars; echo C_TREE_H=c/c-tree.h c-family/c-common.h c-family/c-common.def tree.h tree-core.h coretypes.h all-tree.def tree.def c-family/c-common.def obstack.h wide-int-print.h >> tmp-header-vars; echo SYSTEM_H=system.h hwint.h filenames.h >> tmp-header-vars; echo PREDICT_H=predict.h predict.def >> tmp-header-vars; echo CPPLIB_H=cpplib.h >> tmp-header-vars; echo INPUT_H=line-map.h input.h >> tmp-header-vars; echo OPTS_H=obstack.h >> tmp-header-vars; echo SYMTAB_H=obstack.h >> tmp-header-vars; echo CPP_ID_DATA_H=cpp-id-data.h >> tmp-header-vars; echo CPP_INTERNAL_H=cpp-id-data.h >> tmp-header-vars; echo TREE_DUMP_H=tree-dump.h line-map.h dumpfile.h >> tmp-header-vars; echo TREE_PASS_H=tree-pass.h timevar.h timevar.def line-map.h dumpfile.h >> tmp-header-vars; echo TREE_SSA_H=tree-ssa.h tree-ssa-operands.h bitmap.h mips-opts.h real.h machmode.h mode-classes.def insn-modes.h fixed-value.h machmode.h mode-classes.def insn-modes.h double-int.h tree-check.h tree-ssa-alias.h >> tmp-header-vars; echo PRETTY_PRINT_H=pretty-print.h obstack.h wide-int-print.h >> tmp-header-vars; echo TREE_PRETTY_PRINT_H=tree-pretty-print.h pretty-print.h obstack.h wide-int-print.h >> tmp-header-vars; echo GIMPLE_PRETTY_PRINT_H=gimple-pretty-print.h tree-pretty-print.h pretty-print.h obstack.h wide-int-print.h >> tmp-header-vars; echo DIAGNOSTIC_CORE_H=diagnostic-core.h line-map.h input.h bversion.h diagnostic.def >> tmp-header-vars; echo DIAGNOSTIC_H=diagnostic.h diagnostic-core.h obstack.h wide-int-print.h >> tmp-header-vars; echo C_PRETTY_PRINT_H=c-family/c-pretty-print.h pretty-print.h mips-opts.h real.h machmode.h mode-classes.def insn-modes.h fixed-value.h machmode.h mode-classes.def insn-modes.h double-int.h tree-check.h >> tmp-header-vars; echo TREE_INLINE_H=tree-inline.h >> tmp-header-vars; echo REAL_H=real.h machmode.h mode-classes.def insn-modes.h >> tmp-header-vars; echo LTO_STREAMER_H=lto-streamer.h obstack.h wide-int-print.h alloc-pool.h >> tmp-header-vars; echo IPA_PROP_H=ipa-prop.h tree.h tree-core.h coretypes.h all-tree.def tree.def c-family/c-common.def hashtab.h hash-table.h is-a.h alloc-pool.h >> tmp-header-vars; echo BITMAP_H=bitmap.h hashtab.h statistics.h >> tmp-header-vars; echo GCC_PLUGIN_H=gcc-plugin.h highlev-plugin-common.h plugin.def config.h auto-host.h hashtab.h >> tmp-header-vars; echo PLUGIN_H=plugin.h gcc-plugin.h highlev-plugin-common.h plugin.def config.h auto-host.h hashtab.h >> tmp-header-vars; echo PLUGIN_VERSION_H=plugin-version.h configargs.h >> tmp-header-vars; echo CONTEXT_H=context.h >> tmp-header-vars; echo GTFILES_H=gt-coverage.h gt-caller-save.h gt-symtab.h gt-alias.h gt-bitmap.h gt-cselib.h gt-cgraph.h gt-ipa-prop.h gt-ipa-cp.h gt-dbxout.h gt-dwarf2asm.h gt-dwarf2cfi.h gt-dwarf2out.h gt-tree-vect-generic.h gt-dojump.h gt-emit-rtl.h gt-explow.h gt-expr.h gt-function.h gt-except.h gt-gcse.h gt-godump.h gt-lists.h gt-optabs.h gt-profile.h gt-mcf.h gt-reg-stack.h gt-cfgrtl.h gt-sdbout.h gt-stor-layout.h gt-stringpool.h gt-tree.h gt-varasm.h gt-tree-chkp.h gt-tree-ssanames.h gt-tree-eh.h gt-tree-ssa-address.h gt-tree-cfg.h gt-tree-dfa.h gt-tree-iterator.h gt-gimple-expr.h gt-tree-scalar-evolution.h gt-tree-profile.h gt-tree-nested.h gt-omp-low.h gt-targhooks.h gt-mips.h gt-passes.h gt-cgraphunit.h gt-cgraphclones.h gt-tree-phinodes.h gt-trans-mem.h gt-vtable-verify.h gt-asan.h gt-ubsan.h gt-tsan.h gt-sanopt.h gt-ipa-devirt.h gt-ada-decl.h gt-ada-trans.h gt-ada-utils.h gt-ada-misc.h gt-c-c-lang.h gt-c-c-decl.h gt-c-family-c-common.h gt-c-family-c-cppbuiltin.h gt-c-family-c-pragma.h gt-c-c-objc-common.h gt-c-c-parser.h gt-cp-rtti.h gt-cp-mangle.h gt-cp-name-lookup.h gt-cp-call.h gt-cp-decl.h gt-cp-decl2.h gt-cp-pt.h gt-cp-repo.h gt-cp-semantics.h gt-cp-tree.h gt-cp-parser.h gt-cp-method.h gt-cp-typeck2.h gt-c-family-c-common.h gt-c-family-c-lex.h gt-c-family-c-pragma.h gt-cp-class.h gt-cp-cp-objcp-common.h gt-cp-cp-lang.h gt-cp-except.h gt-cp-vtable-class-hierarchy.h gt-cp-constexpr.h gt-fortran-f95-lang.h gt-fortran-trans-decl.h gt-fortran-trans-intrinsic.h gt-fortran-trans-io.h gt-fortran-trans-stmt.h gt-fortran-trans-types.h gt-go-go-lang.h gt-java-builtins.h gt-java-class.h gt-java-constants.h gt-java-decl.h gt-java-expr.h gt-java-jcf-parse.h gt-java-lang.h gt-java-mangle.h gt-java-resource.h gt-jit-dummy-frontend.h gt-lto-lto-lang.h gt-lto-lto.h gt-objc-objc-act.h gt-objc-objc-runtime-shared-support.h gt-objc-objc-gnu-runtime-abi-01.h gt-objc-objc-next-runtime-abi-01.h gt-objc-objc-next-runtime-abi-02.h gt-c-c-parser.h gt-c-c-decl.h gt-c-c-objc-common.h gt-c-family-c-common.h gt-c-family-c-cppbuiltin.h gt-c-family-c-pragma.h gt-cp-rtti.h gt-cp-mangle.h gt-cp-name-lookup.h gt-cp-call.h gt-cp-decl.h gt-cp-decl2.h gt-cp-pt.h gt-cp-repo.h gt-cp-semantics.h gt-cp-tree.h gt-cp-parser.h gt-cp-method.h gt-cp-typeck2.h gt-c-family-c-common.h gt-c-family-c-lex.h gt-c-family-c-pragma.h gt-cp-class.h gt-cp-cp-objcp-common.h gt-cp-except.h gt-cp-vtable-class-hierarchy.h gt-cp-constexpr.h gt-objc-objc-act.h gt-objc-objc-runtime-shared-support.h gt-objc-objc-gnu-runtime-abi-01.h gt-objc-objc-next-runtime-abi-01.h gt-objc-objc-next-runtime-abi-02.h gt-c-family-c-cppbuiltin.h >> tmp-header-vars; echo GTFILES_LANG_H=gtype-ada.h gtype-c.h gtype-cp.h gtype-fortran.h gtype-go.h gtype-java.h gtype-jit.h gtype-lto.h gtype-objc.h gtype-objcp.h >> tmp-header-vars; \
+/bin/bash ../../gcc-5.2.0/gcc/../move-if-change tmp-header-vars b-header-vars
+echo timestamp > s-header-vars
+/bin/bash ../../gcc-5.2.0/gcc/../mkinstalldirs /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/include
+/bin/bash ../../gcc-5.2.0/gcc/../mkinstalldirs /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/install-tools/include
+rm -f /cross-tools/share/man/man1/mips64-unknown-linux-gnu-gcc.1
+rm -f /cross-tools/share/man/man1/mips64-unknown-linux-gnu-cpp.1
+/usr/bin/install -c -m 644 doc/gcc.1 /cross-tools/share/man/man1/mips64-unknown-linux-gnu-gcc.1
+/bin/bash ../../gcc-5.2.0/gcc/../mkinstalldirs /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0/install-tools
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/doc/cpp.1 /cross-tools/share/man/man1/mips64-unknown-linux-gnu-cpp.1
+mkdir -p -- /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/include
+rm -rf /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/include-fixed
+chmod a-x /cross-tools/share/man/man1/mips64-unknown-linux-gnu-gcc.1
+rm -f /cross-tools/share/man/man1/mips64-unknown-linux-gnu-gcov.1
+mkdir /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/include-fixed
+chmod a-x /cross-tools/share/man/man1/mips64-unknown-linux-gnu-cpp.1
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/doc/gcov.1 /cross-tools/share/man/man1/mips64-unknown-linux-gnu-gcov.1
+rm -f /cross-tools/share/man/man7/fsf-funding.7
+chmod a+rx /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/include-fixed
+rm -f /cross-tools/share/man/man7/gfdl.7
+chmod a-x /cross-tools/share/man/man1/mips64-unknown-linux-gnu-gcov.1
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/doc/fsf-funding.7 /cross-tools/share/man/man7/fsf-funding.7
+rm -f /cross-tools/share/man/man7/gpl.7
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/doc/gfdl.7 /cross-tools/share/man/man7/gfdl.7
+rm -f /cross-tools/share/info/cpp.info
+chmod a-x /cross-tools/share/man/man7/fsf-funding.7
+/usr/bin/install -c -m 644 doc/gpl.7 /cross-tools/share/man/man7/gpl.7
+chmod a-x /cross-tools/share/man/man7/gfdl.7
+if [ -f doc/cpp.info ]; then \
+  for f in doc/cpp.info*; do \
+    realfile=`echo $f | sed -e 's|.*/\([^/]*\)$|\1|'`; \
+    /usr/bin/install -c -m 644 $f /cross-tools/share/info/$realfile; \
+    chmod a-x /cross-tools/share/info/$realfile; \
+  done; \
+else true; fi
+rm -f /cross-tools/share/info/gcc.info
+chmod a-x /cross-tools/share/man/man7/gpl.7
+if /bin/bash -c 'install-info --version' >/dev/null 2>&1; then \
+  if [ -f /cross-tools/share/info/cpp.info ]; then \
+    install-info --dir-file=/cross-tools/share/info/dir /cross-tools/share/info/cpp.info; \
+  else true; fi; \
+else true; fi;
+rm -f /cross-tools/share/info/cppinternals.info
+if [ -f doc/gcc.info ]; then \
+  for f in doc/gcc.info*; do \
+    realfile=`echo $f | sed -e 's|.*/\([^/]*\)$|\1|'`; \
+    /usr/bin/install -c -m 644 $f /cross-tools/share/info/$realfile; \
+    chmod a-x /cross-tools/share/info/$realfile; \
+  done; \
+else true; fi
+rm -f /cross-tools/share/info/gccinstall.info
+if [ -f doc/cppinternals.info ]; then \
+  for f in doc/cppinternals.info*; do \
+    realfile=`echo $f | sed -e 's|.*/\([^/]*\)$|\1|'`; \
+    /usr/bin/install -c -m 644 $f /cross-tools/share/info/$realfile; \
+    chmod a-x /cross-tools/share/info/$realfile; \
+  done; \
+else true; fi
+if /bin/bash -c 'install-info --version' >/dev/null 2>&1; then \
+  if [ -f /cross-tools/share/info/gcc.info ]; then \
+    install-info --dir-file=/cross-tools/share/info/dir /cross-tools/share/info/gcc.info; \
+  else true; fi; \
+else true; fi;
+if /bin/bash -c 'install-info --version' >/dev/null 2>&1; then \
+  if [ -f /cross-tools/share/info/cppinternals.info ]; then \
+    install-info --dir-file=/cross-tools/share/info/dir /cross-tools/share/info/cppinternals.info; \
+  else true; fi; \
+else true; fi;
+if [ -f doc/gccinstall.info ]; then \
+  for f in doc/gccinstall.info*; do \
+    realfile=`echo $f | sed -e 's|.*/\([^/]*\)$|\1|'`; \
+    /usr/bin/install -c -m 644 $f /cross-tools/share/info/$realfile; \
+    chmod a-x /cross-tools/share/info/$realfile; \
+  done; \
+else true; fi
+if /bin/bash -c 'install-info --version' >/dev/null 2>&1; then \
+  if [ -f /cross-tools/share/info/gccinstall.info ]; then \
+    install-info --dir-file=/cross-tools/share/info/dir /cross-tools/share/info/gccinstall.info; \
+  else true; fi; \
+else true; fi;
+if [ x = xinfo ]; then \
+	/home/dl/ramdisk/clfs_cross_tools/system/mips64-64/sources/gcc-5.2.0/missing makeinfo --split-size=5000000 --no-split -I . -I ../../gcc-5.2.0/gcc/doc \
+		-I ../../gcc-5.2.0/gcc/doc/include -o doc/gccint.info ../../gcc-5.2.0/gcc/doc/gccint.texi; \
+fi
+rm -f /cross-tools/share/info/gccint.info
+if [ -f doc/gccint.info ]; then \
+  for f in doc/gccint.info*; do \
+    realfile=`echo $f | sed -e 's|.*/\([^/]*\)$|\1|'`; \
+    /usr/bin/install -c -m 644 $f /cross-tools/share/info/$realfile; \
+    chmod a-x /cross-tools/share/info/$realfile; \
+  done; \
+else true; fi
+if /bin/bash -c 'install-info --version' >/dev/null 2>&1; then \
+  if [ -f /cross-tools/share/info/gccint.info ]; then \
+    install-info --dir-file=/cross-tools/share/info/dir /cross-tools/share/info/gccint.info; \
+  else true; fi; \
+else true; fi;
+if test "" != "yes" ; then \
+  rm -f /cross-tools/bin/mips64-unknown-linux-gnu-cpp; \
+  /usr/bin/install -c -m 755 cpp /cross-tools/bin/mips64-unknown-linux-gnu-cpp; \
+  if [ x != x ]; then \
+    rm -f /cross-tools//mips64-unknown-linux-gnu-cpp; \
+    /usr/bin/install -c -m 755 cpp /cross-tools//mips64-unknown-linux-gnu-cpp; \
+  else true; fi; \
+fi
+rm -f /cross-tools/bin/mips64-unknown-linux-gnu-gcc
+/usr/bin/install -c lto-wrapper /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0/lto-wrapper
+if test "" != "yes" ; then \
+  for i in gcc-ar gcc-nm gcc-ranlib; do \
+    install_name=`echo $i|sed 's&^&mips64-unknown-linux-gnu-&'` ;\
+    target_install_name=mips64-unknown-linux-gnu-`echo $i|sed 's&^&mips64-unknown-linux-gnu-&'` ; \
+    rm -f /cross-tools/bin/$install_name ; \
+    /usr/bin/install -c $i /cross-tools/bin/$install_name ;\
+    if test -f gcc-cross; then \
+      :; \
+    else \
+      rm -f /cross-tools/bin/$target_install_name; \
+      ( cd /cross-tools/bin && \
+	ln $install_name $target_install_name ) ; \
+    fi ; \
+  done; \
+fi
+/usr/bin/install -c xgcc /cross-tools/bin/mips64-unknown-linux-gnu-gcc
+/bin/bash ../../gcc-5.2.0/gcc/../mkinstalldirs /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin
+for file in gnat1 cc1 cc1plus f951 go1 jc1 jvgenmain  lto1 cc1obj cc1objplus; do \
+  if [ -f $file ] ; then \
+    rm -f /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0/$file; \
+    /usr/bin/install -c $file /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0/$file; \
+  else true; \
+  fi; \
+done
+if test "" != "yes" ; then \
+  if [ "mips64-unknown-linux-gnu-gcc" != "mips64-unknown-linux-gnu-gcc-5.2.0" ]; then \
+    rm -f /cross-tools/bin/mips64-unknown-linux-gnu-gcc-5.2.0; \
+    ( cd /cross-tools/bin && \
+      ln mips64-unknown-linux-gnu-gcc mips64-unknown-linux-gnu-gcc-5.2.0 ); \
+  fi; \
+  if [ ! -f gcc-cross ] \
+      && [ "mips64-unknown-linux-gnu-gcc" != "mips64-unknown-linux-gnu-mips64-unknown-linux-gnu-gcc" ]; then \
+    rm -f /cross-tools/bin/mips64-unknown-linux-gnu-gcc-tmp; \
+    ( cd /cross-tools/bin && \
+      ln mips64-unknown-linux-gnu-gcc mips64-unknown-linux-gnu-gcc-tmp && \
+      mv -f mips64-unknown-linux-gnu-gcc-tmp mips64-unknown-linux-gnu-mips64-unknown-linux-gnu-gcc ); \
+  fi; \
+fi
+mkdir -p -- /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin
+/usr/bin/install -c -m 644 gtype.state /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/gtype.state
+/bin/bash ../../gcc-5.2.0/gcc/../mkinstalldirs /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0/plugin
+(cd `${PWDCMD-pwd}`/include ; \
+ tar -cf - .; exit 0) | (cd /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/include; tar xpf - )
+mkdir -p -- /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0/plugin
+/usr/bin/install -c gengtype /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/gengtype
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gsyslimits.h \
+  /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/install-tools/gsyslimits.h
+(cd `${PWDCMD-pwd}`/include-fixed ; \
+ tar -cf - .; exit 0) | (cd /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/include-fixed; tar xpf - )
+/usr/bin/install -c -m 644 macro_list /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/install-tools/macro_list
+/bin/bash ../../gcc-5.2.0/gcc/../mkinstalldirs /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include
+/usr/bin/install -c -m 644 fixinc_list /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/install-tools/fixinc_list
+files=`cd /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/include-fixed; find . -type l -print 2>/dev/null`; \
+if [ $? -eq 0 ]; then \
+  dir=`cd include-fixed; ${PWDCMD-pwd}`; \
+  for i in $files; do \
+    dest=`ls -ld /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/include-fixed/$i | sed -n 's/.*-> //p'`; \
+    if expr "$dest" : "$dir.*" > /dev/null; then \
+      rm -f /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/include-fixed/$i; \
+      ln -s `echo $i | sed "s|/[^/]*|/..|g" | sed 's|/..$||'``echo "$dest" | sed "s|$dir||"` /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/include-fixed/$i; \
+    fi; \
+  done; \
+fi
+mkdir -p -- /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include
+headers=`echo tree.h tree-core.h coretypes.h all-tree.def tree.def c-family/c-common.def ../../gcc-5.2.0/gcc/ada/gcc-interface/ada-tree.def ../../gcc-5.2.0/gcc/cp/cp-tree.def ../../gcc-5.2.0/gcc/java/java-tree.def ../../gcc-5.2.0/gcc/objc/objc-tree.def machmode.h mode-classes.def insn-modes.h builtins.def sync-builtins.def omp-builtins.def gtm-builtins.def sanitizer.def cilkplus.def cilk-builtins.def ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h statistics.h vec.h statistics.h ggc.h gtype-desc.h statistics.h treestruct.def ../../gcc-5.2.0/gcc/../include/hashtab.h double-int.h alias.h ../../gcc-5.2.0/gcc/../libcpp/include/symtab.h ../../gcc-5.2.0/gcc/../include/obstack.h flags.h flag-types.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h real.h machmode.h mode-classes.def insn-modes.h fixed-value.h machmode.h mode-classes.def insn-modes.h double-int.h  tree-check.h config.h  auto-host.h ../../gcc-5.2.0/gcc/../include/ansidecl.h system.h hwint.h ../../gcc-5.2.0/gcc/../include/libiberty.h ../../gcc-5.2.0/gcc/../include/safe-ctype.h ../../gcc-5.2.0/gcc/../include/filenames.h coretypes.h tm.h      options.h ../../gcc-5.2.0/gcc/config/dbxelf.h ../../gcc-5.2.0/gcc/config/elfos.h ../../gcc-5.2.0/gcc/config/gnu-user.h ../../gcc-5.2.0/gcc/config/linux.h ../../gcc-5.2.0/gcc/config/linux-android.h ../../gcc-5.2.0/gcc/config/glibc-stdint.h ../../gcc-5.2.0/gcc/config/vxworks-dummy.h ../../gcc-5.2.0/gcc/config/mips/mips.h ../../gcc-5.2.0/gcc/config/mips/gnu-user.h ../../gcc-5.2.0/gcc/config/mips/linux.h ../../gcc-5.2.0/gcc/config/mips/linux-common.h ../../gcc-5.2.0/gcc/config/initfini-array.h ../../gcc-5.2.0/gcc/defaults.h insn-constants.h insn-flags.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h toplev.h diagnostic-core.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h bversion.h diagnostic.def basic-block.h predict.h predict.def vec.h statistics.h ggc.h gtype-desc.h statistics.h function.h ../../gcc-5.2.0/gcc/../include/hashtab.h tm.h      options.h ../../gcc-5.2.0/gcc/config/dbxelf.h ../../gcc-5.2.0/gcc/config/elfos.h ../../gcc-5.2.0/gcc/config/gnu-user.h ../../gcc-5.2.0/gcc/config/linux.h ../../gcc-5.2.0/gcc/config/linux-android.h ../../gcc-5.2.0/gcc/config/glibc-stdint.h ../../gcc-5.2.0/gcc/config/vxworks-dummy.h ../../gcc-5.2.0/gcc/config/mips/mips.h ../../gcc-5.2.0/gcc/config/mips/gnu-user.h ../../gcc-5.2.0/gcc/config/mips/linux.h ../../gcc-5.2.0/gcc/config/mips/linux-common.h ../../gcc-5.2.0/gcc/config/initfini-array.h ../../gcc-5.2.0/gcc/defaults.h insn-constants.h insn-flags.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h hard-reg-set.h vec.h statistics.h ggc.h gtype-desc.h statistics.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h machmode.h mode-classes.def insn-modes.h cfg-flags.def cfghooks.h ../../gcc-5.2.0/gcc/../include/hashtab.h hash-table.h tree-ssa-alias.h internal-fn.h internal-fn.def gimple-fold.h tree-eh.h gimple-expr.h gimple.h is-a.h tree-pass.h timevar.h timevar.def ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h dumpfile.h gcc-plugin.h highlev-plugin-common.h plugin.def config.h  auto-host.h ../../gcc-5.2.0/gcc/../include/ansidecl.h system.h hwint.h ../../gcc-5.2.0/gcc/../include/libiberty.h ../../gcc-5.2.0/gcc/../include/safe-ctype.h ../../gcc-5.2.0/gcc/../include/filenames.h ../../gcc-5.2.0/gcc/../include/hashtab.h ggc.h gtype-desc.h statistics.h tree-dump.h ../../gcc-5.2.0/gcc/../include/splay-tree.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h dumpfile.h pretty-print.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h ../../gcc-5.2.0/gcc/../include/obstack.h wide-int-print.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h vec.h statistics.h ggc.h gtype-desc.h statistics.h opts.h ../../gcc-5.2.0/gcc/../include/obstack.h params.h params.def options.h ../../gcc-5.2.0/gcc/config/dbxelf.h ../../gcc-5.2.0/gcc/config/elfos.h ../../gcc-5.2.0/gcc/config/gnu-user.h ../../gcc-5.2.0/gcc/config/linux.h ../../gcc-5.2.0/gcc/config/linux-android.h ../../gcc-5.2.0/gcc/config/glibc-stdint.h ../../gcc-5.2.0/gcc/config/vxworks-dummy.h ../../gcc-5.2.0/gcc/config/mips/mips.h ../../gcc-5.2.0/gcc/config/mips/gnu-user.h ../../gcc-5.2.0/gcc/config/mips/linux.h ../../gcc-5.2.0/gcc/config/mips/linux-common.h ../../gcc-5.2.0/gcc/config/initfini-array.h ../../gcc-5.2.0/gcc/defaults.h options.h insn-constants.h config/dbxelf.h config/elfos.h config/gnu-user.h config/linux.h config/linux-android.h config/glibc-stdint.h config/vxworks-dummy.h config/mips/mips.h config/mips/gnu-user.h config/mips/linux.h config/mips/linux-common.h config/initfini-array.h defaults.h ../../gcc-5.2.0/gcc/config/mips/mips-protos.h ../../gcc-5.2.0/gcc/config/linux-protos.h tm-preds.h config/mips/mips-protos.h config/linux-protos.h tm-preds.h auto-host.h ../../gcc-5.2.0/gcc/../include/ansidecl.h auto-host.h ansidecl.h auto-host.h ansidecl.h intl.h plugin-version.h configargs.h diagnostic.h diagnostic-core.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h bversion.h diagnostic.def pretty-print.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h ../../gcc-5.2.0/gcc/../include/obstack.h wide-int-print.h c/c-tree.h c-family/c-common.h c-family/c-common.def tree.h tree-core.h coretypes.h all-tree.def tree.def c-family/c-common.def ../../gcc-5.2.0/gcc/ada/gcc-interface/ada-tree.def ../../gcc-5.2.0/gcc/cp/cp-tree.def ../../gcc-5.2.0/gcc/java/java-tree.def ../../gcc-5.2.0/gcc/objc/objc-tree.def machmode.h mode-classes.def insn-modes.h builtins.def sync-builtins.def omp-builtins.def gtm-builtins.def sanitizer.def cilkplus.def cilk-builtins.def ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h statistics.h vec.h statistics.h ggc.h gtype-desc.h statistics.h treestruct.def ../../gcc-5.2.0/gcc/../include/hashtab.h double-int.h alias.h ../../gcc-5.2.0/gcc/../libcpp/include/symtab.h ../../gcc-5.2.0/gcc/../include/obstack.h flags.h flag-types.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h real.h machmode.h mode-classes.def insn-modes.h fixed-value.h machmode.h mode-classes.def insn-modes.h double-int.h  tree-check.h ../../gcc-5.2.0/gcc/../include/splay-tree.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h ../../gcc-5.2.0/gcc/../libcpp/include/cpplib.h ggc.h gtype-desc.h statistics.h diagnostic-core.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h bversion.h diagnostic.def diagnostic.h diagnostic-core.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h bversion.h diagnostic.def pretty-print.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h ../../gcc-5.2.0/gcc/../include/obstack.h wide-int-print.h c-family/c-common.h c-family/c-common.def tree.h tree-core.h coretypes.h all-tree.def tree.def c-family/c-common.def ../../gcc-5.2.0/gcc/ada/gcc-interface/ada-tree.def ../../gcc-5.2.0/gcc/cp/cp-tree.def ../../gcc-5.2.0/gcc/java/java-tree.def ../../gcc-5.2.0/gcc/objc/objc-tree.def machmode.h mode-classes.def insn-modes.h builtins.def sync-builtins.def omp-builtins.def gtm-builtins.def sanitizer.def cilkplus.def cilk-builtins.def ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h statistics.h vec.h statistics.h ggc.h gtype-desc.h statistics.h treestruct.def ../../gcc-5.2.0/gcc/../include/hashtab.h double-int.h alias.h ../../gcc-5.2.0/gcc/../libcpp/include/symtab.h ../../gcc-5.2.0/gcc/../include/obstack.h flags.h flag-types.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h real.h machmode.h mode-classes.def insn-modes.h fixed-value.h machmode.h mode-classes.def insn-modes.h double-int.h  tree-check.h ../../gcc-5.2.0/gcc/../include/splay-tree.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h ../../gcc-5.2.0/gcc/../libcpp/include/cpplib.h ggc.h gtype-desc.h statistics.h diagnostic-core.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h bversion.h diagnostic.def c-family/c-objc.h c-family/c-pretty-print.h pretty-print.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h ../../gcc-5.2.0/gcc/../include/obstack.h wide-int-print.h c-family/c-common.h c-family/c-common.def tree.h tree-core.h coretypes.h all-tree.def tree.def c-family/c-common.def ../../gcc-5.2.0/gcc/ada/gcc-interface/ada-tree.def ../../gcc-5.2.0/gcc/cp/cp-tree.def ../../gcc-5.2.0/gcc/java/java-tree.def ../../gcc-5.2.0/gcc/objc/objc-tree.def machmode.h mode-classes.def insn-modes.h builtins.def sync-builtins.def omp-builtins.def gtm-builtins.def sanitizer.def cilkplus.def cilk-builtins.def ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h statistics.h vec.h statistics.h ggc.h gtype-desc.h statistics.h treestruct.def ../../gcc-5.2.0/gcc/../include/hashtab.h double-int.h alias.h ../../gcc-5.2.0/gcc/../libcpp/include/symtab.h ../../gcc-5.2.0/gcc/../include/obstack.h flags.h flag-types.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h real.h machmode.h mode-classes.def insn-modes.h fixed-value.h machmode.h mode-classes.def insn-modes.h double-int.h  tree-check.h ../../gcc-5.2.0/gcc/../include/splay-tree.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h ../../gcc-5.2.0/gcc/../libcpp/include/cpplib.h ggc.h gtype-desc.h statistics.h diagnostic-core.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h bversion.h diagnostic.def tree.h tree-core.h coretypes.h all-tree.def tree.def c-family/c-common.def ../../gcc-5.2.0/gcc/ada/gcc-interface/ada-tree.def ../../gcc-5.2.0/gcc/cp/cp-tree.def ../../gcc-5.2.0/gcc/java/java-tree.def ../../gcc-5.2.0/gcc/objc/objc-tree.def machmode.h mode-classes.def insn-modes.h builtins.def sync-builtins.def omp-builtins.def gtm-builtins.def sanitizer.def cilkplus.def cilk-builtins.def ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h statistics.h vec.h statistics.h ggc.h gtype-desc.h statistics.h treestruct.def ../../gcc-5.2.0/gcc/../include/hashtab.h double-int.h alias.h ../../gcc-5.2.0/gcc/../libcpp/include/symtab.h ../../gcc-5.2.0/gcc/../include/obstack.h flags.h flag-types.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h real.h machmode.h mode-classes.def insn-modes.h fixed-value.h machmode.h mode-classes.def insn-modes.h double-int.h  tree-check.h tree-iterator.h plugin.h gcc-plugin.h highlev-plugin-common.h plugin.def config.h  auto-host.h ../../gcc-5.2.0/gcc/../include/ansidecl.h system.h hwint.h ../../gcc-5.2.0/gcc/../include/libiberty.h ../../gcc-5.2.0/gcc/../include/safe-ctype.h ../../gcc-5.2.0/gcc/../include/filenames.h ../../gcc-5.2.0/gcc/../include/hashtab.h tree-ssa.h tree-ssa-operands.h bitmap.h ../../gcc-5.2.0/gcc/../include/hashtab.h statistics.h sbitmap.h basic-block.h predict.h predict.def vec.h statistics.h ggc.h gtype-desc.h statistics.h function.h ../../gcc-5.2.0/gcc/../include/hashtab.h tm.h      options.h ../../gcc-5.2.0/gcc/config/dbxelf.h ../../gcc-5.2.0/gcc/config/elfos.h ../../gcc-5.2.0/gcc/config/gnu-user.h ../../gcc-5.2.0/gcc/config/linux.h ../../gcc-5.2.0/gcc/config/linux-android.h ../../gcc-5.2.0/gcc/config/glibc-stdint.h ../../gcc-5.2.0/gcc/config/vxworks-dummy.h ../../gcc-5.2.0/gcc/config/mips/mips.h ../../gcc-5.2.0/gcc/config/mips/gnu-user.h ../../gcc-5.2.0/gcc/config/mips/linux.h ../../gcc-5.2.0/gcc/config/mips/linux-common.h ../../gcc-5.2.0/gcc/config/initfini-array.h ../../gcc-5.2.0/gcc/defaults.h insn-constants.h insn-flags.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h hard-reg-set.h vec.h statistics.h ggc.h gtype-desc.h statistics.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h machmode.h mode-classes.def insn-modes.h cfg-flags.def cfghooks.h gimple.h gimple.def gsstruct.def vec.h statistics.h ggc.h gtype-desc.h statistics.h ggc.h gtype-desc.h statistics.h basic-block.h predict.h predict.def vec.h statistics.h ggc.h gtype-desc.h statistics.h function.h ../../gcc-5.2.0/gcc/../include/hashtab.h tm.h      options.h ../../gcc-5.2.0/gcc/config/dbxelf.h ../../gcc-5.2.0/gcc/config/elfos.h ../../gcc-5.2.0/gcc/config/gnu-user.h ../../gcc-5.2.0/gcc/config/linux.h ../../gcc-5.2.0/gcc/config/linux-android.h ../../gcc-5.2.0/gcc/config/glibc-stdint.h ../../gcc-5.2.0/gcc/config/vxworks-dummy.h ../../gcc-5.2.0/gcc/config/mips/mips.h ../../gcc-5.2.0/gcc/config/mips/gnu-user.h ../../gcc-5.2.0/gcc/config/mips/linux.h ../../gcc-5.2.0/gcc/config/mips/linux-common.h ../../gcc-5.2.0/gcc/config/initfini-array.h ../../gcc-5.2.0/gcc/defaults.h insn-constants.h insn-flags.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h hard-reg-set.h vec.h statistics.h ggc.h gtype-desc.h statistics.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h machmode.h mode-classes.def insn-modes.h cfg-flags.def cfghooks.h tree.h tree-core.h coretypes.h all-tree.def tree.def c-family/c-common.def ../../gcc-5.2.0/gcc/ada/gcc-interface/ada-tree.def ../../gcc-5.2.0/gcc/cp/cp-tree.def ../../gcc-5.2.0/gcc/java/java-tree.def ../../gcc-5.2.0/gcc/objc/objc-tree.def machmode.h mode-classes.def insn-modes.h builtins.def sync-builtins.def omp-builtins.def gtm-builtins.def sanitizer.def cilkplus.def cilk-builtins.def ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h statistics.h vec.h statistics.h ggc.h gtype-desc.h statistics.h treestruct.def ../../gcc-5.2.0/gcc/../include/hashtab.h double-int.h alias.h ../../gcc-5.2.0/gcc/../libcpp/include/symtab.h ../../gcc-5.2.0/gcc/../include/obstack.h flags.h flag-types.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h real.h machmode.h mode-classes.def insn-modes.h fixed-value.h machmode.h mode-classes.def insn-modes.h double-int.h  tree-check.h tree-ssa-operands.h tree-ssa-alias.h internal-fn.h internal-fn.def ../../gcc-5.2.0/gcc/../include/hashtab.h hash-table.h is-a.h ../../gcc-5.2.0/gcc/../include/hashtab.h cgraph.h vec.h statistics.h ggc.h gtype-desc.h statistics.h tree.h tree-core.h coretypes.h all-tree.def tree.def c-family/c-common.def ../../gcc-5.2.0/gcc/ada/gcc-interface/ada-tree.def ../../gcc-5.2.0/gcc/cp/cp-tree.def ../../gcc-5.2.0/gcc/java/java-tree.def ../../gcc-5.2.0/gcc/objc/objc-tree.def machmode.h mode-classes.def insn-modes.h builtins.def sync-builtins.def omp-builtins.def gtm-builtins.def sanitizer.def cilkplus.def cilk-builtins.def ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h statistics.h vec.h statistics.h ggc.h gtype-desc.h statistics.h treestruct.def ../../gcc-5.2.0/gcc/../include/hashtab.h double-int.h alias.h ../../gcc-5.2.0/gcc/../libcpp/include/symtab.h ../../gcc-5.2.0/gcc/../include/obstack.h flags.h flag-types.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h real.h machmode.h mode-classes.def insn-modes.h fixed-value.h machmode.h mode-classes.def insn-modes.h double-int.h  tree-check.h basic-block.h predict.h predict.def vec.h statistics.h ggc.h gtype-desc.h statistics.h function.h ../../gcc-5.2.0/gcc/../include/hashtab.h tm.h      options.h ../../gcc-5.2.0/gcc/config/dbxelf.h ../../gcc-5.2.0/gcc/config/elfos.h ../../gcc-5.2.0/gcc/config/gnu-user.h ../../gcc-5.2.0/gcc/config/linux.h ../../gcc-5.2.0/gcc/config/linux-android.h ../../gcc-5.2.0/gcc/config/glibc-stdint.h ../../gcc-5.2.0/gcc/config/vxworks-dummy.h ../../gcc-5.2.0/gcc/config/mips/mips.h ../../gcc-5.2.0/gcc/config/mips/gnu-user.h ../../gcc-5.2.0/gcc/config/mips/linux.h ../../gcc-5.2.0/gcc/config/mips/linux-common.h ../../gcc-5.2.0/gcc/config/initfini-array.h ../../gcc-5.2.0/gcc/defaults.h insn-constants.h insn-flags.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h hard-reg-set.h vec.h statistics.h ggc.h gtype-desc.h statistics.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h machmode.h mode-classes.def insn-modes.h cfg-flags.def cfghooks.h function.h ../../gcc-5.2.0/gcc/../include/hashtab.h tm.h      options.h ../../gcc-5.2.0/gcc/config/dbxelf.h ../../gcc-5.2.0/gcc/config/elfos.h ../../gcc-5.2.0/gcc/config/gnu-user.h ../../gcc-5.2.0/gcc/config/linux.h ../../gcc-5.2.0/gcc/config/linux-android.h ../../gcc-5.2.0/gcc/config/glibc-stdint.h ../../gcc-5.2.0/gcc/config/vxworks-dummy.h ../../gcc-5.2.0/gcc/config/mips/mips.h ../../gcc-5.2.0/gcc/config/mips/gnu-user.h ../../gcc-5.2.0/gcc/config/mips/linux.h ../../gcc-5.2.0/gcc/config/mips/linux-common.h ../../gcc-5.2.0/gcc/config/initfini-array.h ../../gcc-5.2.0/gcc/defaults.h insn-constants.h insn-flags.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h hard-reg-set.h vec.h statistics.h ggc.h gtype-desc.h statistics.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h machmode.h mode-classes.def insn-modes.h cif-code.def ipa-ref.h ../../gcc-5.2.0/gcc/../include/plugin-api.h is-a.h ipa-reference.h bitmap.h ../../gcc-5.2.0/gcc/../include/hashtab.h statistics.h tree.h tree-core.h coretypes.h all-tree.def tree.def c-family/c-common.def ../../gcc-5.2.0/gcc/ada/gcc-interface/ada-tree.def ../../gcc-5.2.0/gcc/cp/cp-tree.def ../../gcc-5.2.0/gcc/java/java-tree.def ../../gcc-5.2.0/gcc/objc/objc-tree.def machmode.h mode-classes.def insn-modes.h builtins.def sync-builtins.def omp-builtins.def gtm-builtins.def sanitizer.def cilkplus.def cilk-builtins.def ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h statistics.h vec.h statistics.h ggc.h gtype-desc.h statistics.h treestruct.def ../../gcc-5.2.0/gcc/../include/hashtab.h double-int.h alias.h ../../gcc-5.2.0/gcc/../libcpp/include/symtab.h ../../gcc-5.2.0/gcc/../include/obstack.h flags.h flag-types.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h real.h machmode.h mode-classes.def insn-modes.h fixed-value.h machmode.h mode-classes.def insn-modes.h double-int.h  tree-check.h tree-ssa-alias.h langhooks.h incpath.h debug.h except.h ../../gcc-5.2.0/gcc/../include/hashtab.h tree-ssa-sccvn.h real.h output.h ipa-utils.h tree.h tree-core.h coretypes.h all-tree.def tree.def c-family/c-common.def ../../gcc-5.2.0/gcc/ada/gcc-interface/ada-tree.def ../../gcc-5.2.0/gcc/cp/cp-tree.def ../../gcc-5.2.0/gcc/java/java-tree.def ../../gcc-5.2.0/gcc/objc/objc-tree.def machmode.h mode-classes.def insn-modes.h builtins.def sync-builtins.def omp-builtins.def gtm-builtins.def sanitizer.def cilkplus.def cilk-builtins.def ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h statistics.h vec.h statistics.h ggc.h gtype-desc.h statistics.h treestruct.def ../../gcc-5.2.0/gcc/../include/hashtab.h double-int.h alias.h ../../gcc-5.2.0/gcc/../libcpp/include/symtab.h ../../gcc-5.2.0/gcc/../include/obstack.h flags.h flag-types.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h real.h machmode.h mode-classes.def insn-modes.h fixed-value.h machmode.h mode-classes.def insn-modes.h double-int.h  tree-check.h cgraph.h vec.h statistics.h ggc.h gtype-desc.h statistics.h tree.h tree-core.h coretypes.h all-tree.def tree.def c-family/c-common.def ../../gcc-5.2.0/gcc/ada/gcc-interface/ada-tree.def ../../gcc-5.2.0/gcc/cp/cp-tree.def ../../gcc-5.2.0/gcc/java/java-tree.def ../../gcc-5.2.0/gcc/objc/objc-tree.def machmode.h mode-classes.def insn-modes.h builtins.def sync-builtins.def omp-builtins.def gtm-builtins.def sanitizer.def cilkplus.def cilk-builtins.def ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h statistics.h vec.h statistics.h ggc.h gtype-desc.h statistics.h treestruct.def ../../gcc-5.2.0/gcc/../include/hashtab.h double-int.h alias.h ../../gcc-5.2.0/gcc/../libcpp/include/symtab.h ../../gcc-5.2.0/gcc/../include/obstack.h flags.h flag-types.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h real.h machmode.h mode-classes.def insn-modes.h fixed-value.h machmode.h mode-classes.def insn-modes.h double-int.h  tree-check.h basic-block.h predict.h predict.def vec.h statistics.h ggc.h gtype-desc.h statistics.h function.h ../../gcc-5.2.0/gcc/../include/hashtab.h tm.h      options.h ../../gcc-5.2.0/gcc/config/dbxelf.h ../../gcc-5.2.0/gcc/config/elfos.h ../../gcc-5.2.0/gcc/config/gnu-user.h ../../gcc-5.2.0/gcc/config/linux.h ../../gcc-5.2.0/gcc/config/linux-android.h ../../gcc-5.2.0/gcc/config/glibc-stdint.h ../../gcc-5.2.0/gcc/config/vxworks-dummy.h ../../gcc-5.2.0/gcc/config/mips/mips.h ../../gcc-5.2.0/gcc/config/mips/gnu-user.h ../../gcc-5.2.0/gcc/config/mips/linux.h ../../gcc-5.2.0/gcc/config/mips/linux-common.h ../../gcc-5.2.0/gcc/config/initfini-array.h ../../gcc-5.2.0/gcc/defaults.h insn-constants.h insn-flags.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h hard-reg-set.h vec.h statistics.h ggc.h gtype-desc.h statistics.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h machmode.h mode-classes.def insn-modes.h cfg-flags.def cfghooks.h function.h ../../gcc-5.2.0/gcc/../include/hashtab.h tm.h      options.h ../../gcc-5.2.0/gcc/config/dbxelf.h ../../gcc-5.2.0/gcc/config/elfos.h ../../gcc-5.2.0/gcc/config/gnu-user.h ../../gcc-5.2.0/gcc/config/linux.h ../../gcc-5.2.0/gcc/config/linux-android.h ../../gcc-5.2.0/gcc/config/glibc-stdint.h ../../gcc-5.2.0/gcc/config/vxworks-dummy.h ../../gcc-5.2.0/gcc/config/mips/mips.h ../../gcc-5.2.0/gcc/config/mips/gnu-user.h ../../gcc-5.2.0/gcc/config/mips/linux.h ../../gcc-5.2.0/gcc/config/mips/linux-common.h ../../gcc-5.2.0/gcc/config/initfini-array.h ../../gcc-5.2.0/gcc/defaults.h insn-constants.h insn-flags.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h hard-reg-set.h vec.h statistics.h ggc.h gtype-desc.h statistics.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h machmode.h mode-classes.def insn-modes.h cif-code.def ipa-ref.h ../../gcc-5.2.0/gcc/../include/plugin-api.h is-a.h c-family/c-pragma.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h ../../gcc-5.2.0/gcc/../libcpp/include/cpplib.h  ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h ../../gcc-5.2.0/gcc/../libcpp/include/cpplib.h  function.h ../../gcc-5.2.0/gcc/../include/hashtab.h tm.h      options.h ../../gcc-5.2.0/gcc/config/dbxelf.h ../../gcc-5.2.0/gcc/config/elfos.h ../../gcc-5.2.0/gcc/config/gnu-user.h ../../gcc-5.2.0/gcc/config/linux.h ../../gcc-5.2.0/gcc/config/linux-android.h ../../gcc-5.2.0/gcc/config/glibc-stdint.h ../../gcc-5.2.0/gcc/config/vxworks-dummy.h ../../gcc-5.2.0/gcc/config/mips/mips.h ../../gcc-5.2.0/gcc/config/mips/gnu-user.h ../../gcc-5.2.0/gcc/config/mips/linux.h ../../gcc-5.2.0/gcc/config/mips/linux-common.h ../../gcc-5.2.0/gcc/config/initfini-array.h ../../gcc-5.2.0/gcc/defaults.h insn-constants.h insn-flags.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h hard-reg-set.h vec.h statistics.h ggc.h gtype-desc.h statistics.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h machmode.h mode-classes.def insn-modes.h cppdefault.h flags.h ../../gcc-5.2.0/gcc/../include/md5.h params.def params.h prefix.h tree-inline.h gimple-pretty-print.h tree-pretty-print.h pretty-print.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h ../../gcc-5.2.0/gcc/../include/obstack.h wide-int-print.h realmpfr.h ipa-prop.h tree.h tree-core.h coretypes.h all-tree.def tree.def c-family/c-common.def ../../gcc-5.2.0/gcc/ada/gcc-interface/ada-tree.def ../../gcc-5.2.0/gcc/cp/cp-tree.def ../../gcc-5.2.0/gcc/java/java-tree.def ../../gcc-5.2.0/gcc/objc/objc-tree.def machmode.h mode-classes.def insn-modes.h builtins.def sync-builtins.def omp-builtins.def gtm-builtins.def sanitizer.def cilkplus.def cilk-builtins.def ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h statistics.h vec.h statistics.h ggc.h gtype-desc.h statistics.h treestruct.def ../../gcc-5.2.0/gcc/../include/hashtab.h double-int.h alias.h ../../gcc-5.2.0/gcc/../libcpp/include/symtab.h ../../gcc-5.2.0/gcc/../include/obstack.h flags.h flag-types.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h real.h machmode.h mode-classes.def insn-modes.h fixed-value.h machmode.h mode-classes.def insn-modes.h double-int.h  tree-check.h vec.h statistics.h ggc.h gtype-desc.h statistics.h cgraph.h vec.h statistics.h ggc.h gtype-desc.h statistics.h tree.h tree-core.h coretypes.h all-tree.def tree.def c-family/c-common.def ../../gcc-5.2.0/gcc/ada/gcc-interface/ada-tree.def ../../gcc-5.2.0/gcc/cp/cp-tree.def ../../gcc-5.2.0/gcc/java/java-tree.def ../../gcc-5.2.0/gcc/objc/objc-tree.def machmode.h mode-classes.def insn-modes.h builtins.def sync-builtins.def omp-builtins.def gtm-builtins.def sanitizer.def cilkplus.def cilk-builtins.def ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h statistics.h vec.h statistics.h ggc.h gtype-desc.h statistics.h treestruct.def ../../gcc-5.2.0/gcc/../include/hashtab.h double-int.h alias.h ../../gcc-5.2.0/gcc/../libcpp/include/symtab.h ../../gcc-5.2.0/gcc/../include/obstack.h flags.h flag-types.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h real.h machmode.h mode-classes.def insn-modes.h fixed-value.h machmode.h mode-classes.def insn-modes.h double-int.h  tree-check.h basic-block.h predict.h predict.def vec.h statistics.h ggc.h gtype-desc.h statistics.h function.h ../../gcc-5.2.0/gcc/../include/hashtab.h tm.h      options.h ../../gcc-5.2.0/gcc/config/dbxelf.h ../../gcc-5.2.0/gcc/config/elfos.h ../../gcc-5.2.0/gcc/config/gnu-user.h ../../gcc-5.2.0/gcc/config/linux.h ../../gcc-5.2.0/gcc/config/linux-android.h ../../gcc-5.2.0/gcc/config/glibc-stdint.h ../../gcc-5.2.0/gcc/config/vxworks-dummy.h ../../gcc-5.2.0/gcc/config/mips/mips.h ../../gcc-5.2.0/gcc/config/mips/gnu-user.h ../../gcc-5.2.0/gcc/config/mips/linux.h ../../gcc-5.2.0/gcc/config/mips/linux-common.h ../../gcc-5.2.0/gcc/config/initfini-array.h ../../gcc-5.2.0/gcc/defaults.h insn-constants.h insn-flags.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h hard-reg-set.h vec.h statistics.h ggc.h gtype-desc.h statistics.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h machmode.h mode-classes.def insn-modes.h cfg-flags.def cfghooks.h function.h ../../gcc-5.2.0/gcc/../include/hashtab.h tm.h      options.h ../../gcc-5.2.0/gcc/config/dbxelf.h ../../gcc-5.2.0/gcc/config/elfos.h ../../gcc-5.2.0/gcc/config/gnu-user.h ../../gcc-5.2.0/gcc/config/linux.h ../../gcc-5.2.0/gcc/config/linux-android.h ../../gcc-5.2.0/gcc/config/glibc-stdint.h ../../gcc-5.2.0/gcc/config/vxworks-dummy.h ../../gcc-5.2.0/gcc/config/mips/mips.h ../../gcc-5.2.0/gcc/config/mips/gnu-user.h ../../gcc-5.2.0/gcc/config/mips/linux.h ../../gcc-5.2.0/gcc/config/mips/linux-common.h ../../gcc-5.2.0/gcc/config/initfini-array.h ../../gcc-5.2.0/gcc/defaults.h insn-constants.h insn-flags.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h hard-reg-set.h vec.h statistics.h ggc.h gtype-desc.h statistics.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h machmode.h mode-classes.def insn-modes.h cif-code.def ipa-ref.h ../../gcc-5.2.0/gcc/../include/plugin-api.h is-a.h gimple.h gimple.def gsstruct.def vec.h statistics.h ggc.h gtype-desc.h statistics.h ggc.h gtype-desc.h statistics.h basic-block.h predict.h predict.def vec.h statistics.h ggc.h gtype-desc.h statistics.h function.h ../../gcc-5.2.0/gcc/../include/hashtab.h tm.h      options.h ../../gcc-5.2.0/gcc/config/dbxelf.h ../../gcc-5.2.0/gcc/config/elfos.h ../../gcc-5.2.0/gcc/config/gnu-user.h ../../gcc-5.2.0/gcc/config/linux.h ../../gcc-5.2.0/gcc/config/linux-android.h ../../gcc-5.2.0/gcc/config/glibc-stdint.h ../../gcc-5.2.0/gcc/config/vxworks-dummy.h ../../gcc-5.2.0/gcc/config/mips/mips.h ../../gcc-5.2.0/gcc/config/mips/gnu-user.h ../../gcc-5.2.0/gcc/config/mips/linux.h ../../gcc-5.2.0/gcc/config/mips/linux-common.h ../../gcc-5.2.0/gcc/config/initfini-array.h ../../gcc-5.2.0/gcc/defaults.h insn-constants.h insn-flags.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h hard-reg-set.h vec.h statistics.h ggc.h gtype-desc.h statistics.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h machmode.h mode-classes.def insn-modes.h cfg-flags.def cfghooks.h tree.h tree-core.h coretypes.h all-tree.def tree.def c-family/c-common.def ../../gcc-5.2.0/gcc/ada/gcc-interface/ada-tree.def ../../gcc-5.2.0/gcc/cp/cp-tree.def ../../gcc-5.2.0/gcc/java/java-tree.def ../../gcc-5.2.0/gcc/objc/objc-tree.def machmode.h mode-classes.def insn-modes.h builtins.def sync-builtins.def omp-builtins.def gtm-builtins.def sanitizer.def cilkplus.def cilk-builtins.def ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h statistics.h vec.h statistics.h ggc.h gtype-desc.h statistics.h treestruct.def ../../gcc-5.2.0/gcc/../include/hashtab.h double-int.h alias.h ../../gcc-5.2.0/gcc/../libcpp/include/symtab.h ../../gcc-5.2.0/gcc/../include/obstack.h flags.h flag-types.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h real.h machmode.h mode-classes.def insn-modes.h fixed-value.h machmode.h mode-classes.def insn-modes.h double-int.h  tree-check.h tree-ssa-operands.h tree-ssa-alias.h internal-fn.h internal-fn.def ../../gcc-5.2.0/gcc/../include/hashtab.h hash-table.h is-a.h alloc-pool.h tm.h      options.h ../../gcc-5.2.0/gcc/config/dbxelf.h ../../gcc-5.2.0/gcc/config/elfos.h ../../gcc-5.2.0/gcc/config/gnu-user.h ../../gcc-5.2.0/gcc/config/linux.h ../../gcc-5.2.0/gcc/config/linux-android.h ../../gcc-5.2.0/gcc/config/glibc-stdint.h ../../gcc-5.2.0/gcc/config/vxworks-dummy.h ../../gcc-5.2.0/gcc/config/mips/mips.h ../../gcc-5.2.0/gcc/config/mips/gnu-user.h ../../gcc-5.2.0/gcc/config/mips/linux.h ../../gcc-5.2.0/gcc/config/mips/linux-common.h ../../gcc-5.2.0/gcc/config/initfini-array.h ../../gcc-5.2.0/gcc/defaults.h insn-constants.h insn-flags.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h target.h target.def target-hooks-macros.h insn-modes.h insn-codes.h coretypes.h rtl.h rtl.def machmode.h mode-classes.def insn-modes.h reg-notes.def insn-notes.def ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h real.h machmode.h mode-classes.def insn-modes.h statistics.h vec.h statistics.h ggc.h gtype-desc.h statistics.h fixed-value.h machmode.h mode-classes.def insn-modes.h double-int.h alias.h ../../gcc-5.2.0/gcc/../include/hashtab.h flags.h flag-types.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h genrtl.h tm_p.h    ../../gcc-5.2.0/gcc/config/mips/mips-protos.h ../../gcc-5.2.0/gcc/config/linux-protos.h tm-preds.h cfgloop.h basic-block.h predict.h predict.def vec.h statistics.h ggc.h gtype-desc.h statistics.h function.h ../../gcc-5.2.0/gcc/../include/hashtab.h tm.h      options.h ../../gcc-5.2.0/gcc/config/dbxelf.h ../../gcc-5.2.0/gcc/config/elfos.h ../../gcc-5.2.0/gcc/config/gnu-user.h ../../gcc-5.2.0/gcc/config/linux.h ../../gcc-5.2.0/gcc/config/linux-android.h ../../gcc-5.2.0/gcc/config/glibc-stdint.h ../../gcc-5.2.0/gcc/config/vxworks-dummy.h ../../gcc-5.2.0/gcc/config/mips/mips.h ../../gcc-5.2.0/gcc/config/mips/gnu-user.h ../../gcc-5.2.0/gcc/config/mips/linux.h ../../gcc-5.2.0/gcc/config/mips/linux-common.h ../../gcc-5.2.0/gcc/config/initfini-array.h ../../gcc-5.2.0/gcc/defaults.h insn-constants.h insn-flags.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h hard-reg-set.h vec.h statistics.h ggc.h gtype-desc.h statistics.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h machmode.h mode-classes.def insn-modes.h cfg-flags.def cfghooks.h double-int.h bitmap.h ../../gcc-5.2.0/gcc/../include/hashtab.h statistics.h sbitmap.h emit-rtl.h version.h stringpool.h gimplify.h gimple-iterator.h gimple-ssa.h fold-const.h tree-cfg.h tree-into-ssa.h tree-ssanames.h print-tree.h varasm.h context.h tree-phinodes.h stor-layout.h ssa-iterators.h resource.h hard-reg-set.h df.h bitmap.h ../../gcc-5.2.0/gcc/../include/hashtab.h statistics.h regset.h bitmap.h ../../gcc-5.2.0/gcc/../include/hashtab.h statistics.h hard-reg-set.h sbitmap.h basic-block.h predict.h predict.def vec.h statistics.h ggc.h gtype-desc.h statistics.h function.h ../../gcc-5.2.0/gcc/../include/hashtab.h tm.h      options.h ../../gcc-5.2.0/gcc/config/dbxelf.h ../../gcc-5.2.0/gcc/config/elfos.h ../../gcc-5.2.0/gcc/config/gnu-user.h ../../gcc-5.2.0/gcc/config/linux.h ../../gcc-5.2.0/gcc/config/linux-android.h ../../gcc-5.2.0/gcc/config/glibc-stdint.h ../../gcc-5.2.0/gcc/config/vxworks-dummy.h ../../gcc-5.2.0/gcc/config/mips/mips.h ../../gcc-5.2.0/gcc/config/mips/gnu-user.h ../../gcc-5.2.0/gcc/config/mips/linux.h ../../gcc-5.2.0/gcc/config/mips/linux-common.h ../../gcc-5.2.0/gcc/config/initfini-array.h ../../gcc-5.2.0/gcc/defaults.h insn-constants.h insn-flags.h options.h flag-types.h  ../../gcc-5.2.0/gcc/config/mips/mips-opts.h hard-reg-set.h vec.h statistics.h ggc.h gtype-desc.h statistics.h ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h input.h machmode.h mode-classes.def insn-modes.h cfg-flags.def cfghooks.h alloc-pool.h timevar.h timevar.def tree-cfgcleanup.h attribs.h calls.h cfgexpand.h diagnostic-color.h gcc-symtab.h gimple-builder.h gimple-low.h gimple-walk.h gimplify-me.h pass_manager.h print-rtl.h stmt.h tree-dfa.h tree-hasher.h tree-nested.h tree-object-size.h tree-outof-ssa.h tree-parloops.h tree-ssa-address.h tree-ssa-coalesce.h tree-ssa-dom.h tree-ssa-loop.h tree-ssa-loop-ivopts.h tree-ssa-loop-manip.h tree-ssa-loop-niter.h tree-ssa-ter.h tree-ssa-threadedge.h tree-ssa-threadupdate.h inchash.h wide-int.h signop.h hash-map.h hash-set.h dominance.h cfg.h cfgrtl.h cfganal.h cfgbuild.h cfgcleanup.h lcm.h cfgloopmanip.h builtins.def chkp-builtins.def pass-instances.def $(cd ../../gcc-5.2.0/gcc; echo *.h *.def) | tr ' ' '\012' | sort -u`; \
+srcdirstrip=`echo "../../gcc-5.2.0/gcc" | sed 's/[].[^$\\*|]/\\\\&/g'`; \
+for file in $headers; do \
+  if [ -f $file ] ; then \
+    path=$file; \
+  elif [ -f ../../gcc-5.2.0/gcc/$file ]; then \
+    path=../../gcc-5.2.0/gcc/$file; \
+  else continue; \
+  fi; \
+  case $path in \
+  "../../gcc-5.2.0/gcc"/config/* | "../../gcc-5.2.0/gcc"/c-family/* | "../../gcc-5.2.0/gcc"/*.def ) \
+    base=`echo "$path" | sed -e "s|$srcdirstrip/||"`;; \
+  *) base=`basename $path` ;; \
+  esac; \
+  dest=/cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/$base; \
+  echo /usr/bin/install -c -m 644 $path $dest; \
+  dir=`dirname $dest`; \
+  /bin/bash ../../gcc-5.2.0/gcc/../mkinstalldirs $dir; \
+  /usr/bin/install -c -m 644 $path $dest; \
+done
+set -e; for ml in `cat fixinc_list`; do \
+  multi_dir=`echo ${ml} | sed -e 's/^[^;]*;//'`; \
+  /bin/bash ../../gcc-5.2.0/gcc/../mkinstalldirs /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/install-tools/include${multi_dir}; \
+  /usr/bin/install -c -m 644 include-fixed${multidir}/limits.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/install-tools/include${multi_dir}/limits.h; \
+done
+/usr/bin/install -c ../../gcc-5.2.0/gcc/../mkinstalldirs \
+	/cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0/install-tools/mkinstalldirs ; \
+sysroot_headers_suffix='${sysroot_headers_suffix}'; \
+	echo 'SYSTEM_HEADER_DIR="'"`echo /home/dl/ramdisk/clfs_cross_tools/system/mips64-64${sysroot_headers_suffix}/tools/include | sed -e :a -e 's,[^/]*/\.\.\/,,' -e ta`"'"' \
+	> /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/install-tools/mkheaders.conf
+echo 'OTHER_FIXINCLUDES_DIRS=""' \
+	>> /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/install-tools/mkheaders.conf
+echo 'STMP_FIXINC="stmp-fixinc"' \
+	>> /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/install-tools/mkheaders.conf
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/../include/ansidecl.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/ansidecl.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/../include/filenames.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/filenames.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/../include/hashtab.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/hashtab.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/../include/libiberty.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/libiberty.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/../include/md5.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/md5.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/../include/obstack.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/obstack.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/../include/plugin-api.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/plugin-api.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/../include/safe-ctype.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/safe-ctype.h
+for file in  collect2 ..; do \
+  if [ x"$file" != x.. ]; then \
+    rm -f /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0/$file; \
+    /usr/bin/install -c $file /cross-tools/libexec/gcc/mips64-unknown-linux-gnu/5.2.0/$file; \
+  else true; fi; \
+done
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/../include/splay-tree.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/splay-tree.h
+rm -f /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/specs
+if test "" != "yes" ; then \
+  if [ -f gcov ]; \
+  then \
+    rm -f /cross-tools/bin/mips64-unknown-linux-gnu-gcov; \
+    /usr/bin/install -c gcov /cross-tools/bin/mips64-unknown-linux-gnu-gcov; \
+  fi; \
+fi
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/../libcpp/include/cpplib.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/cpplib.h
+if test "" != "yes" ; then \
+  if [ -f gcov-tool ]; \
+  then \
+    rm -f /cross-tools/bin/mips64-unknown-linux-gnu-gcov-tool; \
+    /usr/bin/install -c \
+    gcov-tool /cross-tools/bin/mips64-unknown-linux-gnu-gcov-tool; \
+  fi; \
+fi
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/../libcpp/include/line-map.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/line-map.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/../libcpp/include/symtab.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/symtab.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/ada/gcc-interface/ada-tree.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/ada/gcc-interface/ada-tree.def
+mkdir -p -- /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/ada/gcc-interface
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/dbxelf.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/dbxelf.h
+mkdir -p -- /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/elfos.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/elfos.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/glibc-stdint.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/glibc-stdint.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/gnu-user.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/gnu-user.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/initfini-array.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/initfini-array.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/linux-android.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/linux-android.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/linux-protos.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/linux-protos.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/linux.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/linux.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/mips/gnu-user.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/mips/gnu-user.h
+mkdir -p -- /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/mips
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/mips/linux-common.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/mips/linux-common.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/mips/linux.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/mips/linux.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/mips/mips-opts.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/mips/mips-opts.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/mips/mips-protos.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/mips/mips-protos.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/mips/mips.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/mips/mips.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/vxworks-dummy.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/vxworks-dummy.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/cp/cp-tree.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/cp/cp-tree.def
+mkdir -p -- /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/cp
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/defaults.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/defaults.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/java/java-tree.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/java/java-tree.def
+mkdir -p -- /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/java
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/objc/objc-tree.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/objc/objc-tree.def
+mkdir -p -- /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/objc
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/addresses.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/addresses.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/alias.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/alias.h
+/usr/bin/install -c -m 644 all-tree.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/all-tree.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/alloc-pool.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/alloc-pool.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/asan.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/asan.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/attribs.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/attribs.h
+/usr/bin/install -c -m 644 auto-host.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/auto-host.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/auto-profile.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/auto-profile.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/basic-block.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/basic-block.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/bb-reorder.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/bb-reorder.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/bitmap.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/bitmap.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/builtin-attrs.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/builtin-attrs.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/builtin-types.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/builtin-types.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/builtins.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/builtins.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/builtins.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/builtins.h
+/usr/bin/install -c -m 644 bversion.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/bversion.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/c-family/c-common.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/c-family/c-common.def
+mkdir -p -- /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/c-family
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/c-family/c-common.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/c-family/c-common.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/c-family/c-objc.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/c-family/c-objc.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/c-family/c-pragma.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/c-family/c-pragma.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/c-family/c-pretty-print.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/c-family/c-pretty-print.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/c/c-tree.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/c-tree.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/calls.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/calls.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/ccmp.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/ccmp.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/cfg-flags.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/cfg-flags.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/cfg.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/cfg.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/cfganal.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/cfganal.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/cfgbuild.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/cfgbuild.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/cfgcleanup.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/cfgcleanup.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/cfgexpand.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/cfgexpand.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/cfghooks.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/cfghooks.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/cfgloop.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/cfgloop.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/cfgloopmanip.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/cfgloopmanip.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/cfgrtl.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/cfgrtl.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/cgraph.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/cgraph.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/chkp-builtins.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/chkp-builtins.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/cif-code.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/cif-code.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/cilk-builtins.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/cilk-builtins.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/cilk.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/cilk.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/cilkplus.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/cilkplus.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/collect-utils.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/collect-utils.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/collect2-aix.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/collect2-aix.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/collect2.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/collect2.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/conditions.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/conditions.h
+/usr/bin/install -c -m 644 config.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/dbxelf.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/dbxelf.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/elfos.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/elfos.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/glibc-stdint.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/glibc-stdint.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/gnu-user.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/gnu-user.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/initfini-array.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/initfini-array.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/linux-android.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/linux-android.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/linux-protos.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/linux-protos.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/linux.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/linux.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/mips/gnu-user.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/mips/gnu-user.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/mips/linux-common.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/mips/linux-common.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/mips/linux.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/mips/linux.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/mips/mips-protos.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/mips/mips-protos.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/mips/mips.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/mips/mips.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/config/vxworks-dummy.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/config/vxworks-dummy.h
+/usr/bin/install -c -m 644 configargs.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/configargs.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/context.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/context.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/convert.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/convert.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/coretypes.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/coretypes.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/coverage.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/coverage.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/cppbuiltin.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/cppbuiltin.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/cppdefault.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/cppdefault.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/cselib.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/cselib.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/data-streamer.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/data-streamer.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/dbgcnt.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/dbgcnt.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/dbgcnt.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/dbgcnt.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/dbxout.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/dbxout.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/dce.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/dce.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/ddg.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/ddg.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/debug.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/debug.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/defaults.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/defaults.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/df.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/df.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/dfp.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/dfp.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/diagnostic-color.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/diagnostic-color.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/diagnostic-core.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/diagnostic-core.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/diagnostic.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/diagnostic.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/diagnostic.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/diagnostic.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/dojump.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/dojump.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/dominance.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/dominance.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/domwalk.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/domwalk.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/double-int.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/double-int.h
+/bin/bash ../../../gcc-5.2.0/libgcc/../mkinstalldirs /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0
+/bin/bash ../../../gcc-5.2.0/libgcc/../mkinstalldirs /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/include
+/usr/bin/install -c -m 644 unwind.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/include
+/usr/bin/install -c -m 644 libgcc.a /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/dumpfile.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/dumpfile.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/dwarf2asm.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/dwarf2asm.h
+chmod 644 /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/libgcc.a
+/cross-tools/mips64-unknown-linux-gnu/bin/ranlib /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/libgcc.a
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/dwarf2out.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/dwarf2out.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/emit-rtl.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/emit-rtl.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/errors.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/errors.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/et-forest.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/et-forest.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/except.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/except.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/explow.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/explow.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/expmed.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/expmed.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/expr.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/expr.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/fibonacci_heap.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/fibonacci_heap.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/file-find.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/file-find.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/fixed-value.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/fixed-value.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/flag-types.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/flag-types.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/flags.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/flags.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/fold-const.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/fold-const.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/function.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/function.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gcc-plugin.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gcc-plugin.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gcc-symtab.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gcc-symtab.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gcc.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gcc.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gcov-counter.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gcov-counter.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gcov-io.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gcov-io.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gcse-common.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gcse-common.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gcse.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gcse.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/generic-match.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/generic-match.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gengtype.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gengtype.h
+/usr/bin/install -c -m 644 genrtl.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/genrtl.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gensupport.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gensupport.h
+/usr/bin/install -c -m 644 libgcov.a /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/
+chmod 644 /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/libgcov.a
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/ggc-internal.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/ggc-internal.h
+/cross-tools/mips64-unknown-linux-gnu/bin/ranlib /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/libgcov.a
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/ggc.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/ggc.h
+parts="crtbegin.o crtbeginS.o crtbeginT.o crtend.o crtendS.o crtfastmath.o";				\
+for file in $parts; do					\
+  rm -f /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/$file;		\
+  /usr/bin/install -c -m 644 $file /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/;	\
+  case $file in 					\
+    *.a)						\
+      /cross-tools/mips64-unknown-linux-gnu/bin/ranlib ../.././gcc/$file ;;	\
+  esac;							\
+done
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gimple-builder.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gimple-builder.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gimple-expr.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gimple-expr.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gimple-fold.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gimple-fold.h
+make[1]: Leaving directory '/home/dl/ramdisk/clfs_cross_tools/system/mips64-64/sources/step_15_gcc-5.2.0-build/mips64-unknown-linux-gnu/libgcc'
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gimple-iterator.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gimple-iterator.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gimple-low.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gimple-low.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gimple-match.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gimple-match.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gimple-pretty-print.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gimple-pretty-print.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gimple-ssa.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gimple-ssa.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gimple-streamer.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gimple-streamer.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gimple-walk.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gimple-walk.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gimple.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gimple.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gimple.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gimple.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gimplify-me.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gimplify-me.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gimplify.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gimplify.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/glimits.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/glimits.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/graph.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/graph.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/graphds.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/graphds.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/graphite-isl-ast-to-gimple.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/graphite-isl-ast-to-gimple.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/graphite-poly.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/graphite-poly.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/graphite-scop-detection.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/graphite-scop-detection.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/graphite-sese-to-poly.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/graphite-sese-to-poly.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gsstruct.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gsstruct.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gstab.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gstab.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gsyms.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gsyms.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gsyslimits.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gsyslimits.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/gtm-builtins.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gtm-builtins.def
+/usr/bin/install -c -m 644 gtype-desc.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/gtype-desc.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/hard-reg-set.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/hard-reg-set.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/hash-map.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/hash-map.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/hash-set.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/hash-set.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/hash-table.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/hash-table.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/highlev-plugin-common.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/highlev-plugin-common.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/hooks.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/hooks.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/hosthooks-def.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/hosthooks-def.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/hosthooks.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/hosthooks.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/hw-doloop.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/hw-doloop.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/hwint.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/hwint.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/ifcvt.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/ifcvt.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/inchash.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/inchash.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/incpath.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/incpath.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/input.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/input.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/insn-addr.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/insn-addr.h
+/usr/bin/install -c -m 644 insn-codes.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/insn-codes.h
+/usr/bin/install -c -m 644 insn-constants.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/insn-constants.h
+/usr/bin/install -c -m 644 insn-flags.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/insn-flags.h
+/usr/bin/install -c -m 644 insn-modes.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/insn-modes.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/insn-notes.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/insn-notes.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/internal-fn.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/internal-fn.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/internal-fn.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/internal-fn.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/intl.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/intl.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/ipa-chkp.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/ipa-chkp.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/ipa-icf-gimple.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/ipa-icf-gimple.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/ipa-icf.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/ipa-icf.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/ipa-inline.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/ipa-inline.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/ipa-prop.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/ipa-prop.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/ipa-ref.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/ipa-ref.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/ipa-reference.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/ipa-reference.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/ipa-utils.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/ipa-utils.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/ira-int.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/ira-int.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/ira.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/ira.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/is-a.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/is-a.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/langhooks-def.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/langhooks-def.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/langhooks.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/langhooks.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/lcm.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/lcm.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/libfuncs.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/libfuncs.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/limitx.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/limitx.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/limity.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/limity.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/loop-unroll.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/loop-unroll.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/lower-subreg.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/lower-subreg.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/lra-int.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/lra-int.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/lra.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/lra.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/lto-compress.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/lto-compress.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/lto-section-names.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/lto-section-names.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/lto-streamer.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/lto-streamer.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/machmode.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/machmode.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/machmode.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/machmode.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/mode-classes.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/mode-classes.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/omega.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/omega.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/omp-builtins.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/omp-builtins.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/omp-low.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/omp-low.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/optabs.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/optabs.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/optabs.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/optabs.h
+/usr/bin/install -c -m 644 options.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/options.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/opts-diagnostic.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/opts-diagnostic.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/opts.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/opts.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/output.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/output.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/params.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/params.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/params.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/params.h
+/usr/bin/install -c -m 644 pass-instances.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/pass-instances.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/pass_manager.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/pass_manager.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/passes.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/passes.def
+/usr/bin/install -c -m 644 plugin-version.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/plugin-version.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/plugin.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/plugin.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/plugin.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/plugin.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/predict.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/predict.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/predict.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/predict.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/prefix.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/prefix.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/pretty-print.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/pretty-print.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/print-rtl.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/print-rtl.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/print-tree.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/print-tree.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/profile.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/profile.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/read-md.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/read-md.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/real.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/real.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/realmpfr.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/realmpfr.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/recog.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/recog.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/reg-notes.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/reg-notes.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/regcprop.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/regcprop.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/regrename.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/regrename.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/regs.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/regs.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/regset.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/regset.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/reload.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/reload.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/resource.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/resource.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/rtl-chkp.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/rtl-chkp.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/rtl-error.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/rtl-error.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/rtl-iter.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/rtl-iter.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/rtl.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/rtl.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/rtl.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/rtl.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/rtlhash.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/rtlhash.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/rtlhooks-def.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/rtlhooks-def.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/sanitizer.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/sanitizer.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/sbitmap.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/sbitmap.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/sched-int.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/sched-int.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/sdbout.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/sdbout.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/sel-sched-dump.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/sel-sched-dump.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/sel-sched-ir.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/sel-sched-ir.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/sel-sched.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/sel-sched.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/sese.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/sese.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/shrink-wrap.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/shrink-wrap.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/signop.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/signop.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/sparseset.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/sparseset.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/sreal.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/sreal.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/ssa-iterators.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/ssa-iterators.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/stab.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/stab.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/statistics.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/statistics.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/stmt.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/stmt.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/stor-layout.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/stor-layout.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/streamer-hooks.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/streamer-hooks.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/stringpool.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/stringpool.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/symbol-summary.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/symbol-summary.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/sync-builtins.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/sync-builtins.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/system.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/system.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/target-def.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/target-def.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/target-globals.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/target-globals.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/target-hooks-macros.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/target-hooks-macros.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/target.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/target.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/target.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/target.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/targhooks.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/targhooks.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/timevar.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/timevar.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/timevar.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/timevar.h
+/usr/bin/install -c -m 644 tm-preds.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tm-preds.h
+/usr/bin/install -c -m 644 tm.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tm.h
+/usr/bin/install -c -m 644 tm_p.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tm_p.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/toplev.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/toplev.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/trans-mem.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/trans-mem.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-affine.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-affine.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-browser.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-browser.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-cfg.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-cfg.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-cfgcleanup.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-cfgcleanup.h
+/usr/bin/install -c -m 644 tree-check.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-check.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-chkp.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-chkp.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-chrec.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-chrec.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-core.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-core.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-data-ref.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-data-ref.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-dfa.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-dfa.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-diagnostic.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-diagnostic.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-dump.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-dump.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-eh.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-eh.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-hasher.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-hasher.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-inline.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-inline.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-into-ssa.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-into-ssa.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-iterator.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-iterator.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-nested.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-nested.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-object-size.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-object-size.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-outof-ssa.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-outof-ssa.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-parloops.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-parloops.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-pass.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-pass.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-phinodes.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-phinodes.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-pretty-print.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-pretty-print.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-scalar-evolution.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-scalar-evolution.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-ssa-address.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-ssa-address.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-ssa-alias.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-ssa-alias.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-ssa-coalesce.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-ssa-coalesce.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-ssa-dom.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-ssa-dom.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-ssa-live.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-ssa-live.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-ssa-loop-ivopts.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-ssa-loop-ivopts.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-ssa-loop-manip.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-ssa-loop-manip.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-ssa-loop-niter.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-ssa-loop-niter.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-ssa-loop.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-ssa-loop.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-ssa-operands.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-ssa-operands.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-ssa-propagate.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-ssa-propagate.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-ssa-sccvn.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-ssa-sccvn.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-ssa-ter.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-ssa-ter.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-ssa-threadedge.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-ssa-threadedge.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-ssa-threadupdate.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-ssa-threadupdate.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-ssa.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-ssa.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-ssanames.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-ssanames.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-stdarg.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-stdarg.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-streamer.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-streamer.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree-vectorizer.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree-vectorizer.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tree.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tree.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/treestruct.def /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/treestruct.def
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tsan.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tsan.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/tsystem.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/tsystem.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/typeclass.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/typeclass.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/typed-splay-tree.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/typed-splay-tree.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/ubsan.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/ubsan.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/valtrack.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/valtrack.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/value-prof.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/value-prof.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/varasm.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/varasm.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/vec.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/vec.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/version.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/version.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/vmsdbg.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/vmsdbg.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/vtable-verify.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/vtable-verify.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/wide-int-print.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/wide-int-print.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/wide-int.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/wide-int.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/xcoff.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/xcoff.h
+/usr/bin/install -c -m 644 ../../gcc-5.2.0/gcc/xcoffout.h /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/xcoffout.h
+/usr/bin/install -c -m 644 b-header-vars /cross-tools/lib/gcc/mips64-unknown-linux-gnu/5.2.0/plugin/include/b-header-vars
+make[1]: Leaving directory '/home/dl/ramdisk/clfs_cross_tools/system/mips64-64/sources/step_15_gcc-5.2.0-build/gcc'

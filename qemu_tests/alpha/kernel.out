@@ -11,7 +11,7 @@ PCI: 00:02:0 class 0101 id 1095:0646
 PCI:   region 0: 0000c040
 PCI:   region 1: 0000c048
 PCI:   region 3: 0000c04c
-Linux version 4.2.3 (dl@dl-Precision-M6500) (gcc version 5.2.0 (GCC) ) #1 Sat Oct 24 14:25:41 CEST 2015
+Linux version 4.2.3 (dl@dl-Precision-M6500) (gcc version 5.2.0 (GCC) ) #1 Sun Oct 25 13:46:54 CET 2015
 Booting on Tsunami variation Clipper using machine vector Clipper from SRM
 Major Options: EV67 LEGACY_START VERBOSE_MCHECK MAGIC_SYSRQ 
 Command line: console=ttyS0
@@ -35,7 +35,7 @@ clocksource: rpcc: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041
 Turning on RTC interrupts.
 Console: colour VGA+ 80x25
 console [ttyS0] enabled
-Calibrating delay loop... 467.88 BogoMIPS (lpj=228352)
+Calibrating delay loop... 442.16 BogoMIPS (lpj=216064)
 pid_max: default: 32768 minimum: 301
 Mount-cache hash table entries: 2048 (order: 1, 16384 bytes)
 Mountpoint-cache hash table entries: 2048 (order: 1, 16384 bytes)
