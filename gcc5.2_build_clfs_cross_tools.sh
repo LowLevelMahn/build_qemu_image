@@ -940,7 +940,7 @@ die_on_any_error 1
 chmod +x init
 die_on_any_error 2
 
-find init | cpio -H newc -o > /tools/boot/initramfs.cpio 2>&1 | tee "${STEP_LOG_DIR}/create_initramfs.cpio.out"
+find init | cpio -H newc -o > /tools/boot/initrd.cpio 2>&1 | tee "${STEP_LOG_DIR}/create_initrd.cpio.out"
 die_on_any_error 3
 
 ## check cpio
