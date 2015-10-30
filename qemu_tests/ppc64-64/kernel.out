@@ -1,0 +1,181 @@
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+
+
+SLOF[0m[?25l **********************************************************************
+[1mQEMU Starting
+[0m Build Date = May  7 2015 17:07:10
+ FW Version = git-7d766a3ac9b2474f
+ Press "s" to enter Open Firmware.
+
+[0m[?25hC0000C0100C0120C0140C0200C0201C0220C0240C0260C0270C02E0C0300C0320C0340C0360C0370C0380C0371C0372C0373C0374C0390C03F0C0400C0480C04C0C04D0C0500Populating /vdevice methods
+Populating /vdevice/vty@71000000
+Populating /vdevice/nvram@71000001
+Populating /vdevice/l-lan@71000002
+Populating /vdevice/v-scsi@71000003
+       SCSI: Looking for devices
+          8200000000000000 CD-ROM   : "QEMU     QEMU CD-ROM      2.4."
+C0580C05A0Populating /pci@800000020000000
+                     00 0800 (D) : 106b 003f    serial bus [ usb-ohci ]
+                     00 0000 (D) : 1234 1111    qemu vga
+C0600C0640C0690C06A0C06A8C06B0C06B8C06C0C06E0C0700C0800C0880No NVRAM common partition, re-initializing...
+C0890C08A0C08A8Installing QEMU fb
+
+
+
+C08B0Scanning USB 
+  OHCI: initializing
+    USB Keyboard 
+    USB mouse 
+C08C0C08D0No console specified using screen & keyboard
+C08E0C08E8Detected RAM kernel at 400000 (d46044 bytes) C08FF     
+  Welcome to Open Firmware
+
+  Copyright (c) 2004, 2011 IBM Corporation All rights reserved.
+  This program and the accompanying materials are made available
+  under the terms of the BSD License available at
+  http://www.opensource.org/licenses/bsd-license.php
+
+Booting from memory...
+Linux ppc64
+#1 SMP Fri Oct 3[    0.000000] Using pSeries machine description
+[    0.000000] Page sizes from device-tree:
+[    0.000000] base_shift=12: shift=12, sllp=0x0000, avpnm=0x00000000, tlbiel=1, penc=0
+[    0.000000] base_shift=24: shift=24, sllp=0x0100, avpnm=0x00000001, tlbiel=0, penc=0
+[    0.000000] Using 1TB segments
+[    0.000000] Found initrd at 0xc000000001160000:0xc0000000014f420c
+[    0.000000] Partition configured for 1 cpus.
+[    0.000000] CPU maps initialized for 1 thread per core
+[    0.000000] Starting Linux ppc64 #1 SMP Fri Oct 30 13:57:25 CET 2015
+[    0.000000] -----------------------------------------------------
+[    0.000000] ppc64_pft_size    = 0x17
+[    0.000000] phys_mem_size     = 0x40000000
+[    0.000000] cpu_features      = 0x0b7e7a6418500049
+[    0.000000]   possible        = 0x1fffffef18500649
+[    0.000000]   always          = 0x0000000018100040
+[    0.000000] cpu_user_features = 0xdc0065c2 0x20000000
+[    0.000000] mmu_features      = 0x5c000001
+[    0.000000] firmware_features = 0x00000001405a440b
+[    0.000000] htab_hash_mask    = 0xffff
+[    0.000000] -----------------------------------------------------
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 4.2.3 (dl@dl-Precision-M6500) (gcc version 5.2.0 (GCC) ) #1 SMP Fri Oct 30 13:57:25 CET 2015
+[    0.000000] numa: Initmem setup node 0 [mem 0x00000000-0x3fffffff]
+[    0.000000] numa:   NODE_DATA [mem 0x3ffc9000-0x3ffd3fff]
+[    0.000000] PCI host bridge /pci@800000020000000  ranges:
+[    0.000000]   IO 0x0000010080000000..0x000001008000ffff -> 0x0000000000000000
+[    0.000000]  MEM 0x00000100a0000000..0x000001101fffffff -> 0x0000000080000000 
+[    0.000000] PPC64 nvram contains 65536 bytes
+[    0.000000] Relocation on exceptions not supported
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000000000000-0x000000003fffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000000000-0x000000003fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000000000-0x000000003fffffff]
+[    0.000000] PERCPU: Embedded 3 pages/cpu @c00000003fe00000 s122648 r0 d73960 u1048576
+[    0.000000] Built 1 zonelists in Node order, mobility grouping on.  Total pages: 16368
+[    0.000000] Policy zone: DMA
+[    0.000000] Kernel command line: console=hvsi0 console=hvc0 console=ttyS0,9600 console=tty0
+[    0.000000] PID hash table entries: 4096 (order: -1, 32768 bytes)
+[    0.000000] Sorting __ex_table...
+[    0.000000] Memory: 1013696K/1048576K available (7808K kernel code, 1856K rwdata, 1896K rodata, 896K init, 1048K bss, 34880K reserved, 0K cma-reserved)
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=32 to nr_cpu_ids=1.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=1
+[    0.000000] NR_IRQS:512 nr_irqs:512 16
+[    0.000293] clocksource: timebase: mask: 0xffffffffffffffff max_cycles: 0x761537d007, max_idle_ns: 440795202126 ns
+[    0.000481] clocksource: timebase mult[1f40000] shift[24] registered
+[    0.011577] Console: colour dummy device 80x25
+[    0.017806] console [tty0] enabled
+[    0.019930] pid_max: default: 32768 minimum: 301
+[    0.021049] Security Framework initialized
+[    0.021346] AppArmor: AppArmor disabled by boot time parameter
+[    0.021425] Yama: becoming mindful.
+[    0.024431] Dentry cache hash table entries: 131072 (order: 4, 1048576 bytes)
+[    0.032827] Inode-cache hash table entries: 65536 (order: 3, 524288 bytes)
+[    0.036754] Mount-cache hash table entries: 8192 (order: 0, 65536 bytes)
+[    0.036886] Mountpoint-cache hash table entries: 8192 (order: 0, 65536 bytes)
+[    0.051120] Initializing cgroup subsys blkio
+[    0.051722] Initializing cgroup subsys memory
+[    0.052310] Initializing cgroup subsys devices
+[    0.052448] Initializing cgroup subsys freezer
+[    0.052591] Initializing cgroup subsys net_cls
+[    0.052716] Initializing cgroup subsys perf_event
+[    0.053085] Initializing cgroup subsys net_prio
+[    0.053624] ftrace: allocating 21006 entries in 8 pages
+[    0.168781] EEH: pSeries platform initialized
+[    0.170057] POWER7 performance monitor hardware support registered
+[    0.190674] Brought up 1 CPUs
+[    0.192175] Enabling Asymmetric SMT scheduling
+[    0.213950] devtmpfs: initialized
+[    0.515356] EEH: devices created
+[    0.517382] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.527798] NET: Registered protocol family 16
+[    0.531452] EEH: No capable adapters found
+[    0.532326] IBM eBus Device Driver
+[    0.540269] cpuidle: using governor ladder
+[    0.540480] cpuidle: using governor menu
+[    0.554594] PCI: Probing PCI hardware
+[    0.557376] PCI host bridge to bus 0000:00
+[    0.557969] pci_bus 0000:00: root bus resource [io  0x10000-0x1ffff] (bus address [0x0000-0xffff])
+[    0.558137] pci_bus 0000:00: root bus resource [mem 0x100a0000000-0x1101fffffff] (bus address [0x80000000-0xfffffffff])
+[    0.558471] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.570069] IOMMU table initialized, virtual merging enabled
+[    0.610635] vgaarb: setting as boot device: PCI:0000:00:00.0
+[    0.610858] vgaarb: device added: PCI:0000:00:00.0,decodes=io+mem,owns=io+mem,locks=none
+[    0.610979] vgaarb: loaded
+[    0.611061] vgaarb: bridge control possible 0000:00:00.0
+[    0.613270] SCSI subsystem initialized
+[    0.627293] clocksource: Switched to clocksource timebase
+[    0.799592] NET: Registered protocol family 2
+[    0.807737] TCP established hash table entries: 8192 (order: 0, 65536 bytes)
+[    0.808635] TCP bind hash table entries: 8192 (order: 1, 131072 bytes)
+[    0.810377] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.811920] UDP hash table entries: 2048 (order: 0, 65536 bytes)
+[    0.812747] UDP-Lite hash table entries: 2048 (order: 0, 65536 bytes)
+[    0.815681] NET: Registered protocol family 1
+[    0.879766] Unpacking initramfs...
+[    0.916363] Initramfs unpacking failed: junk in compressed archive
+[    0.917232] Freeing initrd memory: 3648K (c000000001160000 - c0000000014f0000)
+[    0.929386] Hypercall H_BEST_ENERGY not supported
+[    0.934225] futex hash table entries: 256 (order: -1, 32768 bytes)
+[    0.935666] audit: initializing netlink subsys (disabled)
+[    0.936652] audit: type=2000 audit(1446210520.876:1): initialized
+[    0.949366] HugeTLB registered 16 MB page size, pre-allocated 0 pages
+[    0.950340] zpool: loaded
+[    0.950411] zbud: loaded
+[    0.953640] VFS: Disk quotas dquot_6.6.0
+[    0.954056] VFS: Dquot-cache hash table entries: 8192 (order 0, 65536 bytes)
+[    0.981734] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+[    0.983396] io scheduler noop registered
+[    0.983529] io scheduler deadline registered
+[    0.983923] io scheduler cfq registered (default)
+[    0.985776] pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+[    0.985989] pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+[    0.987796] Using unsupported 800x600 vga at 100a0000000, depth=32, pitch=3200
+[    1.023054] Console: switching to colour frame buffer device 100x37
+[    1.036957] fb0: Open Firmware frame buffer device on /pci@800000020000000/vga@0
+[    1.048519] console [hvc0] enabled
+[    1.049405] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    1.054431] pmac_zilog: 0.6 (Benjamin Herrenschmidt <benh@kernel.crashing.org>)
+[    1.055261] Linux agpgart interface v0.103
+[    1.060206] mousedev: PS/2 mouse device common for all mice
+[    1.062228] rtc-generic rtc-generic: rtc core: registered rtc-generic as rtc0
+[    1.065052] ledtrig-cpu: registered to indicate activity on CPUs
+[    1.066535] NET: Registered protocol family 10
+[    1.074665] mip6: Mobile IPv6
+[    1.075339] NET: Registered protocol family 17
+[    1.075790] mpls_gso: MPLS GSO support
+[    1.087209] registered taskstats version 1
+[    1.094119] zswap: loading zswap
+[    1.101113] zswap: using zbud pool
+[    1.107774] zswap: using lzo compressor
+[    1.120997] rtc-generic rtc-generic: setting system clock to 2015-10-30 13:08:41 UTC (1446210521)
+[    1.160732] Freeing unused kernel memory: 896K (c000000000990000 - c000000000a70000)
