@@ -1,0 +1,8 @@
+  CHECK   qt
+  MOC     scripts/kconfig/qconf.moc
+  HOSTCXX scripts/kconfig/qconf.o
+  HOSTLD  scripts/kconfig/qconf
+scripts/kconfig/qconf  Kconfig
+#
+# configuration written to .config
+#

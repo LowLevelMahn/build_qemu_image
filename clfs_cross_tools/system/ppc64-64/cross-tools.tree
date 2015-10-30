@@ -1,0 +1,1511 @@
+/home/dl/ramdisk/build_qemu_image/clfs_cross_tools/system/ppc64-64/cross-tools
+|-- bin
+|   |-- file
+|   |-- m4
+|   |-- powerpc64-unknown-linux-gnu-addr2line
+|   |-- powerpc64-unknown-linux-gnu-ar
+|   |-- powerpc64-unknown-linux-gnu-as
+|   |-- powerpc64-unknown-linux-gnu-c++
+|   |-- powerpc64-unknown-linux-gnu-c++filt
+|   |-- powerpc64-unknown-linux-gnu-cpp
+|   |-- powerpc64-unknown-linux-gnu-elfedit
+|   |-- powerpc64-unknown-linux-gnu-embedspu
+|   |-- powerpc64-unknown-linux-gnu-g++
+|   |-- powerpc64-unknown-linux-gnu-gcc
+|   |-- powerpc64-unknown-linux-gnu-gcc-5.2.0
+|   |-- powerpc64-unknown-linux-gnu-gcc-ar
+|   |-- powerpc64-unknown-linux-gnu-gcc-nm
+|   |-- powerpc64-unknown-linux-gnu-gcc-ranlib
+|   |-- powerpc64-unknown-linux-gnu-gcov
+|   |-- powerpc64-unknown-linux-gnu-gcov-tool
+|   |-- powerpc64-unknown-linux-gnu-gprof
+|   |-- powerpc64-unknown-linux-gnu-ld
+|   |-- powerpc64-unknown-linux-gnu-ld.bfd
+|   |-- powerpc64-unknown-linux-gnu-nm
+|   |-- powerpc64-unknown-linux-gnu-objcopy
+|   |-- powerpc64-unknown-linux-gnu-objdump
+|   |-- powerpc64-unknown-linux-gnu-pkg-config
+|   |-- powerpc64-unknown-linux-gnu-ranlib
+|   |-- powerpc64-unknown-linux-gnu-readelf
+|   |-- powerpc64-unknown-linux-gnu-size
+|   |-- powerpc64-unknown-linux-gnu-strings
+|   |-- powerpc64-unknown-linux-gnu-strip
+|   |-- renamed.pkg-config
+|   `-- tic
+|-- include
+|   |-- gmp.h
+|   |-- gmpxx.h
+|   |-- isl
+|   |   |-- aff.h
+|   |   |-- aff_type.h
+|   |   |-- arg.h
+|   |   |-- ast.h
+|   |   |-- ast_build.h
+|   |   |-- ast_type.h
+|   |   |-- band.h
+|   |   |-- constraint.h
+|   |   |-- ctx.h
+|   |   |-- deprecated
+|   |   |   |-- aff_int.h
+|   |   |   |-- ast_int.h
+|   |   |   |-- constraint_int.h
+|   |   |   |-- ilp_int.h
+|   |   |   |-- int.h
+|   |   |   |-- map_int.h
+|   |   |   |-- mat_int.h
+|   |   |   |-- point_int.h
+|   |   |   |-- polynomial_int.h
+|   |   |   |-- set_int.h
+|   |   |   |-- union_map_int.h
+|   |   |   |-- val_int.h
+|   |   |   `-- vec_int.h
+|   |   |-- dim.h
+|   |   |-- flow.h
+|   |   |-- hash.h
+|   |   |-- hmap.h
+|   |   |-- id.h
+|   |   |-- id_to_ast_expr.h
+|   |   |-- id_to_pw_aff.h
+|   |   |-- ilp.h
+|   |   |-- list.h
+|   |   |-- local_space.h
+|   |   |-- lp.h
+|   |   |-- map.h
+|   |   |-- map_to_basic_set.h
+|   |   |-- map_type.h
+|   |   |-- mat.h
+|   |   |-- multi.h
+|   |   |-- obj.h
+|   |   |-- options.h
+|   |   |-- point.h
+|   |   |-- polynomial.h
+|   |   |-- polynomial_type.h
+|   |   |-- printer.h
+|   |   |-- schedule.h
+|   |   |-- set.h
+|   |   |-- set_type.h
+|   |   |-- space.h
+|   |   |-- stdint.h
+|   |   |-- stream.h
+|   |   |-- union_map.h
+|   |   |-- union_map_type.h
+|   |   |-- union_set.h
+|   |   |-- union_set_type.h
+|   |   |-- val.h
+|   |   |-- val_gmp.h
+|   |   |-- vec.h
+|   |   |-- version.h
+|   |   `-- vertices.h
+|   |-- magic.h
+|   |-- mpc.h
+|   |-- mpf2mpfr.h
+|   `-- mpfr.h
+|-- lib
+|   |-- gcc
+|   |   `-- powerpc64-unknown-linux-gnu
+|   |       `-- 5.2.0
+|   |           |-- crtbegin.o
+|   |           |-- crtbeginS.o
+|   |           |-- crtbeginT.o
+|   |           |-- crtend.o
+|   |           |-- crtendS.o
+|   |           |-- ecrti.o
+|   |           |-- ecrtn.o
+|   |           |-- finclude
+|   |           |-- include
+|   |           |   |-- altivec.h
+|   |           |   |-- float.h
+|   |           |   |-- htmintrin.h
+|   |           |   |-- htmxlintrin.h
+|   |           |   |-- iso646.h
+|   |           |   |-- omp.h
+|   |           |   |-- openacc.h
+|   |           |   |-- paired.h
+|   |           |   |-- ppc-asm.h
+|   |           |   |-- ppu_intrinsics.h
+|   |           |   |-- si2vmx.h
+|   |           |   |-- spe.h
+|   |           |   |-- spu2vmx.h
+|   |           |   |-- ssp
+|   |           |   |   |-- ssp.h
+|   |           |   |   |-- stdio.h
+|   |           |   |   |-- string.h
+|   |           |   |   `-- unistd.h
+|   |           |   |-- stdalign.h
+|   |           |   |-- stdarg.h
+|   |           |   |-- stdatomic.h
+|   |           |   |-- stdbool.h
+|   |           |   |-- stddef.h
+|   |           |   |-- stdfix.h
+|   |           |   |-- stdint-gcc.h
+|   |           |   |-- stdint.h
+|   |           |   |-- stdnoreturn.h
+|   |           |   |-- unwind.h
+|   |           |   |-- varargs.h
+|   |           |   `-- vec_types.h
+|   |           |-- include-fixed
+|   |           |   |-- README
+|   |           |   |-- limits.h
+|   |           |   `-- syslimits.h
+|   |           |-- install-tools
+|   |           |   |-- fixinc_list
+|   |           |   |-- gsyslimits.h
+|   |           |   |-- include
+|   |           |   |   |-- README
+|   |           |   |   `-- limits.h
+|   |           |   |-- macro_list
+|   |           |   `-- mkheaders.conf
+|   |           |-- libgcc.a
+|   |           |-- libgcc_eh.a
+|   |           |-- libgcov.a
+|   |           |-- ncrti.o
+|   |           |-- ncrtn.o
+|   |           `-- plugin
+|   |               |-- gtype.state
+|   |               |-- include
+|   |               |   |-- ada
+|   |               |   |   `-- gcc-interface
+|   |               |   |       `-- ada-tree.def
+|   |               |   |-- addresses.h
+|   |               |   |-- alias.h
+|   |               |   |-- all-tree.def
+|   |               |   |-- alloc-pool.h
+|   |               |   |-- ansidecl.h
+|   |               |   |-- asan.h
+|   |               |   |-- attribs.h
+|   |               |   |-- auto-host.h
+|   |               |   |-- auto-profile.h
+|   |               |   |-- b-header-vars
+|   |               |   |-- basic-block.h
+|   |               |   |-- bb-reorder.h
+|   |               |   |-- bitmap.h
+|   |               |   |-- builtin-attrs.def
+|   |               |   |-- builtin-types.def
+|   |               |   |-- builtins.def
+|   |               |   |-- builtins.h
+|   |               |   |-- bversion.h
+|   |               |   |-- c-family
+|   |               |   |   |-- c-common.def
+|   |               |   |   |-- c-common.h
+|   |               |   |   |-- c-objc.h
+|   |               |   |   |-- c-pragma.h
+|   |               |   |   `-- c-pretty-print.h
+|   |               |   |-- c-tree.h
+|   |               |   |-- calls.h
+|   |               |   |-- ccmp.h
+|   |               |   |-- cfg-flags.def
+|   |               |   |-- cfg.h
+|   |               |   |-- cfganal.h
+|   |               |   |-- cfgbuild.h
+|   |               |   |-- cfgcleanup.h
+|   |               |   |-- cfgexpand.h
+|   |               |   |-- cfghooks.h
+|   |               |   |-- cfgloop.h
+|   |               |   |-- cfgloopmanip.h
+|   |               |   |-- cfgrtl.h
+|   |               |   |-- cgraph.h
+|   |               |   |-- chkp-builtins.def
+|   |               |   |-- cif-code.def
+|   |               |   |-- cilk-builtins.def
+|   |               |   |-- cilk.h
+|   |               |   |-- cilkplus.def
+|   |               |   |-- collect-utils.h
+|   |               |   |-- collect2-aix.h
+|   |               |   |-- collect2.h
+|   |               |   |-- conditions.h
+|   |               |   |-- config
+|   |               |   |   |-- dbxelf.h
+|   |               |   |   |-- elfos.h
+|   |               |   |   |-- freebsd-spec.h
+|   |               |   |   |-- glibc-stdint.h
+|   |               |   |   |-- gnu-user.h
+|   |               |   |   |-- initfini-array.h
+|   |               |   |   |-- linux-protos.h
+|   |               |   |   `-- rs6000
+|   |               |   |       |-- biarch64.h
+|   |               |   |       |-- default64.h
+|   |               |   |       |-- linux64.h
+|   |               |   |       |-- option-defaults.h
+|   |               |   |       |-- rs6000-builtin.def
+|   |               |   |       |-- rs6000-cpus.def
+|   |               |   |       |-- rs6000-opts.h
+|   |               |   |       |-- rs6000-protos.h
+|   |               |   |       |-- rs6000.h
+|   |               |   |       `-- sysv4.h
+|   |               |   |-- config.h
+|   |               |   |-- configargs.h
+|   |               |   |-- context.h
+|   |               |   |-- convert.h
+|   |               |   |-- coretypes.h
+|   |               |   |-- coverage.h
+|   |               |   |-- cp
+|   |               |   |   |-- cp-tree.def
+|   |               |   |   |-- cp-tree.h
+|   |               |   |   |-- cxx-pretty-print.h
+|   |               |   |   |-- name-lookup.h
+|   |               |   |   `-- type-utils.h
+|   |               |   |-- cppbuiltin.h
+|   |               |   |-- cppdefault.h
+|   |               |   |-- cpplib.h
+|   |               |   |-- cselib.h
+|   |               |   |-- data-streamer.h
+|   |               |   |-- dbgcnt.def
+|   |               |   |-- dbgcnt.h
+|   |               |   |-- dbxout.h
+|   |               |   |-- dce.h
+|   |               |   |-- ddg.h
+|   |               |   |-- debug.h
+|   |               |   |-- defaults.h
+|   |               |   |-- df.h
+|   |               |   |-- dfp.h
+|   |               |   |-- diagnostic-color.h
+|   |               |   |-- diagnostic-core.h
+|   |               |   |-- diagnostic.def
+|   |               |   |-- diagnostic.h
+|   |               |   |-- dojump.h
+|   |               |   |-- dominance.h
+|   |               |   |-- domwalk.h
+|   |               |   |-- double-int.h
+|   |               |   |-- dumpfile.h
+|   |               |   |-- dwarf2asm.h
+|   |               |   |-- dwarf2out.h
+|   |               |   |-- emit-rtl.h
+|   |               |   |-- errors.h
+|   |               |   |-- et-forest.h
+|   |               |   |-- except.h
+|   |               |   |-- explow.h
+|   |               |   |-- expmed.h
+|   |               |   |-- expr.h
+|   |               |   |-- fibonacci_heap.h
+|   |               |   |-- file-find.h
+|   |               |   |-- filenames.h
+|   |               |   |-- fixed-value.h
+|   |               |   |-- flag-types.h
+|   |               |   |-- flags.h
+|   |               |   |-- fold-const.h
+|   |               |   |-- function.h
+|   |               |   |-- gcc-plugin.h
+|   |               |   |-- gcc-symtab.h
+|   |               |   |-- gcc.h
+|   |               |   |-- gcov-counter.def
+|   |               |   |-- gcov-io.h
+|   |               |   |-- gcse-common.h
+|   |               |   |-- gcse.h
+|   |               |   |-- generic-match.h
+|   |               |   |-- gengtype.h
+|   |               |   |-- genrtl.h
+|   |               |   |-- gensupport.h
+|   |               |   |-- ggc-internal.h
+|   |               |   |-- ggc.h
+|   |               |   |-- gimple-builder.h
+|   |               |   |-- gimple-expr.h
+|   |               |   |-- gimple-fold.h
+|   |               |   |-- gimple-iterator.h
+|   |               |   |-- gimple-low.h
+|   |               |   |-- gimple-match.h
+|   |               |   |-- gimple-pretty-print.h
+|   |               |   |-- gimple-ssa.h
+|   |               |   |-- gimple-streamer.h
+|   |               |   |-- gimple-walk.h
+|   |               |   |-- gimple.def
+|   |               |   |-- gimple.h
+|   |               |   |-- gimplify-me.h
+|   |               |   |-- gimplify.h
+|   |               |   |-- glimits.h
+|   |               |   |-- graph.h
+|   |               |   |-- graphds.h
+|   |               |   |-- graphite-isl-ast-to-gimple.h
+|   |               |   |-- graphite-poly.h
+|   |               |   |-- graphite-scop-detection.h
+|   |               |   |-- graphite-sese-to-poly.h
+|   |               |   |-- gsstruct.def
+|   |               |   |-- gstab.h
+|   |               |   |-- gsyms.h
+|   |               |   |-- gsyslimits.h
+|   |               |   |-- gtm-builtins.def
+|   |               |   |-- gtype-desc.h
+|   |               |   |-- hard-reg-set.h
+|   |               |   |-- hash-map.h
+|   |               |   |-- hash-set.h
+|   |               |   |-- hash-table.h
+|   |               |   |-- hashtab.h
+|   |               |   |-- highlev-plugin-common.h
+|   |               |   |-- hooks.h
+|   |               |   |-- hosthooks-def.h
+|   |               |   |-- hosthooks.h
+|   |               |   |-- hw-doloop.h
+|   |               |   |-- hwint.h
+|   |               |   |-- ifcvt.h
+|   |               |   |-- inchash.h
+|   |               |   |-- incpath.h
+|   |               |   |-- input.h
+|   |               |   |-- insn-addr.h
+|   |               |   |-- insn-codes.h
+|   |               |   |-- insn-constants.h
+|   |               |   |-- insn-flags.h
+|   |               |   |-- insn-modes.h
+|   |               |   |-- insn-notes.def
+|   |               |   |-- internal-fn.def
+|   |               |   |-- internal-fn.h
+|   |               |   |-- intl.h
+|   |               |   |-- ipa-chkp.h
+|   |               |   |-- ipa-icf-gimple.h
+|   |               |   |-- ipa-icf.h
+|   |               |   |-- ipa-inline.h
+|   |               |   |-- ipa-prop.h
+|   |               |   |-- ipa-ref.h
+|   |               |   |-- ipa-reference.h
+|   |               |   |-- ipa-utils.h
+|   |               |   |-- ira-int.h
+|   |               |   |-- ira.h
+|   |               |   |-- is-a.h
+|   |               |   |-- java
+|   |               |   |   `-- java-tree.def
+|   |               |   |-- langhooks-def.h
+|   |               |   |-- langhooks.h
+|   |               |   |-- lcm.h
+|   |               |   |-- libfuncs.h
+|   |               |   |-- libiberty.h
+|   |               |   |-- limitx.h
+|   |               |   |-- limity.h
+|   |               |   |-- line-map.h
+|   |               |   |-- loop-unroll.h
+|   |               |   |-- lower-subreg.h
+|   |               |   |-- lra-int.h
+|   |               |   |-- lra.h
+|   |               |   |-- lto-compress.h
+|   |               |   |-- lto-section-names.h
+|   |               |   |-- lto-streamer.h
+|   |               |   |-- machmode.def
+|   |               |   |-- machmode.h
+|   |               |   |-- md5.h
+|   |               |   |-- mode-classes.def
+|   |               |   |-- objc
+|   |               |   |   `-- objc-tree.def
+|   |               |   |-- obstack.h
+|   |               |   |-- omega.h
+|   |               |   |-- omp-builtins.def
+|   |               |   |-- omp-low.h
+|   |               |   |-- optabs.def
+|   |               |   |-- optabs.h
+|   |               |   |-- options.h
+|   |               |   |-- opts-diagnostic.h
+|   |               |   |-- opts.h
+|   |               |   |-- output.h
+|   |               |   |-- params.def
+|   |               |   |-- params.h
+|   |               |   |-- pass-instances.def
+|   |               |   |-- pass_manager.h
+|   |               |   |-- passes.def
+|   |               |   |-- plugin-api.h
+|   |               |   |-- plugin-version.h
+|   |               |   |-- plugin.def
+|   |               |   |-- plugin.h
+|   |               |   |-- predict.def
+|   |               |   |-- predict.h
+|   |               |   |-- prefix.h
+|   |               |   |-- pretty-print.h
+|   |               |   |-- print-rtl.h
+|   |               |   |-- print-tree.h
+|   |               |   |-- profile.h
+|   |               |   |-- read-md.h
+|   |               |   |-- real.h
+|   |               |   |-- realmpfr.h
+|   |               |   |-- recog.h
+|   |               |   |-- reg-notes.def
+|   |               |   |-- regcprop.h
+|   |               |   |-- regrename.h
+|   |               |   |-- regs.h
+|   |               |   |-- regset.h
+|   |               |   |-- reload.h
+|   |               |   |-- resource.h
+|   |               |   |-- rtl-chkp.h
+|   |               |   |-- rtl-error.h
+|   |               |   |-- rtl-iter.h
+|   |               |   |-- rtl.def
+|   |               |   |-- rtl.h
+|   |               |   |-- rtlhash.h
+|   |               |   |-- rtlhooks-def.h
+|   |               |   |-- safe-ctype.h
+|   |               |   |-- sanitizer.def
+|   |               |   |-- sbitmap.h
+|   |               |   |-- sched-int.h
+|   |               |   |-- sdbout.h
+|   |               |   |-- sel-sched-dump.h
+|   |               |   |-- sel-sched-ir.h
+|   |               |   |-- sel-sched.h
+|   |               |   |-- sese.h
+|   |               |   |-- shrink-wrap.h
+|   |               |   |-- signop.h
+|   |               |   |-- sparseset.h
+|   |               |   |-- splay-tree.h
+|   |               |   |-- sreal.h
+|   |               |   |-- ssa-iterators.h
+|   |               |   |-- stab.def
+|   |               |   |-- statistics.h
+|   |               |   |-- stmt.h
+|   |               |   |-- stor-layout.h
+|   |               |   |-- streamer-hooks.h
+|   |               |   |-- stringpool.h
+|   |               |   |-- symbol-summary.h
+|   |               |   |-- symtab.h
+|   |               |   |-- sync-builtins.def
+|   |               |   |-- system.h
+|   |               |   |-- target-def.h
+|   |               |   |-- target-globals.h
+|   |               |   |-- target-hooks-macros.h
+|   |               |   |-- target.def
+|   |               |   |-- target.h
+|   |               |   |-- targhooks.h
+|   |               |   |-- timevar.def
+|   |               |   |-- timevar.h
+|   |               |   |-- tm-preds.h
+|   |               |   |-- tm.h
+|   |               |   |-- tm_p.h
+|   |               |   |-- toplev.h
+|   |               |   |-- trans-mem.h
+|   |               |   |-- tree-affine.h
+|   |               |   |-- tree-browser.def
+|   |               |   |-- tree-cfg.h
+|   |               |   |-- tree-cfgcleanup.h
+|   |               |   |-- tree-check.h
+|   |               |   |-- tree-chkp.h
+|   |               |   |-- tree-chrec.h
+|   |               |   |-- tree-core.h
+|   |               |   |-- tree-data-ref.h
+|   |               |   |-- tree-dfa.h
+|   |               |   |-- tree-diagnostic.h
+|   |               |   |-- tree-dump.h
+|   |               |   |-- tree-eh.h
+|   |               |   |-- tree-hasher.h
+|   |               |   |-- tree-inline.h
+|   |               |   |-- tree-into-ssa.h
+|   |               |   |-- tree-iterator.h
+|   |               |   |-- tree-nested.h
+|   |               |   |-- tree-object-size.h
+|   |               |   |-- tree-outof-ssa.h
+|   |               |   |-- tree-parloops.h
+|   |               |   |-- tree-pass.h
+|   |               |   |-- tree-phinodes.h
+|   |               |   |-- tree-pretty-print.h
+|   |               |   |-- tree-scalar-evolution.h
+|   |               |   |-- tree-ssa-address.h
+|   |               |   |-- tree-ssa-alias.h
+|   |               |   |-- tree-ssa-coalesce.h
+|   |               |   |-- tree-ssa-dom.h
+|   |               |   |-- tree-ssa-live.h
+|   |               |   |-- tree-ssa-loop-ivopts.h
+|   |               |   |-- tree-ssa-loop-manip.h
+|   |               |   |-- tree-ssa-loop-niter.h
+|   |               |   |-- tree-ssa-loop.h
+|   |               |   |-- tree-ssa-operands.h
+|   |               |   |-- tree-ssa-propagate.h
+|   |               |   |-- tree-ssa-sccvn.h
+|   |               |   |-- tree-ssa-ter.h
+|   |               |   |-- tree-ssa-threadedge.h
+|   |               |   |-- tree-ssa-threadupdate.h
+|   |               |   |-- tree-ssa.h
+|   |               |   |-- tree-ssanames.h
+|   |               |   |-- tree-stdarg.h
+|   |               |   |-- tree-streamer.h
+|   |               |   |-- tree-vectorizer.h
+|   |               |   |-- tree.def
+|   |               |   |-- tree.h
+|   |               |   |-- treestruct.def
+|   |               |   |-- tsan.h
+|   |               |   |-- tsystem.h
+|   |               |   |-- typeclass.h
+|   |               |   |-- typed-splay-tree.h
+|   |               |   |-- ubsan.h
+|   |               |   |-- valtrack.h
+|   |               |   |-- value-prof.h
+|   |               |   |-- varasm.h
+|   |               |   |-- vec.h
+|   |               |   |-- version.h
+|   |               |   |-- vmsdbg.h
+|   |               |   |-- vtable-verify.h
+|   |               |   |-- wide-int-print.h
+|   |               |   |-- wide-int.h
+|   |               |   |-- xcoff.h
+|   |               |   `-- xcoffout.h
+|   |               |-- libcc1plugin.la
+|   |               |-- libcc1plugin.so -> libcc1plugin.so.0.0.0
+|   |               |-- libcc1plugin.so.0 -> libcc1plugin.so.0.0.0
+|   |               `-- libcc1plugin.so.0.0.0
+|   |-- libcc1.la
+|   |-- libcc1.so -> libcc1.so.0.0.0
+|   |-- libcc1.so.0 -> libcc1.so.0.0.0
+|   |-- libcc1.so.0.0.0
+|   |-- libgmp.la
+|   |-- libgmp.so -> libgmp.so.10.2.0
+|   |-- libgmp.so.10 -> libgmp.so.10.2.0
+|   |-- libgmp.so.10.2.0
+|   |-- libgmpxx.la
+|   |-- libgmpxx.so -> libgmpxx.so.4.4.0
+|   |-- libgmpxx.so.4 -> libgmpxx.so.4.4.0
+|   |-- libgmpxx.so.4.4.0
+|   |-- libisl.la
+|   |-- libisl.so -> libisl.so.13.1.0
+|   |-- libisl.so.13 -> libisl.so.13.1.0
+|   |-- libisl.so.13.1.0
+|   |-- libisl.so.13.1.0-gdb.py
+|   |-- libmagic.la
+|   |-- libmagic.so -> libmagic.so.1.0.0
+|   |-- libmagic.so.1 -> libmagic.so.1.0.0
+|   |-- libmagic.so.1.0.0
+|   |-- libmpc.la
+|   |-- libmpc.so -> libmpc.so.3.0.0
+|   |-- libmpc.so.3 -> libmpc.so.3.0.0
+|   |-- libmpc.so.3.0.0
+|   |-- libmpfr.la
+|   |-- libmpfr.so -> libmpfr.so.4.1.3
+|   |-- libmpfr.so.4 -> libmpfr.so.4.1.3
+|   |-- libmpfr.so.4.1.3
+|   `-- pkgconfig
+|       `-- isl.pc
+|-- libexec
+|   `-- gcc
+|       `-- powerpc64-unknown-linux-gnu
+|           `-- 5.2.0
+|               |-- cc1
+|               |-- cc1plus
+|               |-- collect2
+|               |-- install-tools
+|               |   |-- fixinc.sh
+|               |   |-- fixincl
+|               |   |-- mkheaders
+|               |   `-- mkinstalldirs
+|               |-- liblto_plugin.la
+|               |-- liblto_plugin.so -> liblto_plugin.so.0.0.0
+|               |-- liblto_plugin.so.0 -> liblto_plugin.so.0.0.0
+|               |-- liblto_plugin.so.0.0.0
+|               |-- lto-wrapper
+|               |-- lto1
+|               `-- plugin
+|                   `-- gengtype
+|-- powerpc64-unknown-linux-gnu
+|   |-- bin
+|   |   |-- ar
+|   |   |-- as
+|   |   |-- ld
+|   |   |-- ld.bfd
+|   |   |-- nm
+|   |   |-- objcopy
+|   |   |-- objdump
+|   |   |-- ranlib
+|   |   `-- strip
+|   |-- include
+|   |   `-- c++
+|   |       `-- 5.2.0
+|   |           |-- algorithm
+|   |           |-- array
+|   |           |-- atomic
+|   |           |-- backward
+|   |           |   |-- auto_ptr.h
+|   |           |   |-- backward_warning.h
+|   |           |   |-- binders.h
+|   |           |   |-- hash_fun.h
+|   |           |   |-- hash_map
+|   |           |   |-- hash_set
+|   |           |   |-- hashtable.h
+|   |           |   `-- strstream
+|   |           |-- bits
+|   |           |   |-- algorithmfwd.h
+|   |           |   |-- alloc_traits.h
+|   |           |   |-- allocated_ptr.h
+|   |           |   |-- allocator.h
+|   |           |   |-- atomic_base.h
+|   |           |   |-- atomic_futex.h
+|   |           |   |-- atomic_lockfree_defines.h
+|   |           |   |-- basic_ios.h
+|   |           |   |-- basic_ios.tcc
+|   |           |   |-- basic_string.h
+|   |           |   |-- basic_string.tcc
+|   |           |   |-- boost_concept_check.h
+|   |           |   |-- c++0x_warning.h
+|   |           |   |-- c++14_warning.h
+|   |           |   |-- char_traits.h
+|   |           |   |-- codecvt.h
+|   |           |   |-- concept_check.h
+|   |           |   |-- cpp_type_traits.h
+|   |           |   |-- cxxabi_forced.h
+|   |           |   |-- deque.tcc
+|   |           |   |-- enable_special_members.h
+|   |           |   |-- exception_defines.h
+|   |           |   |-- exception_ptr.h
+|   |           |   |-- forward_list.h
+|   |           |   |-- forward_list.tcc
+|   |           |   |-- fstream.tcc
+|   |           |   |-- functexcept.h
+|   |           |   |-- functional_hash.h
+|   |           |   |-- gslice.h
+|   |           |   |-- gslice_array.h
+|   |           |   |-- hash_bytes.h
+|   |           |   |-- hashtable.h
+|   |           |   |-- hashtable_policy.h
+|   |           |   |-- indirect_array.h
+|   |           |   |-- ios_base.h
+|   |           |   |-- istream.tcc
+|   |           |   |-- list.tcc
+|   |           |   |-- locale_classes.h
+|   |           |   |-- locale_classes.tcc
+|   |           |   |-- locale_conv.h
+|   |           |   |-- locale_facets.h
+|   |           |   |-- locale_facets.tcc
+|   |           |   |-- locale_facets_nonio.h
+|   |           |   |-- locale_facets_nonio.tcc
+|   |           |   |-- localefwd.h
+|   |           |   |-- mask_array.h
+|   |           |   |-- memoryfwd.h
+|   |           |   |-- move.h
+|   |           |   |-- nested_exception.h
+|   |           |   |-- ostream.tcc
+|   |           |   |-- ostream_insert.h
+|   |           |   |-- parse_numbers.h
+|   |           |   |-- postypes.h
+|   |           |   |-- predefined_ops.h
+|   |           |   |-- ptr_traits.h
+|   |           |   |-- random.h
+|   |           |   |-- random.tcc
+|   |           |   |-- range_access.h
+|   |           |   |-- regex.h
+|   |           |   |-- regex.tcc
+|   |           |   |-- regex_automaton.h
+|   |           |   |-- regex_automaton.tcc
+|   |           |   |-- regex_compiler.h
+|   |           |   |-- regex_compiler.tcc
+|   |           |   |-- regex_constants.h
+|   |           |   |-- regex_error.h
+|   |           |   |-- regex_executor.h
+|   |           |   |-- regex_executor.tcc
+|   |           |   |-- regex_scanner.h
+|   |           |   |-- regex_scanner.tcc
+|   |           |   |-- shared_ptr.h
+|   |           |   |-- shared_ptr_atomic.h
+|   |           |   |-- shared_ptr_base.h
+|   |           |   |-- slice_array.h
+|   |           |   |-- sstream.tcc
+|   |           |   |-- stl_algo.h
+|   |           |   |-- stl_algobase.h
+|   |           |   |-- stl_bvector.h
+|   |           |   |-- stl_construct.h
+|   |           |   |-- stl_deque.h
+|   |           |   |-- stl_function.h
+|   |           |   |-- stl_heap.h
+|   |           |   |-- stl_iterator.h
+|   |           |   |-- stl_iterator_base_funcs.h
+|   |           |   |-- stl_iterator_base_types.h
+|   |           |   |-- stl_list.h
+|   |           |   |-- stl_map.h
+|   |           |   |-- stl_multimap.h
+|   |           |   |-- stl_multiset.h
+|   |           |   |-- stl_numeric.h
+|   |           |   |-- stl_pair.h
+|   |           |   |-- stl_queue.h
+|   |           |   |-- stl_raw_storage_iter.h
+|   |           |   |-- stl_relops.h
+|   |           |   |-- stl_set.h
+|   |           |   |-- stl_stack.h
+|   |           |   |-- stl_tempbuf.h
+|   |           |   |-- stl_tree.h
+|   |           |   |-- stl_uninitialized.h
+|   |           |   |-- stl_vector.h
+|   |           |   |-- stream_iterator.h
+|   |           |   |-- streambuf.tcc
+|   |           |   |-- streambuf_iterator.h
+|   |           |   |-- stringfwd.h
+|   |           |   |-- unique_ptr.h
+|   |           |   |-- unordered_map.h
+|   |           |   |-- unordered_set.h
+|   |           |   |-- uses_allocator.h
+|   |           |   |-- valarray_after.h
+|   |           |   |-- valarray_array.h
+|   |           |   |-- valarray_array.tcc
+|   |           |   |-- valarray_before.h
+|   |           |   `-- vector.tcc
+|   |           |-- bitset
+|   |           |-- cassert
+|   |           |-- ccomplex
+|   |           |-- cctype
+|   |           |-- cerrno
+|   |           |-- cfenv
+|   |           |-- cfloat
+|   |           |-- chrono
+|   |           |-- cinttypes
+|   |           |-- ciso646
+|   |           |-- climits
+|   |           |-- clocale
+|   |           |-- cmath
+|   |           |-- codecvt
+|   |           |-- complex
+|   |           |-- complex.h
+|   |           |-- condition_variable
+|   |           |-- csetjmp
+|   |           |-- csignal
+|   |           |-- cstdalign
+|   |           |-- cstdarg
+|   |           |-- cstdbool
+|   |           |-- cstddef
+|   |           |-- cstdint
+|   |           |-- cstdio
+|   |           |-- cstdlib
+|   |           |-- cstring
+|   |           |-- ctgmath
+|   |           |-- ctime
+|   |           |-- cwchar
+|   |           |-- cwctype
+|   |           |-- cxxabi.h
+|   |           |-- debug
+|   |           |   |-- array
+|   |           |   |-- bitset
+|   |           |   |-- debug.h
+|   |           |   |-- deque
+|   |           |   |-- formatter.h
+|   |           |   |-- forward_list
+|   |           |   |-- functions.h
+|   |           |   |-- list
+|   |           |   |-- macros.h
+|   |           |   |-- map
+|   |           |   |-- map.h
+|   |           |   |-- multimap.h
+|   |           |   |-- multiset.h
+|   |           |   |-- safe_base.h
+|   |           |   |-- safe_container.h
+|   |           |   |-- safe_iterator.h
+|   |           |   |-- safe_iterator.tcc
+|   |           |   |-- safe_local_iterator.h
+|   |           |   |-- safe_local_iterator.tcc
+|   |           |   |-- safe_sequence.h
+|   |           |   |-- safe_sequence.tcc
+|   |           |   |-- safe_unordered_base.h
+|   |           |   |-- safe_unordered_container.h
+|   |           |   |-- safe_unordered_container.tcc
+|   |           |   |-- set
+|   |           |   |-- set.h
+|   |           |   |-- string
+|   |           |   |-- unordered_map
+|   |           |   |-- unordered_set
+|   |           |   `-- vector
+|   |           |-- decimal
+|   |           |   |-- decimal
+|   |           |   `-- decimal.h
+|   |           |-- deque
+|   |           |-- exception
+|   |           |-- experimental
+|   |           |   |-- algorithm
+|   |           |   |-- any
+|   |           |   |-- chrono
+|   |           |   |-- functional
+|   |           |   |-- optional
+|   |           |   |-- ratio
+|   |           |   |-- string_view
+|   |           |   |-- string_view.tcc
+|   |           |   |-- system_error
+|   |           |   |-- tuple
+|   |           |   `-- type_traits
+|   |           |-- ext
+|   |           |   |-- algorithm
+|   |           |   |-- aligned_buffer.h
+|   |           |   |-- alloc_traits.h
+|   |           |   |-- array_allocator.h
+|   |           |   |-- atomicity.h
+|   |           |   |-- bitmap_allocator.h
+|   |           |   |-- cast.h
+|   |           |   |-- cmath
+|   |           |   |-- codecvt_specializations.h
+|   |           |   |-- concurrence.h
+|   |           |   |-- debug_allocator.h
+|   |           |   |-- enc_filebuf.h
+|   |           |   |-- extptr_allocator.h
+|   |           |   |-- functional
+|   |           |   |-- hash_map
+|   |           |   |-- hash_set
+|   |           |   |-- iterator
+|   |           |   |-- malloc_allocator.h
+|   |           |   |-- memory
+|   |           |   |-- mt_allocator.h
+|   |           |   |-- new_allocator.h
+|   |           |   |-- numeric
+|   |           |   |-- numeric_traits.h
+|   |           |   |-- pb_ds
+|   |           |   |   |-- assoc_container.hpp
+|   |           |   |   |-- detail
+|   |           |   |   |   |-- bin_search_tree_
+|   |           |   |   |   |   |-- bin_search_tree_.hpp
+|   |           |   |   |   |   |-- constructors_destructor_fn_imps.hpp
+|   |           |   |   |   |   |-- debug_fn_imps.hpp
+|   |           |   |   |   |   |-- erase_fn_imps.hpp
+|   |           |   |   |   |   |-- find_fn_imps.hpp
+|   |           |   |   |   |   |-- info_fn_imps.hpp
+|   |           |   |   |   |   |-- insert_fn_imps.hpp
+|   |           |   |   |   |   |-- iterators_fn_imps.hpp
+|   |           |   |   |   |   |-- node_iterators.hpp
+|   |           |   |   |   |   |-- point_iterators.hpp
+|   |           |   |   |   |   |-- policy_access_fn_imps.hpp
+|   |           |   |   |   |   |-- r_erase_fn_imps.hpp
+|   |           |   |   |   |   |-- rotate_fn_imps.hpp
+|   |           |   |   |   |   |-- split_join_fn_imps.hpp
+|   |           |   |   |   |   `-- traits.hpp
+|   |           |   |   |   |-- binary_heap_
+|   |           |   |   |   |   |-- binary_heap_.hpp
+|   |           |   |   |   |   |-- const_iterator.hpp
+|   |           |   |   |   |   |-- constructors_destructor_fn_imps.hpp
+|   |           |   |   |   |   |-- debug_fn_imps.hpp
+|   |           |   |   |   |   |-- entry_cmp.hpp
+|   |           |   |   |   |   |-- entry_pred.hpp
+|   |           |   |   |   |   |-- erase_fn_imps.hpp
+|   |           |   |   |   |   |-- find_fn_imps.hpp
+|   |           |   |   |   |   |-- info_fn_imps.hpp
+|   |           |   |   |   |   |-- insert_fn_imps.hpp
+|   |           |   |   |   |   |-- iterators_fn_imps.hpp
+|   |           |   |   |   |   |-- point_const_iterator.hpp
+|   |           |   |   |   |   |-- policy_access_fn_imps.hpp
+|   |           |   |   |   |   |-- resize_policy.hpp
+|   |           |   |   |   |   |-- split_join_fn_imps.hpp
+|   |           |   |   |   |   `-- trace_fn_imps.hpp
+|   |           |   |   |   |-- binomial_heap_
+|   |           |   |   |   |   |-- binomial_heap_.hpp
+|   |           |   |   |   |   |-- constructors_destructor_fn_imps.hpp
+|   |           |   |   |   |   `-- debug_fn_imps.hpp
+|   |           |   |   |   |-- binomial_heap_base_
+|   |           |   |   |   |   |-- binomial_heap_base_.hpp
+|   |           |   |   |   |   |-- constructors_destructor_fn_imps.hpp
+|   |           |   |   |   |   |-- debug_fn_imps.hpp
+|   |           |   |   |   |   |-- erase_fn_imps.hpp
+|   |           |   |   |   |   |-- find_fn_imps.hpp
+|   |           |   |   |   |   |-- insert_fn_imps.hpp
+|   |           |   |   |   |   `-- split_join_fn_imps.hpp
+|   |           |   |   |   |-- branch_policy
+|   |           |   |   |   |   |-- branch_policy.hpp
+|   |           |   |   |   |   |-- null_node_metadata.hpp
+|   |           |   |   |   |   `-- traits.hpp
+|   |           |   |   |   |-- cc_hash_table_map_
+|   |           |   |   |   |   |-- cc_ht_map_.hpp
+|   |           |   |   |   |   |-- cmp_fn_imps.hpp
+|   |           |   |   |   |   |-- cond_key_dtor_entry_dealtor.hpp
+|   |           |   |   |   |   |-- constructor_destructor_fn_imps.hpp
+|   |           |   |   |   |   |-- constructor_destructor_no_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- constructor_destructor_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- debug_fn_imps.hpp
+|   |           |   |   |   |   |-- debug_no_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- debug_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- entry_list_fn_imps.hpp
+|   |           |   |   |   |   |-- erase_fn_imps.hpp
+|   |           |   |   |   |   |-- erase_no_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- erase_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- find_fn_imps.hpp
+|   |           |   |   |   |   |-- find_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- info_fn_imps.hpp
+|   |           |   |   |   |   |-- insert_fn_imps.hpp
+|   |           |   |   |   |   |-- insert_no_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- insert_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- iterators_fn_imps.hpp
+|   |           |   |   |   |   |-- policy_access_fn_imps.hpp
+|   |           |   |   |   |   |-- resize_fn_imps.hpp
+|   |           |   |   |   |   |-- resize_no_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- resize_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- size_fn_imps.hpp
+|   |           |   |   |   |   `-- trace_fn_imps.hpp
+|   |           |   |   |   |-- cond_dealtor.hpp
+|   |           |   |   |   |-- container_base_dispatch.hpp
+|   |           |   |   |   |-- debug_map_base.hpp
+|   |           |   |   |   |-- eq_fn
+|   |           |   |   |   |   |-- eq_by_less.hpp
+|   |           |   |   |   |   `-- hash_eq_fn.hpp
+|   |           |   |   |   |-- gp_hash_table_map_
+|   |           |   |   |   |   |-- constructor_destructor_fn_imps.hpp
+|   |           |   |   |   |   |-- constructor_destructor_no_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- constructor_destructor_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- debug_fn_imps.hpp
+|   |           |   |   |   |   |-- debug_no_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- debug_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- erase_fn_imps.hpp
+|   |           |   |   |   |   |-- erase_no_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- erase_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- find_fn_imps.hpp
+|   |           |   |   |   |   |-- find_no_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- find_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- gp_ht_map_.hpp
+|   |           |   |   |   |   |-- info_fn_imps.hpp
+|   |           |   |   |   |   |-- insert_fn_imps.hpp
+|   |           |   |   |   |   |-- insert_no_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- insert_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- iterator_fn_imps.hpp
+|   |           |   |   |   |   |-- policy_access_fn_imps.hpp
+|   |           |   |   |   |   |-- resize_fn_imps.hpp
+|   |           |   |   |   |   |-- resize_no_store_hash_fn_imps.hpp
+|   |           |   |   |   |   |-- resize_store_hash_fn_imps.hpp
+|   |           |   |   |   |   `-- trace_fn_imps.hpp
+|   |           |   |   |   |-- hash_fn
+|   |           |   |   |   |   |-- direct_mask_range_hashing_imp.hpp
+|   |           |   |   |   |   |-- direct_mod_range_hashing_imp.hpp
+|   |           |   |   |   |   |-- linear_probe_fn_imp.hpp
+|   |           |   |   |   |   |-- mask_based_range_hashing.hpp
+|   |           |   |   |   |   |-- mod_based_range_hashing.hpp
+|   |           |   |   |   |   |-- probe_fn_base.hpp
+|   |           |   |   |   |   |-- quadratic_probe_fn_imp.hpp
+|   |           |   |   |   |   |-- ranged_hash_fn.hpp
+|   |           |   |   |   |   |-- ranged_probe_fn.hpp
+|   |           |   |   |   |   |-- sample_probe_fn.hpp
+|   |           |   |   |   |   |-- sample_range_hashing.hpp
+|   |           |   |   |   |   |-- sample_ranged_hash_fn.hpp
+|   |           |   |   |   |   `-- sample_ranged_probe_fn.hpp
+|   |           |   |   |   |-- left_child_next_sibling_heap_
+|   |           |   |   |   |   |-- const_iterator.hpp
+|   |           |   |   |   |   |-- constructors_destructor_fn_imps.hpp
+|   |           |   |   |   |   |-- debug_fn_imps.hpp
+|   |           |   |   |   |   |-- erase_fn_imps.hpp
+|   |           |   |   |   |   |-- info_fn_imps.hpp
+|   |           |   |   |   |   |-- insert_fn_imps.hpp
+|   |           |   |   |   |   |-- iterators_fn_imps.hpp
+|   |           |   |   |   |   |-- left_child_next_sibling_heap_.hpp
+|   |           |   |   |   |   |-- node.hpp
+|   |           |   |   |   |   |-- point_const_iterator.hpp
+|   |           |   |   |   |   |-- policy_access_fn_imps.hpp
+|   |           |   |   |   |   `-- trace_fn_imps.hpp
+|   |           |   |   |   |-- list_update_map_
+|   |           |   |   |   |   |-- constructor_destructor_fn_imps.hpp
+|   |           |   |   |   |   |-- debug_fn_imps.hpp
+|   |           |   |   |   |   |-- entry_metadata_base.hpp
+|   |           |   |   |   |   |-- erase_fn_imps.hpp
+|   |           |   |   |   |   |-- find_fn_imps.hpp
+|   |           |   |   |   |   |-- info_fn_imps.hpp
+|   |           |   |   |   |   |-- insert_fn_imps.hpp
+|   |           |   |   |   |   |-- iterators_fn_imps.hpp
+|   |           |   |   |   |   |-- lu_map_.hpp
+|   |           |   |   |   |   `-- trace_fn_imps.hpp
+|   |           |   |   |   |-- list_update_policy
+|   |           |   |   |   |   |-- lu_counter_metadata.hpp
+|   |           |   |   |   |   `-- sample_update_policy.hpp
+|   |           |   |   |   |-- ov_tree_map_
+|   |           |   |   |   |   |-- constructors_destructor_fn_imps.hpp
+|   |           |   |   |   |   |-- debug_fn_imps.hpp
+|   |           |   |   |   |   |-- erase_fn_imps.hpp
+|   |           |   |   |   |   |-- info_fn_imps.hpp
+|   |           |   |   |   |   |-- insert_fn_imps.hpp
+|   |           |   |   |   |   |-- iterators_fn_imps.hpp
+|   |           |   |   |   |   |-- node_iterators.hpp
+|   |           |   |   |   |   |-- ov_tree_map_.hpp
+|   |           |   |   |   |   |-- policy_access_fn_imps.hpp
+|   |           |   |   |   |   |-- split_join_fn_imps.hpp
+|   |           |   |   |   |   `-- traits.hpp
+|   |           |   |   |   |-- pairing_heap_
+|   |           |   |   |   |   |-- constructors_destructor_fn_imps.hpp
+|   |           |   |   |   |   |-- debug_fn_imps.hpp
+|   |           |   |   |   |   |-- erase_fn_imps.hpp
+|   |           |   |   |   |   |-- find_fn_imps.hpp
+|   |           |   |   |   |   |-- insert_fn_imps.hpp
+|   |           |   |   |   |   |-- pairing_heap_.hpp
+|   |           |   |   |   |   `-- split_join_fn_imps.hpp
+|   |           |   |   |   |-- pat_trie_
+|   |           |   |   |   |   |-- constructors_destructor_fn_imps.hpp
+|   |           |   |   |   |   |-- debug_fn_imps.hpp
+|   |           |   |   |   |   |-- erase_fn_imps.hpp
+|   |           |   |   |   |   |-- find_fn_imps.hpp
+|   |           |   |   |   |   |-- info_fn_imps.hpp
+|   |           |   |   |   |   |-- insert_join_fn_imps.hpp
+|   |           |   |   |   |   |-- iterators_fn_imps.hpp
+|   |           |   |   |   |   |-- pat_trie_.hpp
+|   |           |   |   |   |   |-- pat_trie_base.hpp
+|   |           |   |   |   |   |-- policy_access_fn_imps.hpp
+|   |           |   |   |   |   |-- r_erase_fn_imps.hpp
+|   |           |   |   |   |   |-- rotate_fn_imps.hpp
+|   |           |   |   |   |   |-- split_fn_imps.hpp
+|   |           |   |   |   |   |-- synth_access_traits.hpp
+|   |           |   |   |   |   |-- trace_fn_imps.hpp
+|   |           |   |   |   |   |-- traits.hpp
+|   |           |   |   |   |   `-- update_fn_imps.hpp
+|   |           |   |   |   |-- priority_queue_base_dispatch.hpp
+|   |           |   |   |   |-- rb_tree_map_
+|   |           |   |   |   |   |-- constructors_destructor_fn_imps.hpp
+|   |           |   |   |   |   |-- debug_fn_imps.hpp
+|   |           |   |   |   |   |-- erase_fn_imps.hpp
+|   |           |   |   |   |   |-- find_fn_imps.hpp
+|   |           |   |   |   |   |-- info_fn_imps.hpp
+|   |           |   |   |   |   |-- insert_fn_imps.hpp
+|   |           |   |   |   |   |-- node.hpp
+|   |           |   |   |   |   |-- rb_tree_.hpp
+|   |           |   |   |   |   |-- split_join_fn_imps.hpp
+|   |           |   |   |   |   `-- traits.hpp
+|   |           |   |   |   |-- rc_binomial_heap_
+|   |           |   |   |   |   |-- constructors_destructor_fn_imps.hpp
+|   |           |   |   |   |   |-- debug_fn_imps.hpp
+|   |           |   |   |   |   |-- erase_fn_imps.hpp
+|   |           |   |   |   |   |-- insert_fn_imps.hpp
+|   |           |   |   |   |   |-- rc.hpp
+|   |           |   |   |   |   |-- rc_binomial_heap_.hpp
+|   |           |   |   |   |   |-- split_join_fn_imps.hpp
+|   |           |   |   |   |   `-- trace_fn_imps.hpp
+|   |           |   |   |   |-- resize_policy
+|   |           |   |   |   |   |-- cc_hash_max_collision_check_resize_trigger_imp.hpp
+|   |           |   |   |   |   |-- hash_exponential_size_policy_imp.hpp
+|   |           |   |   |   |   |-- hash_load_check_resize_trigger_imp.hpp
+|   |           |   |   |   |   |-- hash_load_check_resize_trigger_size_base.hpp
+|   |           |   |   |   |   |-- hash_prime_size_policy_imp.hpp
+|   |           |   |   |   |   |-- hash_standard_resize_policy_imp.hpp
+|   |           |   |   |   |   |-- sample_resize_policy.hpp
+|   |           |   |   |   |   |-- sample_resize_trigger.hpp
+|   |           |   |   |   |   `-- sample_size_policy.hpp
+|   |           |   |   |   |-- splay_tree_
+|   |           |   |   |   |   |-- constructors_destructor_fn_imps.hpp
+|   |           |   |   |   |   |-- debug_fn_imps.hpp
+|   |           |   |   |   |   |-- erase_fn_imps.hpp
+|   |           |   |   |   |   |-- find_fn_imps.hpp
+|   |           |   |   |   |   |-- info_fn_imps.hpp
+|   |           |   |   |   |   |-- insert_fn_imps.hpp
+|   |           |   |   |   |   |-- node.hpp
+|   |           |   |   |   |   |-- splay_fn_imps.hpp
+|   |           |   |   |   |   |-- splay_tree_.hpp
+|   |           |   |   |   |   |-- split_join_fn_imps.hpp
+|   |           |   |   |   |   `-- traits.hpp
+|   |           |   |   |   |-- standard_policies.hpp
+|   |           |   |   |   |-- thin_heap_
+|   |           |   |   |   |   |-- constructors_destructor_fn_imps.hpp
+|   |           |   |   |   |   |-- debug_fn_imps.hpp
+|   |           |   |   |   |   |-- erase_fn_imps.hpp
+|   |           |   |   |   |   |-- find_fn_imps.hpp
+|   |           |   |   |   |   |-- insert_fn_imps.hpp
+|   |           |   |   |   |   |-- split_join_fn_imps.hpp
+|   |           |   |   |   |   |-- thin_heap_.hpp
+|   |           |   |   |   |   `-- trace_fn_imps.hpp
+|   |           |   |   |   |-- tree_policy
+|   |           |   |   |   |   |-- node_metadata_selector.hpp
+|   |           |   |   |   |   |-- order_statistics_imp.hpp
+|   |           |   |   |   |   `-- sample_tree_node_update.hpp
+|   |           |   |   |   |-- tree_trace_base.hpp
+|   |           |   |   |   |-- trie_policy
+|   |           |   |   |   |   |-- node_metadata_selector.hpp
+|   |           |   |   |   |   |-- order_statistics_imp.hpp
+|   |           |   |   |   |   |-- prefix_search_node_update_imp.hpp
+|   |           |   |   |   |   |-- sample_trie_access_traits.hpp
+|   |           |   |   |   |   |-- sample_trie_node_update.hpp
+|   |           |   |   |   |   |-- trie_policy_base.hpp
+|   |           |   |   |   |   `-- trie_string_access_traits_imp.hpp
+|   |           |   |   |   |-- type_utils.hpp
+|   |           |   |   |   |-- types_traits.hpp
+|   |           |   |   |   `-- unordered_iterator
+|   |           |   |   |       |-- const_iterator.hpp
+|   |           |   |   |       |-- iterator.hpp
+|   |           |   |   |       |-- point_const_iterator.hpp
+|   |           |   |   |       `-- point_iterator.hpp
+|   |           |   |   |-- exception.hpp
+|   |           |   |   |-- hash_policy.hpp
+|   |           |   |   |-- list_update_policy.hpp
+|   |           |   |   |-- priority_queue.hpp
+|   |           |   |   |-- tag_and_trait.hpp
+|   |           |   |   |-- tree_policy.hpp
+|   |           |   |   `-- trie_policy.hpp
+|   |           |   |-- pod_char_traits.h
+|   |           |   |-- pointer.h
+|   |           |   |-- pool_allocator.h
+|   |           |   |-- random
+|   |           |   |-- random.tcc
+|   |           |   |-- rb_tree
+|   |           |   |-- rc_string_base.h
+|   |           |   |-- rope
+|   |           |   |-- ropeimpl.h
+|   |           |   |-- slist
+|   |           |   |-- sso_string_base.h
+|   |           |   |-- stdio_filebuf.h
+|   |           |   |-- stdio_sync_filebuf.h
+|   |           |   |-- string_conversions.h
+|   |           |   |-- throw_allocator.h
+|   |           |   |-- type_traits.h
+|   |           |   |-- typelist.h
+|   |           |   |-- vstring.h
+|   |           |   |-- vstring.tcc
+|   |           |   |-- vstring_fwd.h
+|   |           |   `-- vstring_util.h
+|   |           |-- fenv.h
+|   |           |-- forward_list
+|   |           |-- fstream
+|   |           |-- functional
+|   |           |-- future
+|   |           |-- initializer_list
+|   |           |-- iomanip
+|   |           |-- ios
+|   |           |-- iosfwd
+|   |           |-- iostream
+|   |           |-- istream
+|   |           |-- iterator
+|   |           |-- limits
+|   |           |-- list
+|   |           |-- locale
+|   |           |-- map
+|   |           |-- memory
+|   |           |-- mutex
+|   |           |-- new
+|   |           |-- numeric
+|   |           |-- ostream
+|   |           |-- parallel
+|   |           |   |-- algo.h
+|   |           |   |-- algobase.h
+|   |           |   |-- algorithm
+|   |           |   |-- algorithmfwd.h
+|   |           |   |-- balanced_quicksort.h
+|   |           |   |-- base.h
+|   |           |   |-- basic_iterator.h
+|   |           |   |-- checkers.h
+|   |           |   |-- compatibility.h
+|   |           |   |-- compiletime_settings.h
+|   |           |   |-- equally_split.h
+|   |           |   |-- features.h
+|   |           |   |-- find.h
+|   |           |   |-- find_selectors.h
+|   |           |   |-- for_each.h
+|   |           |   |-- for_each_selectors.h
+|   |           |   |-- iterator.h
+|   |           |   |-- list_partition.h
+|   |           |   |-- losertree.h
+|   |           |   |-- merge.h
+|   |           |   |-- multiseq_selection.h
+|   |           |   |-- multiway_merge.h
+|   |           |   |-- multiway_mergesort.h
+|   |           |   |-- numeric
+|   |           |   |-- numericfwd.h
+|   |           |   |-- omp_loop.h
+|   |           |   |-- omp_loop_static.h
+|   |           |   |-- par_loop.h
+|   |           |   |-- parallel.h
+|   |           |   |-- partial_sum.h
+|   |           |   |-- partition.h
+|   |           |   |-- queue.h
+|   |           |   |-- quicksort.h
+|   |           |   |-- random_number.h
+|   |           |   |-- random_shuffle.h
+|   |           |   |-- search.h
+|   |           |   |-- set_operations.h
+|   |           |   |-- settings.h
+|   |           |   |-- sort.h
+|   |           |   |-- tags.h
+|   |           |   |-- types.h
+|   |           |   |-- unique_copy.h
+|   |           |   `-- workstealing.h
+|   |           |-- powerpc64-unknown-linux-gnu
+|   |           |   |-- bits
+|   |           |   |   |-- atomic_word.h
+|   |           |   |   |-- basic_file.h
+|   |           |   |   |-- c++allocator.h
+|   |           |   |   |-- c++config.h
+|   |           |   |   |-- c++io.h
+|   |           |   |   |-- c++locale.h
+|   |           |   |   |-- cpu_defines.h
+|   |           |   |   |-- ctype_base.h
+|   |           |   |   |-- ctype_inline.h
+|   |           |   |   |-- cxxabi_tweaks.h
+|   |           |   |   |-- error_constants.h
+|   |           |   |   |-- extc++.h
+|   |           |   |   |-- gthr-default.h
+|   |           |   |   |-- gthr-posix.h
+|   |           |   |   |-- gthr-single.h
+|   |           |   |   |-- gthr.h
+|   |           |   |   |-- messages_members.h
+|   |           |   |   |-- opt_random.h
+|   |           |   |   |-- os_defines.h
+|   |           |   |   |-- stdc++.h
+|   |           |   |   |-- stdtr1c++.h
+|   |           |   |   `-- time_members.h
+|   |           |   `-- ext
+|   |           |       `-- opt_random.h
+|   |           |-- profile
+|   |           |   |-- array
+|   |           |   |-- base.h
+|   |           |   |-- bitset
+|   |           |   |-- deque
+|   |           |   |-- forward_list
+|   |           |   |-- impl
+|   |           |   |   |-- profiler.h
+|   |           |   |   |-- profiler_algos.h
+|   |           |   |   |-- profiler_container_size.h
+|   |           |   |   |-- profiler_hash_func.h
+|   |           |   |   |-- profiler_hashtable_size.h
+|   |           |   |   |-- profiler_list_to_slist.h
+|   |           |   |   |-- profiler_list_to_vector.h
+|   |           |   |   |-- profiler_map_to_unordered_map.h
+|   |           |   |   |-- profiler_node.h
+|   |           |   |   |-- profiler_state.h
+|   |           |   |   |-- profiler_trace.h
+|   |           |   |   |-- profiler_vector_size.h
+|   |           |   |   `-- profiler_vector_to_list.h
+|   |           |   |-- iterator_tracker.h
+|   |           |   |-- list
+|   |           |   |-- map
+|   |           |   |-- map.h
+|   |           |   |-- multimap.h
+|   |           |   |-- multiset.h
+|   |           |   |-- ordered_base.h
+|   |           |   |-- set
+|   |           |   |-- set.h
+|   |           |   |-- unordered_base.h
+|   |           |   |-- unordered_map
+|   |           |   |-- unordered_set
+|   |           |   `-- vector
+|   |           |-- queue
+|   |           |-- random
+|   |           |-- ratio
+|   |           |-- regex
+|   |           |-- scoped_allocator
+|   |           |-- set
+|   |           |-- shared_mutex
+|   |           |-- sstream
+|   |           |-- stack
+|   |           |-- stdexcept
+|   |           |-- streambuf
+|   |           |-- string
+|   |           |-- system_error
+|   |           |-- tgmath.h
+|   |           |-- thread
+|   |           |-- tr1
+|   |           |   |-- array
+|   |           |   |-- bessel_function.tcc
+|   |           |   |-- beta_function.tcc
+|   |           |   |-- ccomplex
+|   |           |   |-- cctype
+|   |           |   |-- cfenv
+|   |           |   |-- cfloat
+|   |           |   |-- cinttypes
+|   |           |   |-- climits
+|   |           |   |-- cmath
+|   |           |   |-- complex
+|   |           |   |-- complex.h
+|   |           |   |-- cstdarg
+|   |           |   |-- cstdbool
+|   |           |   |-- cstdint
+|   |           |   |-- cstdio
+|   |           |   |-- cstdlib
+|   |           |   |-- ctgmath
+|   |           |   |-- ctime
+|   |           |   |-- ctype.h
+|   |           |   |-- cwchar
+|   |           |   |-- cwctype
+|   |           |   |-- ell_integral.tcc
+|   |           |   |-- exp_integral.tcc
+|   |           |   |-- fenv.h
+|   |           |   |-- float.h
+|   |           |   |-- functional
+|   |           |   |-- functional_hash.h
+|   |           |   |-- gamma.tcc
+|   |           |   |-- hashtable.h
+|   |           |   |-- hashtable_policy.h
+|   |           |   |-- hypergeometric.tcc
+|   |           |   |-- inttypes.h
+|   |           |   |-- legendre_function.tcc
+|   |           |   |-- limits.h
+|   |           |   |-- math.h
+|   |           |   |-- memory
+|   |           |   |-- modified_bessel_func.tcc
+|   |           |   |-- poly_hermite.tcc
+|   |           |   |-- poly_laguerre.tcc
+|   |           |   |-- random
+|   |           |   |-- random.h
+|   |           |   |-- random.tcc
+|   |           |   |-- regex
+|   |           |   |-- riemann_zeta.tcc
+|   |           |   |-- shared_ptr.h
+|   |           |   |-- special_function_util.h
+|   |           |   |-- stdarg.h
+|   |           |   |-- stdbool.h
+|   |           |   |-- stdint.h
+|   |           |   |-- stdio.h
+|   |           |   |-- stdlib.h
+|   |           |   |-- tgmath.h
+|   |           |   |-- tuple
+|   |           |   |-- type_traits
+|   |           |   |-- unordered_map
+|   |           |   |-- unordered_map.h
+|   |           |   |-- unordered_set
+|   |           |   |-- unordered_set.h
+|   |           |   |-- utility
+|   |           |   |-- wchar.h
+|   |           |   `-- wctype.h
+|   |           |-- tr2
+|   |           |   |-- bool_set
+|   |           |   |-- bool_set.tcc
+|   |           |   |-- dynamic_bitset
+|   |           |   |-- dynamic_bitset.tcc
+|   |           |   |-- ratio
+|   |           |   `-- type_traits
+|   |           |-- tuple
+|   |           |-- type_traits
+|   |           |-- typeindex
+|   |           |-- typeinfo
+|   |           |-- unordered_map
+|   |           |-- unordered_set
+|   |           |-- utility
+|   |           |-- valarray
+|   |           `-- vector
+|   |-- lib
+|   |   `-- ldscripts
+|   |       |-- elf32ppc.x
+|   |       |-- elf32ppc.xbn
+|   |       |-- elf32ppc.xc
+|   |       |-- elf32ppc.xd
+|   |       |-- elf32ppc.xdc
+|   |       |-- elf32ppc.xdw
+|   |       |-- elf32ppc.xn
+|   |       |-- elf32ppc.xr
+|   |       |-- elf32ppc.xs
+|   |       |-- elf32ppc.xsc
+|   |       |-- elf32ppc.xsw
+|   |       |-- elf32ppc.xu
+|   |       |-- elf32ppc.xw
+|   |       |-- elf32ppclinux.x
+|   |       |-- elf32ppclinux.xbn
+|   |       |-- elf32ppclinux.xc
+|   |       |-- elf32ppclinux.xd
+|   |       |-- elf32ppclinux.xdc
+|   |       |-- elf32ppclinux.xdw
+|   |       |-- elf32ppclinux.xn
+|   |       |-- elf32ppclinux.xr
+|   |       |-- elf32ppclinux.xs
+|   |       |-- elf32ppclinux.xsc
+|   |       |-- elf32ppclinux.xsw
+|   |       |-- elf32ppclinux.xu
+|   |       |-- elf32ppclinux.xw
+|   |       |-- elf32ppcsim.x
+|   |       |-- elf32ppcsim.xbn
+|   |       |-- elf32ppcsim.xc
+|   |       |-- elf32ppcsim.xd
+|   |       |-- elf32ppcsim.xdc
+|   |       |-- elf32ppcsim.xdw
+|   |       |-- elf32ppcsim.xn
+|   |       |-- elf32ppcsim.xr
+|   |       |-- elf32ppcsim.xs
+|   |       |-- elf32ppcsim.xsc
+|   |       |-- elf32ppcsim.xsw
+|   |       |-- elf32ppcsim.xu
+|   |       |-- elf32ppcsim.xw
+|   |       |-- elf64ppc.x
+|   |       |-- elf64ppc.xbn
+|   |       |-- elf64ppc.xc
+|   |       |-- elf64ppc.xd
+|   |       |-- elf64ppc.xdc
+|   |       |-- elf64ppc.xdw
+|   |       |-- elf64ppc.xn
+|   |       |-- elf64ppc.xr
+|   |       |-- elf64ppc.xs
+|   |       |-- elf64ppc.xsc
+|   |       |-- elf64ppc.xsw
+|   |       |-- elf64ppc.xu
+|   |       `-- elf64ppc.xw
+|   `-- lib64
+|       |-- libatomic.la
+|       |-- libatomic.so -> libatomic.so.1.1.0
+|       |-- libatomic.so.1 -> libatomic.so.1.1.0
+|       |-- libatomic.so.1.1.0
+|       |-- libgcc_s.so
+|       |-- libgcc_s.so.1
+|       |-- libgomp-plugin-host_nonshm.la
+|       |-- libgomp-plugin-host_nonshm.so -> libgomp-plugin-host_nonshm.so.1.0.0
+|       |-- libgomp-plugin-host_nonshm.so.1 -> libgomp-plugin-host_nonshm.so.1.0.0
+|       |-- libgomp-plugin-host_nonshm.so.1.0.0
+|       |-- libgomp.la
+|       |-- libgomp.so -> libgomp.so.1.0.0
+|       |-- libgomp.so.1 -> libgomp.so.1.0.0
+|       |-- libgomp.so.1.0.0
+|       |-- libgomp.spec
+|       |-- libitm.la
+|       |-- libitm.so -> libitm.so.1.0.0
+|       |-- libitm.so.1 -> libitm.so.1.0.0
+|       |-- libitm.so.1.0.0
+|       |-- libitm.spec
+|       |-- libssp.la
+|       |-- libssp.so -> libssp.so.0.0.0
+|       |-- libssp.so.0 -> libssp.so.0.0.0
+|       |-- libssp.so.0.0.0
+|       |-- libssp_nonshared.a
+|       |-- libssp_nonshared.la
+|       |-- libstdc++.la
+|       |-- libstdc++.so -> libstdc++.so.6.0.21
+|       |-- libstdc++.so.6 -> libstdc++.so.6.0.21
+|       |-- libstdc++.so.6.0.21
+|       |-- libstdc++.so.6.0.21-gdb.py
+|       |-- libsupc++.a
+|       `-- libsupc++.la
+`-- share
+    |-- aclocal
+    |   `-- pkg.m4
+    |-- doc
+    |   |-- mpfr
+    |   |   |-- AUTHORS
+    |   |   |-- BUGS
+    |   |   |-- COPYING
+    |   |   |-- COPYING.LESSER
+    |   |   |-- FAQ.html
+    |   |   |-- NEWS
+    |   |   |-- TODO
+    |   |   `-- examples
+    |   |       |-- ReadMe
+    |   |       |-- divworst.c
+    |   |       |-- rndo-add.c
+    |   |       |-- sample.c
+    |   |       `-- version.c
+    |   `-- pkg-config
+    |       `-- pkg-config-guide.html
+    |-- gcc-5.2.0
+    |   `-- python
+    |       `-- libstdcxx
+    |           |-- __init__.py
+    |           `-- v6
+    |               |-- __init__.py
+    |               |-- printers.py
+    |               `-- xmethods.py
+    |-- info
+    |   |-- as.info
+    |   |-- bfd.info
+    |   |-- binutils.info
+    |   |-- dir
+    |   |-- gmp.info
+    |   |-- gmp.info-1
+    |   |-- gmp.info-2
+    |   |-- gprof.info
+    |   |-- ld.info
+    |   |-- libgomp.info
+    |   |-- libitm.info
+    |   |-- libquadmath.info
+    |   |-- m4.info
+    |   |-- m4.info-1
+    |   |-- m4.info-2
+    |   |-- mpc.info
+    |   `-- mpfr.info
+    |-- man
+    |   |-- man1
+    |   |   |-- file.1
+    |   |   |-- m4.1
+    |   |   |-- pkg-config.1
+    |   |   |-- powerpc64-unknown-linux-gnu-addr2line.1
+    |   |   |-- powerpc64-unknown-linux-gnu-ar.1
+    |   |   |-- powerpc64-unknown-linux-gnu-as.1
+    |   |   |-- powerpc64-unknown-linux-gnu-c++filt.1
+    |   |   |-- powerpc64-unknown-linux-gnu-cpp.1
+    |   |   |-- powerpc64-unknown-linux-gnu-dlltool.1
+    |   |   |-- powerpc64-unknown-linux-gnu-elfedit.1
+    |   |   |-- powerpc64-unknown-linux-gnu-g++.1
+    |   |   |-- powerpc64-unknown-linux-gnu-gcc.1
+    |   |   |-- powerpc64-unknown-linux-gnu-gcov.1
+    |   |   |-- powerpc64-unknown-linux-gnu-gprof.1
+    |   |   |-- powerpc64-unknown-linux-gnu-ld.1
+    |   |   |-- powerpc64-unknown-linux-gnu-nlmconv.1
+    |   |   |-- powerpc64-unknown-linux-gnu-nm.1
+    |   |   |-- powerpc64-unknown-linux-gnu-objcopy.1
+    |   |   |-- powerpc64-unknown-linux-gnu-objdump.1
+    |   |   |-- powerpc64-unknown-linux-gnu-ranlib.1
+    |   |   |-- powerpc64-unknown-linux-gnu-readelf.1
+    |   |   |-- powerpc64-unknown-linux-gnu-size.1
+    |   |   |-- powerpc64-unknown-linux-gnu-strings.1
+    |   |   |-- powerpc64-unknown-linux-gnu-strip.1
+    |   |   |-- powerpc64-unknown-linux-gnu-windmc.1
+    |   |   `-- powerpc64-unknown-linux-gnu-windres.1
+    |   |-- man3
+    |   |   `-- libmagic.3
+    |   |-- man4
+    |   |   `-- magic.4
+    |   |-- man5
+    |   `-- man7
+    |       |-- fsf-funding.7
+    |       |-- gfdl.7
+    |       `-- gpl.7
+    `-- misc
+        `-- magic.mgc
+
+96 directories, 1412 files

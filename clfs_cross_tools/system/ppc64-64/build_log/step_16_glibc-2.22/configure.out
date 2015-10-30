@@ -1,0 +1,138 @@
+configure: loading cache config.cache
+checking build system type... x86_64-cross-linux-gnu
+checking host system type... powerpc64-unknown-linux-gnu
+checking for powerpc64-unknown-linux-gnu-gcc... powerpc64-unknown-linux-gnu-gcc  -m64
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether powerpc64-unknown-linux-gnu-gcc  -m64 accepts -g... yes
+checking for gcc... gcc
+checking for powerpc64-unknown-linux-gnu-readelf... powerpc64-unknown-linux-gnu-readelf
+checking for powerpc64-unknown-linux-gnu-g++... no
+checking for powerpc64-unknown-linux-gnu-c++... no
+checking for powerpc64-unknown-linux-gnu-gpp... no
+checking for powerpc64-unknown-linux-gnu-aCC... no
+checking for powerpc64-unknown-linux-gnu-CC... no
+checking for powerpc64-unknown-linux-gnu-cxx... no
+checking for powerpc64-unknown-linux-gnu-cc++... no
+checking for powerpc64-unknown-linux-gnu-cl.exe... no
+checking for powerpc64-unknown-linux-gnu-FCC... no
+checking for powerpc64-unknown-linux-gnu-KCC... no
+checking for powerpc64-unknown-linux-gnu-RCC... no
+checking for powerpc64-unknown-linux-gnu-xlC_r... no
+checking for powerpc64-unknown-linux-gnu-xlC... no
+checking for g++... g++
+configure: WARNING: using cross tools not prefixed with host triplet
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking whether g++ can link programs... yes
+checking for sysdeps preconfigure fragments... aarch64 alpha arm hppa i386 m68k microblaze mips nacl nios2 powerpc s390 sh sparc tile x86_64 
+configure: running configure fragment for add-on libidn
+checking for assembler and linker STT_GNU_IFUNC support... yes
+checking whether .text pseudo-op must be used... yes
+checking sysdep dirs... sysdeps/unix/sysv/linux/powerpc/powerpc64/fpu sysdeps/unix/sysv/linux/powerpc/powerpc64 sysdeps/unix/sysv/linux/wordsize-64 sysdeps/unix/sysv/linux/powerpc sysdeps/powerpc/nptl sysdeps/unix/sysv/linux sysdeps/nptl sysdeps/pthread sysdeps/gnu sysdeps/unix/inet sysdeps/unix/sysv sysdeps/unix/powerpc sysdeps/unix sysdeps/posix sysdeps/powerpc/powerpc64/fpu/multiarch sysdeps/powerpc/powerpc64/fpu sysdeps/powerpc/powerpc64/multiarch sysdeps/powerpc/powerpc64 sysdeps/wordsize-64 sysdeps/powerpc/fpu sysdeps/powerpc sysdeps/ieee754/ldbl-128ibm sysdeps/ieee754/ldbl-opt sysdeps/ieee754/dbl-64 sysdeps/ieee754/flt-32 sysdeps/ieee754 sysdeps/generic
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln -s works... yes
+checking whether /home/dl/ramdisk/build_qemu_image/clfs_cross_tools/system/ppc64-64/cross-tools/bin/../lib/gcc/powerpc64-unknown-linux-gnu/5.2.0/../../../../powerpc64-unknown-linux-gnu/bin/as is GNU as... yes
+checking whether /home/dl/ramdisk/build_qemu_image/clfs_cross_tools/system/ppc64-64/cross-tools/bin/../lib/gcc/powerpc64-unknown-linux-gnu/5.2.0/../../../../powerpc64-unknown-linux-gnu/bin/ld is GNU ld... yes
+checking for /home/dl/ramdisk/build_qemu_image/clfs_cross_tools/system/ppc64-64/cross-tools/bin/../lib/gcc/powerpc64-unknown-linux-gnu/5.2.0/../../../../powerpc64-unknown-linux-gnu/bin/as... /home/dl/ramdisk/build_qemu_image/clfs_cross_tools/system/ppc64-64/cross-tools/bin/../lib/gcc/powerpc64-unknown-linux-gnu/5.2.0/../../../../powerpc64-unknown-linux-gnu/bin/as
+checking version of /home/dl/ramdisk/build_qemu_image/clfs_cross_tools/system/ppc64-64/cross-tools/bin/../lib/gcc/powerpc64-unknown-linux-gnu/5.2.0/../../../../powerpc64-unknown-linux-gnu/bin/as... 2.25.1, ok
+checking for /home/dl/ramdisk/build_qemu_image/clfs_cross_tools/system/ppc64-64/cross-tools/bin/../lib/gcc/powerpc64-unknown-linux-gnu/5.2.0/../../../../powerpc64-unknown-linux-gnu/bin/ld... /home/dl/ramdisk/build_qemu_image/clfs_cross_tools/system/ppc64-64/cross-tools/bin/../lib/gcc/powerpc64-unknown-linux-gnu/5.2.0/../../../../powerpc64-unknown-linux-gnu/bin/ld
+checking version of /home/dl/ramdisk/build_qemu_image/clfs_cross_tools/system/ppc64-64/cross-tools/bin/../lib/gcc/powerpc64-unknown-linux-gnu/5.2.0/../../../../powerpc64-unknown-linux-gnu/bin/ld... 2.25.1, ok
+checking for gnumake... no
+checking for gmake... no
+checking for make... make
+checking version of make... 4.0, ok
+checking for gnumsgfmt... no
+checking for gmsgfmt... no
+checking for msgfmt... msgfmt
+checking version of msgfmt... 0.19.2, ok
+checking for makeinfo... no
+checking for sed... sed
+checking version of sed... 4.2.2, ok
+checking for gawk... gawk
+checking version of gawk... 4.1.1, ok
+checking if powerpc64-unknown-linux-gnu-gcc  -m64 -B/cross-tools/bin/ is sufficient to build libc... yes
+checking for powerpc64-unknown-linux-gnu-nm... powerpc64-unknown-linux-gnu-nm
+configure: WARNING:
+*** These auxiliary programs are missing or incompatible versions: makeinfo
+*** some features will be disabled.
+*** Check the INSTALL file for required versions.
+checking LD_LIBRARY_PATH variable... ok
+checking whether GCC supports -static-libgcc... -static-libgcc
+checking for bash... /bin/bash
+checking for perl... /usr/bin/perl
+checking for install-info... /usr/bin/install-info
+checking for bison... no
+checking for libc-friendly stddef.h... yes
+checking whether we need to use -P to assemble .S files... no
+checking for .set assembler directive... yes
+checking for assembler gnu_unique_object symbol type... yes
+checking for .previous assembler directive... yes
+checking for .protected and .hidden assembler directive... yes
+checking whether __attribute__((visibility())) is supported... yes
+checking linker support for protected data symbol... yes
+checking for broken __attribute__((visibility()))... no
+checking for broken __attribute__((alias()))... no
+checking whether to put _rtld_local into .sdata section... yes
+checking for .preinit_array/.init_array/.fini_array support... yes
+checking whether to use .ctors/.dtors header and trailer... yes
+checking for libunwind-support in compiler... no
+checking for linker that supports -z nodelete... yes
+checking for linker that supports -z nodlopen... yes
+checking for linker that supports -z initfirst... yes
+checking for -Bgroup option... yes
+checking whether --noexecstack is desirable for .S files... no
+checking for -z combreloc... yes
+checking for linker that supports -z execstack... yes
+checking for -fpie... yes
+checking for --hash-style option... yes
+checking for sufficient default -shared layout... no
+checking linker output format... elf64-powerpc
+checking for -fno-toplevel-reorder -fno-section-anchors... yes
+checking for -fstack-protector... (cached) no
+checking for -fgnu89-inline... (cached) yes
+checking whether cc puts quotes around section names... no
+checking for assembler .weak directive... yes
+checking for ld --no-whole-archive... yes
+checking for gcc -fexceptions... yes
+checking for __builtin_memset... no
+checking for redirection of built-in functions... yes
+checking for __thread... yes
+checking for tls_model attribute... yes
+checking for compiler option to disable generation of FMA instructions... -ffp-contract=off
+checking if powerpc64-unknown-linux-gnu-gcc  -m64 -B/cross-tools/bin/ accepts -fno-tree-loop-distribute-patterns with __attribute__ ((__optimize__))... yes
+checking for libgd... no
+checking for is_selinux_enabled in -lselinux... no
+checking size of long double... 8
+checking for _FORTIFY_SOURCE predefine... no
+checking whether powerpc64-unknown-linux-gnu-gcc  -m64 -B/cross-tools/bin/ implicitly enables -fstack-protector... no
+checking whether the linker provides working __ehdr_start... yes
+checking for __builtin_trap with no external dependencies... yes
+running configure fragment for sysdeps/unix/sysv/linux/powerpc/powerpc64
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking whether the compiler is using the PowerPC64 ELFv2 ABI... no
+checking whether the compiler defines _CALL_ELF... yes
+running configure fragment for sysdeps/unix/sysv/linux/powerpc
+checking whether powerpc64-unknown-linux-gnu-gcc  -m64 -B/cross-tools/bin/ -g -O2 -mlong-double-128 uses IBM extended format... yes
+running configure fragment for sysdeps/unix/sysv/linux
+checking installed Linux kernel header files... 2.6.32 or later
+checking for kernel header at least 4.2.3... ok
+checking for linux/fanotify.h... yes
+running configure fragment for sysdeps/nptl
+checking for forced unwind support... (cached) yes
+checking for C cleanup handling... (cached) yes
+running configure fragment for sysdeps/gnu
+running configure fragment for sysdeps/powerpc/powerpc64
+checking for support for overlapping .opd entries... no
+running configure fragment for sysdeps/ieee754/ldbl-opt
+checking whether powerpc64-unknown-linux-gnu-gcc  -m64 -B/cross-tools/bin/ -g -O2 supports -mlong-double-128... yes
+checking for old glibc 2.0.x headers... no
+checking whether -fPIC is default... no
+checking whether -fPIE is default... no
+configure: updating cache config.cache
+configure: creating ./config.status
+config.status: creating config.make
+config.status: creating Makefile
+config.status: creating config.h
+config.status: executing default commands

@@ -1,0 +1,146 @@
+configure: WARNING: you should use --build, --host, --target
+checking build system type... x86_64-cross-linux-gnu
+checking host system type... x86_64-cross-linux-gnu
+checking target system type... powerpc64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln works... yes
+checking whether ln -s works... yes
+checking for a sed that does not truncate output... /bin/sed
+checking for gawk... gawk
+checking for libcilkrts support... no
+checking for libvtv support... no
+checking for x86_64-cross-linux-gnu-gcc... no
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for x86_64-cross-linux-gnu-g++... no
+checking for x86_64-cross-linux-gnu-c++... no
+checking for x86_64-cross-linux-gnu-gpp... no
+checking for x86_64-cross-linux-gnu-aCC... no
+checking for x86_64-cross-linux-gnu-CC... no
+checking for x86_64-cross-linux-gnu-cxx... no
+checking for x86_64-cross-linux-gnu-cc++... no
+checking for x86_64-cross-linux-gnu-cl.exe... no
+checking for x86_64-cross-linux-gnu-FCC... no
+checking for x86_64-cross-linux-gnu-KCC... no
+checking for x86_64-cross-linux-gnu-RCC... no
+checking for x86_64-cross-linux-gnu-xlC_r... no
+checking for x86_64-cross-linux-gnu-xlC... no
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking whether g++ accepts -static-libstdc++ -static-libgcc... yes
+checking for x86_64-cross-linux-gnu-gnatbind... no
+checking for gnatbind... no
+checking for x86_64-cross-linux-gnu-gnatmake... no
+checking for gnatmake... no
+checking whether compiler driver understands Ada... no
+checking how to compare bootstrapped objects... cmp --ignore-initial=16 $$f1 $$f2
+checking for objdir... .libs
+checking for the correct version of gmp.h... yes
+checking for the correct version of mpfr.h... yes
+checking for the correct version of mpc.h... yes
+checking for the correct version of the gmp/mpfr/mpc libraries... yes
+checking for compatible ISL... yes
+*** This configuration is not supported in the following subdirectories:
+     zlib target-libquadmath target-libcilkrts target-libvtv target-libmpx gnattools gotools target-libada target-libstdc++-v3 target-libgfortran target-libgo target-libffi target-libbacktrace target-zlib target-libjava target-libobjc target-libgomp target-liboffloadmic target-libatomic target-libitm target-libsanitizer target-libssp target-boehm-gc
+    (Any other directories should still work fine.)
+checking for default BUILD_CONFIG... 
+checking for --enable-vtable-verify... no
+checking for bison... no
+checking for byacc... no
+checking for yacc... no
+checking for bison... no
+checking for gm4... no
+checking for gnum4... no
+checking for m4... m4
+checking for flex... no
+checking for lex... no
+checking for flex... no
+checking for makeinfo... no
+/home/dl/ramdisk/build_qemu_image/clfs_cross_tools/system/ppc64-64/sources/gcc-5.2.0/missing: 81: /home/dl/ramdisk/build_qemu_image/clfs_cross_tools/system/ppc64-64/sources/gcc-5.2.0/missing: makeinfo: not found
+checking for expect... no
+checking for runtest... no
+checking for ar... (cached) ar
+checking for x86_64-cross-linux-gnu-ar... (cached) ar
+checking for x86_64-cross-linux-gnu-as... no
+checking for as... as
+checking for x86_64-cross-linux-gnu-dlltool... no
+checking for dlltool... no
+checking for x86_64-cross-linux-gnu-ld... no
+checking for ld... ld
+checking for x86_64-cross-linux-gnu-lipo... no
+checking for lipo... no
+checking for x86_64-cross-linux-gnu-nm... no
+checking for nm... nm
+checking for x86_64-cross-linux-gnu-ranlib... no
+checking for ranlib... ranlib
+checking for x86_64-cross-linux-gnu-strip... no
+checking for strip... strip
+checking for x86_64-cross-linux-gnu-windres... no
+checking for windres... no
+checking for x86_64-cross-linux-gnu-windmc... no
+checking for windmc... no
+checking for x86_64-cross-linux-gnu-objcopy... no
+checking for objcopy... objcopy
+checking for x86_64-cross-linux-gnu-objdump... no
+checking for objdump... objdump
+checking for x86_64-cross-linux-gnu-readelf... no
+checking for readelf... readelf
+checking for powerpc64-unknown-linux-gnu-cc... no
+checking for powerpc64-unknown-linux-gnu-gcc... no
+checking for powerpc64-unknown-linux-gnu-c++... no
+checking for powerpc64-unknown-linux-gnu-g++... no
+checking for powerpc64-unknown-linux-gnu-cxx... no
+checking for powerpc64-unknown-linux-gnu-gxx... no
+checking for powerpc64-unknown-linux-gnu-gcc... no
+checking for powerpc64-unknown-linux-gnu-gcj... no
+checking for powerpc64-unknown-linux-gnu-gfortran... no
+checking for powerpc64-unknown-linux-gnu-gccgo... no
+checking for ar... /cross-tools/powerpc64-unknown-linux-gnu/bin/ar
+checking for as... /cross-tools/powerpc64-unknown-linux-gnu/bin/as
+checking for dlltool... no
+checking for powerpc64-unknown-linux-gnu-dlltool... no
+checking for ld... /cross-tools/powerpc64-unknown-linux-gnu/bin/ld
+checking for lipo... no
+checking for powerpc64-unknown-linux-gnu-lipo... no
+checking for nm... /cross-tools/powerpc64-unknown-linux-gnu/bin/nm
+checking for objcopy... /cross-tools/powerpc64-unknown-linux-gnu/bin/objcopy
+checking for objdump... /cross-tools/powerpc64-unknown-linux-gnu/bin/objdump
+checking for ranlib... /cross-tools/powerpc64-unknown-linux-gnu/bin/ranlib
+checking for readelf... no
+checking for powerpc64-unknown-linux-gnu-readelf... powerpc64-unknown-linux-gnu-readelf
+checking for strip... /cross-tools/powerpc64-unknown-linux-gnu/bin/strip
+checking for windres... no
+checking for powerpc64-unknown-linux-gnu-windres... no
+checking for windmc... no
+checking for powerpc64-unknown-linux-gnu-windmc... no
+checking where to find the target ar... pre-installed in /cross-tools/powerpc64-unknown-linux-gnu/bin
+checking where to find the target as... pre-installed in /cross-tools/powerpc64-unknown-linux-gnu/bin
+checking where to find the target cc... just compiled
+checking where to find the target c++... pre-installed
+checking where to find the target c++ for libstdc++... pre-installed
+checking where to find the target dlltool... pre-installed
+checking where to find the target gcc... just compiled
+checking where to find the target gcj... pre-installed
+checking where to find the target gfortran... pre-installed
+checking where to find the target gccgo... pre-installed
+checking where to find the target ld... pre-installed in /cross-tools/powerpc64-unknown-linux-gnu/bin
+checking where to find the target lipo... pre-installed
+checking where to find the target nm... pre-installed in /cross-tools/powerpc64-unknown-linux-gnu/bin
+checking where to find the target objcopy... pre-installed in /cross-tools/powerpc64-unknown-linux-gnu/bin
+checking where to find the target objdump... pre-installed in /cross-tools/powerpc64-unknown-linux-gnu/bin
+checking where to find the target ranlib... pre-installed in /cross-tools/powerpc64-unknown-linux-gnu/bin
+checking where to find the target readelf... pre-installed
+checking where to find the target strip... pre-installed in /cross-tools/powerpc64-unknown-linux-gnu/bin
+checking where to find the target windres... pre-installed
+checking where to find the target windmc... pre-installed
+checking whether to enable maintainer-specific portions of Makefiles... no
+configure: creating ./config.status
+config.status: creating Makefile
