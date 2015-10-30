@@ -69,6 +69,8 @@ function die_on_empty_var {
 readonly TARGET_SYSTEM_ALPHA=alpha
 readonly TARGET_SYSTEM_SPARC64_64=sparc64-64
 readonly TARGET_SYSTEM_MIPS64_64=mips64-64
+readonly TARGET_SYSTEM_PPC64_64=ppc64-64
+readonly TARGET_SYSTEM_S390X_64=s390x-64
 # =============================================================
 
 # =============================================================
@@ -128,9 +130,29 @@ case ${TARGET_SYSTEM} in
     LINUX_CONFIG=malta_defconfig
     TARGET_BUILD="-mabi=64"   
     PREPARED_LINUX_CONFIG=linux-config-4.2.3-mips64-64
-    # produced kernel does not find RAMDISK
-    # https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/tree/init/do_mounts_rd.c?id=refs/tags/v4.2.3 line 176
   ;;
+  ${TARGET_SYSTEM_PPC64_64})
+    CLFS_TARGET="powerpc64-unknown-linux-gnu"
+    LINUX_ARCH=powerpc
+    GCC_BUILD_FLAGS=""
+    GLIBC_STEP_16_FLAGS="${GLIBC_STEP_16_FLAGS}"
+    GCCTARGET=""
+    BUILD64="${GCCTARGET} -m64"
+    LINUX_CONFIG=defconfig    
+    TARGET_BUILD="-m64"    
+    PREPARED_LINUX_CONFIG=linux-config-4.2.3-ppc64-64
+  ;;  
+  ${TARGET_SYSTEM_S390X_64})
+    CLFS_TARGET="s390x-unknown-linux-gnu"
+    LINUX_ARCH=s390
+    GCC_BUILD_FLAGS=""
+    GLIBC_STEP_16_FLAGS="${GLIBC_STEP_16_FLAGS}"
+    GCCTARGET=""
+    BUILD64="${GCCTARGET} -m64"
+    LINUX_CONFIG=defconfig    
+    TARGET_BUILD="-m64"    
+    PREPARED_LINUX_CONFIG=
+  ;;    
   *)
     echo "unknown target-system: arg1"
     exit 1
