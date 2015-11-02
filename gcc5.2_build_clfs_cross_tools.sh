@@ -710,6 +710,8 @@ prepare_source_package gcc-5.2.0.tar.bz2
 patch -Np1 -i "${FILES}/gcc-5.20-gcc.c-STANDARD_STARTFILE_PREFIX.patch"
 die_on_any_error 0
 
+# read -p "Press [Enter] key..."
+
 touch /tools/include/limits.h
 die_on_any_error 4
 
@@ -827,14 +829,17 @@ die_on_any_error 6
 cd ${BUILD_DIR}
 die_on_any_error 7
 
-# disable libsanitizer
+# added: --disable-libsanitizer (compile problems with sparc?)
+# removed: --disable-static
+
+# read again: http://www.linuxfromscratch.org/lfs/view/7.8/chapter05/gcc-pass2.html
 
 AR=ar LDFLAGS="-Wl,-rpath,/cross-tools/lib" \
 ../${PACKAGE_DIR}/configure --prefix=/cross-tools \
 --build=${CLFS_HOST} --target=${CLFS_TARGET} --host=${CLFS_HOST} \
 --with-sysroot=${CLFS} --with-local-prefix=/tools \
 --with-native-system-header-dir=/tools/include --disable-nls \
---disable-static --enable-languages=c,c++ \
+--enable-languages=c,c++ \
 --enable-__cxa_atexit --enable-threads=posix \
 --disable-multilib --with-mpc=/cross-tools --with-mpfr=/cross-tools \
 --with-gmp=/cross-tools \
@@ -852,15 +857,15 @@ die_on_any_error 10
 make -j"${PARALLEL_MAKE_JOBS}" install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
 die_on_any_error 11
 
-# make -j"${PARALLEL_MAKE_JOBS}" all-target-libstdc++-v3 2>&1 | tee "${STEP_LOG_DIR}/make_all_target_libstdc++-v3.out"
-# die_on_any_error 12
-# make -j"${PARALLEL_MAKE_JOBS}" install-target-libstdc++-v3 2>&1 | tee "${STEP_LOG_DIR}/make_install_libstdc++-v3.out"
-# die_on_any_error 13
-# libstdc++ is in "wrong" directory (find -name "libstd*")
-# ld search dirs are correct, but gcc search dirs are different
-# ./clfs_cross_tools/system/mips64-64/cross-tools/mips64-unknown-linux-gnu/lib64/libstdc++.so
-# ./clfs_cross_tools/system/alpha/cross-tools/alphaev67-unknown-linux-gnu/lib/libstdc++.so
-# ./clfs_cross_tools/system/sparc64-64/cross-tools/sparc64-unknown-linux-gnu/lib64/libstdc++.so
+# read again: http://www.linuxfromscratch.org/lfs/view/7.8/chapter05/gcc-libstdc++.html
+# 
+
+make -j"${PARALLEL_MAKE_JOBS}" all-target-libstdc++-v3 2>&1 | tee "${STEP_LOG_DIR}/make_all_target_libstdc++-v3.out"
+die_on_any_error 12
+make -j"${PARALLEL_MAKE_JOBS}" install-target-libstdc++-v3 2>&1 | tee "${STEP_LOG_DIR}/make_install_libstdc++-v3.out"
+die_on_any_error 13
+
+# libstdc++ is in "wrong" directory (find -name "libstdc++.a")
 
 "${CLFS_CROSS_TOOLS}/bin/${CLFS_TARGET}-gcc" -print-search-dirs | sed '/^lib/b 1;d;:1;s,/[^/.][^/]*/\.\./,/,;t 1;s,:[^=]*=,:;,;s,;,;  ,g' | tr \; \\012 > "${STEP_LOG_DIR}/gcc_search_dirs.out"
 die_on_any_error 14
@@ -939,24 +944,43 @@ mkdir -pv "${STEP_LOG_DIR}"
 
 cd ${CLFS_SOURCES}
 
-cat > init.c << "EOF"
+cat > init.cpp << "EOF"
 #include <stdio.h>
-//#include <iostream> 
+#include <iostream> 
 
 int main() {
   printf("printf Hello World!\n");
-  //std::cout << "std::cout Hello World!" << std::endl;
+  std::cout << "std::cout Hello World!" << std::endl;
   while(1);
   return 1;
 }
 EOF
 die_on_any_error 0
 
+"${CLFS_TARGET}-g++" -print-search-dirs | sed '/^lib/b 1;d;:1;s,/[^/.][^/]*/\.\./,/,;t 1;s,:[^=]*=,:;,;s,;,;  ,g' | tr \; \\012 > "${STEP_LOG_DIR}/g++_search_dirs.out"
+die_on_any_error 100
+
+cat "${STEP_LOG_DIR}/g++_search_dirs.out" | sed -e $'s/:/\\\n/g' | sed 's/\/'"$TARGET_SYSTEM"'\//\/'{TARGET_SYSTEM}'\//g' | sed 's/'"$CLFS_TARGET"'/'{CLFS_TARGET}'/g'  > "${STEP_LOG_DIR}/gcc_search_dirs.diffable.out"
+die_on_any_error 200
+
+cat "${STEP_LOG_DIR}/g++_search_dirs.out" | sed -e $'s/:/\\\n/g' > "${STEP_LOG_DIR}/gcc_search_dirs.newline.out"
+die_on_any_error 300
+
+file "${CLFS_CROSS_TOOLS}/${CLFS_TARGET}/lib/libstdc++.a"
+
+file "${CLFS_CROSS_TOOLS}/${CLFS_TARGET}/bin/ld"
+
+# ld path on binutils build
+# "${CLFS_CROSS_TOOLS}/bin/${CLFS_TARGET}-ld"
+
+# ld binary in use here
+"${CLFS_CROSS_TOOLS}/${CLFS_TARGET}/bin/ld" --verbose | grep SEARCH_DIR | tr -s ' ;' \\012 > "${STEP_LOG_DIR}/bin_ld_SEARCHDIR.out"
+
 # nothing happes after kernel boot if using -static-libstdc++ -static-libgcc
-CMD="${CLFS_TARGET}-gcc "${BUILD64}" -static init.c -o init"
+CMD="${CLFS_TARGET}-g++ "${BUILD64}" -static init.cpp -o init"
 echo "CMD: $CMD"
 
-$CMD 2>&1 | tee "${STEP_LOG_DIR}/compile_init_c.out"
+$CMD 2>&1 | tee "${STEP_LOG_DIR}/compile_init_cpp.out"
 die_on_any_error 1
 
 chmod +x init
