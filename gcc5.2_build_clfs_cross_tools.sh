@@ -289,6 +289,9 @@ FILE_URLS=(
 "http://ftp.gnu.org/gnu/binutils/binutils-2.25.1.tar.bz2"
 "ftp://gcc.gnu.org/pub/gcc/releases/gcc-5.2.0/gcc-5.2.0.tar.bz2"
 "http://ftp.gnu.org/gnu/glibc/glibc-2.22.tar.xz"
+"http://ftp.gnu.org/gnu/bash/bash-4.4-beta.tar.gz"
+"http://ftp.gnu.org/gnu/coreutils/coreutils-8.24.tar.xz"
+"https://www.kernel.org/pub/linux/utils/util-linux/v2.27/util-linux-2.27.tar.xz"
 )
 
 for IX in ${!FILE_URLS[*]}
@@ -1006,6 +1009,161 @@ tree "${CLFS}/tools" > "${CLFS}/tools.tree"
 
 # -------------------------------------------
     ;;
+    20)
+# -------------------------------------------
+# bash
+# -------------------------------------------
+prepare_source_package bash-4.4-beta.tar.gz
+
+BUILD_DIR="../${STEP_PACKAGE_NAME}-build"
+rm -rf ${BUILD_DIR}
+die_on_any_error 0
+mkdir -vp ${BUILD_DIR}
+die_on_any_error 1
+
+cd ${BUILD_DIR}
+die_on_any_error 2
+
+cat > config.cache << "EOF"
+ac_cv_func_mmap_fixed_mapped=yes
+ac_cv_func_strcoll_works=yes
+ac_cv_func_working_mktime=yes
+bash_cv_func_sigsetjmp=present
+bash_cv_getcwd_malloc=yes
+bash_cv_job_control_missing=present
+bash_cv_printf_a_format=yes
+bash_cv_sys_named_pipes=present
+bash_cv_ulimit_maxfds=yes
+bash_cv_under_sys_siglist=yes
+bash_cv_unusable_rtsigs=no
+gt_cv_int_divbyzero_sigfpe=yes
+EOF
+die_on_any_error 3
+
+../${PACKAGE_DIR}/configure --prefix=/tools \
+    --build=${CLFS_HOST} --host=${CLFS_TARGET} \
+    --without-bash-malloc --cache-file=config.cache 2>&1 | tee "${STEP_LOG_DIR}/configure.out"
+die_on_any_error 4    
+
+make 2>&1 | tee "${STEP_LOG_DIR}/make.out"
+die_on_any_error 5
+
+make install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
+die_on_any_error 6
+
+remove_source_package
+# -------------------------------------------
+   ;;    
+   21)
+# -------------------------------------------
+# util-linux
+# -------------------------------------------
+prepare_source_package util-linux-2.27.tar.xz
+
+BUILD_DIR="../${STEP_PACKAGE_NAME}-build"
+rm -rf ${BUILD_DIR}
+die_on_any_error 0
+mkdir -vp ${BUILD_DIR}
+die_on_any_error 1
+
+cd ${BUILD_DIR}
+die_on_any_error 2
+
+../${PACKAGE_DIR}/configure --prefix=/tools \
+--build=${CLFS_HOST} --host=${CLFS_TARGET} \
+--disable-makeinstall-chown --disable-makeinstall-setuid \
+--without-ncurses 2>&1 | tee "${STEP_LOG_DIR}/configure.out"
+die_on_any_error 3
+    
+make 2>&1 | tee "${STEP_LOG_DIR}/make.out"
+die_on_any_error 4
+
+make install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
+die_on_any_error 5
+
+remove_source_package
+# -------------------------------------------
+   ;;    
+   22)
+# -------------------------------------------
+# coreutils
+# -------------------------------------------
+prepare_source_package coreutils-8.24.tar.xz
+
+set -- man/*.x
+die_on_any_error 100
+
+touch ${@/%x/1}
+die_on_any_error 200
+
+patch -Np1 -i "${FILES}/coreutils-8.24-noman-1.patch"
+die_on_any_error 300
+
+BUILD_DIR="../${STEP_PACKAGE_NAME}-build"
+rm -rf ${BUILD_DIR}
+die_on_any_error 0
+mkdir -vp ${BUILD_DIR}
+die_on_any_error 1
+
+cd ${BUILD_DIR}
+die_on_any_error 2
+
+cat > config.cache << EOF
+fu_cv_sys_stat_statfs2_bsize=yes
+gl_cv_func_working_mkstemp=yes
+EOF
+die_on_any_error 3
+
+../${PACKAGE_DIR}/configure --prefix=/tools \
+--build=${CLFS_HOST} --host=${CLFS_TARGET} \
+--enable-install-program=hostname --cache-file=config.cache 2>&1 | tee "${STEP_LOG_DIR}/configure.out"
+die_on_any_error 4
+
+make 2>&1 | tee "${STEP_LOG_DIR}/make.out"
+die_on_any_error 5
+
+make install 2>&1 | tee "${STEP_LOG_DIR}/make_install.out"
+die_on_any_error 6
+
+remove_source_package
+# -------------------------------------------
+  ;;    
+  23)
+# -------------------------------------------
+# big initrd
+# -------------------------------------------
+BIG_INITRD=${CLFS}/big_initrd
+
+rm -rf ${BIG_INITRD}
+die_on_any_error 0
+mkdir -p ${BIG_INITRD}/tools
+die_on_any_error 1
+
+rm -f ${CLFS}/big_initrd.cpio
+die_on_any_error 2
+
+cp -r ${CLFS}/tools ${BIG_INITRD}
+die_on_any_error 3
+
+cd ${BIG_INITRD}
+die_on_any_error 4
+  
+# relative links
+ln -r -s ./tools/bin ${BIG_INITRD}/bin
+die_on_any_error 5
+ln -r -s ./tools/sbin ${BIG_INITRD}/sbin
+die_on_any_error 6
+ln -r -s ./tools/lib ${BIG_INITRD}/lib
+die_on_any_error 7
+
+rm -f init
+die_on_any_error 8
+
+find . | cpio -H newc -o > ${CLFS}/big_initrd.cpio
+die_on_error 9
+  
+# -------------------------------------------
+  ;;   
   esac
 done
 
